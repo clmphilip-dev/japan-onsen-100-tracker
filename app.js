@@ -20,6 +20,16 @@
     return `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)}</a>`;
   }
 
+  function fmtRank(r) {
+    return r == null || r === "" ? "—" : "#" + r;
+  }
+
+  function rankPairText(h) {
+    const a = h.rank == null ? "—" : "#" + h.rank;
+    const b = h.rank_2026 == null ? "—" : "#" + h.rank_2026;
+    return `2024 ${a}　／　2026 ${b}`;
+  }
+
   function renderRanks(list, mount) {
     mount.innerHTML = list.map(r => `
       <div class="rank-item">
@@ -37,6 +47,16 @@
     return "";
   }
 
+  function changeClass(ch) {
+    if (!ch) return "";
+    if (ch === "NEW") return "new";
+    if (ch === "DROPPED") return "dropped";
+    if (ch === "SAME") return "same";
+    if (String(ch).startsWith("+")) return "up";
+    if (String(ch).startsWith("-")) return "down";
+    return "";
+  }
+
   function renderCards(hotels) {
     const mount = $("#cards");
     if (!hotels.length) {
@@ -45,11 +65,15 @@
     }
     mount.innerHTML = hotels.map(h => `
       <article class="card" data-pref="${esc(h.prefecture || "")}" data-band="${esc(h.price_band || "")}">
-        <div class="rank-badge"><small>2024</small>#${esc(h.rank ?? "—")}${h.rank_2026 != null ? `<br><small>2026</small>#${esc(h.rank_2026)}` : ""}</div>
+        <div class="rank-badge">
+          <span class="rank-line">2024 ${esc(fmtRank(h.rank))}</span>
+          <span class="rank-line">2026 ${esc(fmtRank(h.rank_2026))}</span>
+        </div>
         <div>
           <span class="area">${esc(h.area_cn || "")}</span>
           <h3>${esc(h.property_cn || h.property_en || h.property_jp)}</h3>
           <div class="jp">${esc(h.property_jp)}${h.property_en ? " · " + esc(h.property_en) : ""}</div>
+          <div class="rank-pair">${esc(rankPairText(h))}</div>
           <div class="meta">
             <span class="chip price">${esc(fmtPrice(h.price_jpy))}</span>
             <span class="chip">${esc(h.price_band || "")}</span>
@@ -95,15 +119,55 @@
         return blob.includes(q);
       });
     }
-    // sort by rank then name
     list.sort((a, b) => {
       const ra = a.rank == null ? 999 : Number(a.rank);
       const rb = b.rank == null ? 999 : Number(b.rank);
       if (ra !== rb) return ra - rb;
+      const a6 = a.rank_2026 == null ? 999 : Number(a.rank_2026);
+      const b6 = b.rank_2026 == null ? 999 : Number(b.rank_2026);
+      if (a6 !== b6) return a6 - b6;
       return String(a.property_jp).localeCompare(String(b.property_jp), "ja");
     });
     $("#stats").textContent = `顯示 ${list.length} / ${data.hotels.length} 間住宿／設施`;
     renderCards(list);
+  }
+
+  function changeMagnitude(ch) {
+    if (!ch || ch === "NEW" || ch === "DROPPED" || ch === "SAME") return 0;
+    const n = parseInt(String(ch).replace("+", ""), 10);
+    return isFinite(n) ? Math.abs(n) : 0;
+  }
+
+  function applyCompareFilters(data) {
+    const body = $("#compare-body");
+    if (!body || !data.ranking_compare) return;
+    const mode = ($("#compare-filter") && $("#compare-filter").value) || "all";
+    const q = (($("#compare-q") && $("#compare-q").value) || "").trim().toLowerCase();
+    let list = data.ranking_compare.slice();
+    if (mode === "both") list = list.filter(r => r.rank_2024 != null && r.rank_2026 != null);
+    else if (mode === "up") list = list.filter(r => String(r.change || "").startsWith("+"));
+    else if (mode === "down") list = list.filter(r => String(r.change || "").startsWith("-"));
+    else if (mode === "new") list = list.filter(r => r.change === "NEW");
+    else if (mode === "dropped") list = list.filter(r => r.change === "DROPPED");
+    else if (mode === "big") list = list.filter(r => changeMagnitude(r.change) >= 20);
+    if (q) {
+      list = list.filter(r => {
+        const blob = [r.area_jp, r.area_cn, r.prefecture, r.change, r.note].join(" ").toLowerCase();
+        return blob.includes(q);
+      });
+    }
+    $("#compare-stats").textContent = `顯示 ${list.length} / ${data.ranking_compare.length} 個溫泉地`;
+    body.innerHTML = list.map(r => `
+      <tr>
+        <td class="rk">${esc(fmtRank(r.rank_2024))}</td>
+        <td>
+          <div class="area-cn">${esc(r.area_cn || r.area_jp)}</div>
+          <div class="area-jp">${esc(r.area_jp || "")}${r.note ? " · " + esc(r.note) : ""}</div>
+        </td>
+        <td>${esc(r.prefecture || "")}</td>
+        <td class="rk">${esc(fmtRank(r.rank_2026))}</td>
+        <td><span class="change-pill ${changeClass(r.change)}">${esc(r.change || "")}</span></td>
+      </tr>`).join("");
   }
 
   function init(data) {
@@ -162,11 +226,20 @@
       applyFilters(data);
     });
 
+    if ($("#compare-filter")) {
+      ["compare-filter", "compare-q"].forEach(id => {
+        const el = $(`#${id}`);
+        if (!el) return;
+        el.addEventListener("input", () => applyCompareFilters(data));
+        el.addEventListener("change", () => applyCompareFilters(data));
+      });
+      applyCompareFilters(data);
+    }
+
     $("#disclaimer").textContent = data.meta.disclaimer_zh;
     applyFilters(data);
   }
 
-  // Prefer embedded DATA (file:// friendly); optionally refresh from data.json on http
   const embedded = window.ONSEN_DATA;
   if (embedded) {
     init(embedded);

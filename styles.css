@@ -213,3 +213,78 @@ footer {
   color: var(--muted); font-size: 0.82rem;
 }
 .hidden { display: none !important; }
+
+/* Ranking compare */
+.compare-wrap {
+  overflow-x: auto;
+  margin-top: 10px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  min-width: 560px;
+}
+.compare-table th,
+.compare-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+.compare-table th {
+  background: var(--bg2);
+  position: sticky;
+  top: 0;
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-weight: 700;
+}
+.compare-table tr:hover td { background: var(--cream); }
+.compare-table .rk {
+  font-weight: 800;
+  color: var(--accent);
+  white-space: nowrap;
+  width: 4.5rem;
+}
+.compare-table .area-cn { font-weight: 600; }
+.compare-table .area-jp { color: var(--muted); font-size: 0.82rem; }
+.change-pill {
+  display: inline-block;
+  font-weight: 800;
+  font-size: 0.82rem;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--cream);
+}
+.change-pill.up { background: #e8f6ee; color: var(--ok); border-color: #b7dcc5; }
+.change-pill.down { background: #fff1ee; color: var(--danger); border-color: #e2b4ac; }
+.change-pill.new { background: #eef6fa; color: var(--info); border-color: #b7d0dc; }
+.change-pill.dropped { background: #f3f0ee; color: var(--muted); }
+.change-pill.same { background: var(--bg2); color: var(--muted); }
+
+.card .rank-badge {
+  width: 78px;
+  min-height: 78px;
+  height: auto;
+  padding: 8px 4px;
+  font-size: 0.95rem;
+}
+.card .rank-line {
+  font-size: 0.72rem;
+  font-weight: 700;
+  opacity: 0.95;
+  white-space: nowrap;
+}
+.card .rank-pair {
+  margin: 6px 0 8px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--accent2);
+}
+#compare-panel .filters {
+  grid-template-columns: 1fr 1.4fr;
+}

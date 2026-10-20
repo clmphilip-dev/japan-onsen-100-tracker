@@ -1,19 +1,18 @@
-# Japan Onsen 100 Tracker
+# 《日本溫泉100強》追蹤
 
-Live: https://clmphilip-dev.github.io/japan-onsen-100-tracker/
+香港旅客用溫泉行程計劃站（繁中）。
 
-Updated: 2026-10-20 19:55 Asia/Hong_Kong (HKT, UTC+8)
+- Live: https://clmphilip-dev.github.io/japan-onsen-100-tracker/
+- HOY title: https://hoy.tv/title/27930
 
-## Episodes (7 total)
-- Eps 1–5: HOY TV 2025-11-03～07 ← TV Tokyo 2024-02-04
-- Eps 6–7: HOY 77 2026-10-11 & 2026-10-18 ← TV Tokyo 2026-02-15
-- https://hoy.tv/title/27930
+## Contents
+- 節目提及／整理的旅館與設施（約 95 間）
+- 2024（HOY）與 2026（電視東京）溫泉地 Top 100
+- **排名對照**：同一溫泉地兩年名次與升跌（NEW / DROPPED / ±N）
+- 參考一泊二食價錢與訂房連結
 
-## Method
-Legitimate multi-source web cross-check (**not** episode-watched).
-Hotels in database: **91**
-Source_quality: `web_summary_crosschecked`
+## Data quality
+`web_summary_crosschecked` — 多源合法網絡摘要交叉核對（非 HOY 全集逐集觀看）。
 
-## Files
-- `data.json` — rankings + hotels for the site
-- Spreadsheet: see agent store / workspace `Japan_Onsen_100_Tracker.xlsx`
+## Episodes
+共 7 集：1–5＝HOY TV 2025-11（對應 2024 特番）；6–7＝HOY 77 2026-10（對應 2026 特番）。
