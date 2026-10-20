@@ -308,9 +308,9 @@
     ).join("");
 
     renderRanks(data.ranking_2024_top10, $("#rank-mount"));
-    $$(".tab-btn").forEach(btn => {
+    $$("#panel-top10 .tab-btn").forEach(btn => {
       btn.addEventListener("click", () => {
-        $$(".tab-btn").forEach(b => b.classList.remove("active"));
+        $$("#panel-top10 .tab-btn").forEach(b => b.classList.remove("active"));
         btn.classList.add("active");
         const year = btn.dataset.year;
         renderRanks(year === "2024" ? data.ranking_2024_top10 : data.ranking_2026_top10, $("#rank-mount"));
@@ -318,6 +318,25 @@
           ? "2024 年版（HOY《日本溫泉100強》來源）前 10 名溫泉地"
           : "2026 年 2 月電視東京特番前 10 名溫泉地（名單與 2024 不同）";
       });
+    });
+
+    function showPanel(panelId) {
+      $$(".section-tab").forEach(b => {
+        const on = b.dataset.panel === panelId;
+        b.classList.toggle("is-active", on);
+        b.setAttribute("aria-selected", on ? "true" : "false");
+      });
+      $$(".content-panel").forEach(p => {
+        const on = p.dataset.panel === panelId;
+        p.classList.toggle("is-active", on);
+        p.classList.toggle("hidden", !on);
+      });
+      // Keep nodes; refresh visible panel data if needed
+      if (panelId === "compare") applyCompareFilters(data);
+      if (panelId === "hotels") applyFilters(data);
+    }
+    $$(".section-tab").forEach(btn => {
+      btn.addEventListener("click", () => showPanel(btn.dataset.panel));
     });
 
     const prefs = unique(data.hotels.map(h => h.prefecture));

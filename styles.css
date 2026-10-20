@@ -214,12 +214,49 @@ footer {
 }
 .hidden { display: none !important; }
 
+/* Section tabs (Top 10 / Compare / Hotels) */
+.section-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 14px 0 4px;
+  padding: 4px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+}
+.section-tab {
+  flex: 1 1 auto;
+  min-width: max(140px, 28%);
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--ink);
+  border-radius: 999px;
+  padding: 10px 14px;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 700;
+  font-size: 0.92rem;
+  text-align: center;
+}
+.section-tab:hover { background: var(--bg2); }
+.section-tab.is-active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+.content-panel.hidden { display: none !important; }
+.content-panel.is-active { display: block; }
+
 /* Ranking compare */
 .compare-wrap {
-  overflow-x: auto;
+  overflow: auto;
+  max-height: min(70vh, 640px);
   margin-top: 10px;
   border: 1px solid var(--border);
   border-radius: 12px;
+  -webkit-overflow-scrolling: touch;
 }
 .compare-table {
   width: 100%;
@@ -285,7 +322,7 @@ footer {
   font-weight: 700;
   color: var(--accent2);
 }
-#compare-panel .filters {
+#panel-compare .filters {
   grid-template-columns: 1fr 1.4fr;
 }
 
@@ -295,7 +332,7 @@ footer {
 @media (max-width: 900px) {
   .filters-hotels { grid-template-columns: 1fr 1fr; }
 }
-#compare-panel .filters {
+#panel-compare .filters {
   grid-template-columns: 1fr 1.2fr 1fr;
 }
 .chip-up { background: #e8f6ee; color: var(--ok); border-color: #b7dcc5; font-weight: 800; }

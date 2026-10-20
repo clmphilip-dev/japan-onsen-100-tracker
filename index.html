@@ -28,9 +28,15 @@
     <section id="alerts" aria-label="重要提示"></section>
     <div id="source-banner" class="banner warn" role="status"></div>
 
-    <section class="panel">
+    <nav class="section-tabs" role="tablist" aria-label="主要分頁">
+      <button type="button" class="section-tab" role="tab" id="tab-top10" data-panel="top10" aria-controls="panel-top10" aria-selected="false">溫泉地 Top 10</button>
+      <button type="button" class="section-tab is-active" role="tab" id="tab-compare" data-panel="compare" aria-controls="panel-compare" aria-selected="true">排名對照（2024 ⇄ 2026）</button>
+      <button type="button" class="section-tab" role="tab" id="tab-hotels" data-panel="hotels" aria-controls="panel-hotels" aria-selected="false">住宿／設施</button>
+    </nav>
+
+    <section class="panel content-panel hidden" id="panel-top10" role="tabpanel" aria-labelledby="tab-top10" data-panel="top10">
       <h2>溫泉地排行榜 Top 10</h2>
-      <div class="tabs">
+      <div class="tabs year-tabs">
         <button type="button" class="tab-btn active" data-year="2024">2024（HOY）</button>
         <button type="button" class="tab-btn" data-year="2026">2026（電視東京）</button>
       </div>
@@ -38,7 +44,7 @@
       <div class="rank-grid" id="rank-mount"></div>
     </section>
 
-    <section class="panel" id="compare-panel">
+    <section class="panel content-panel is-active" id="panel-compare" role="tabpanel" aria-labelledby="tab-compare" data-panel="compare">
       <h2>排名對照（2024 ⇄ 2026）</h2>
       <p class="stats" style="margin-top:0">同一溫泉地在兩屆電視東京特番的名次對照。Change：<strong>+N</strong>＝上升（名次數字變小）、<strong>-N</strong>＝下跌、<strong>NEW</strong>＝2026新上榜、<strong>DROPPED</strong>＝2026跌出前100、<strong>SAME</strong>＝名次不變。同率名次（2026：11／16／74／84）已保留。</p>
       <div class="filters">
@@ -67,7 +73,7 @@
         </label>
       </div>
       <p class="stats" id="compare-stats"></p>
-      <div class="compare-wrap">
+      <div class="compare-wrap" id="compare-wrap">
         <table class="compare-table" id="compare-table">
           <thead>
             <tr>
@@ -83,7 +89,7 @@
       </div>
     </section>
 
-    <section class="panel">
+    <section class="panel content-panel hidden" id="panel-hotels" role="tabpanel" aria-labelledby="tab-hotels" data-panel="hotels">
       <h2>住宿／設施一覽</h2>
       <div class="filters filters-hotels">
         <label class="f">關鍵字
@@ -126,7 +132,7 @@ window.ONSEN_DATA = {
     "title_en": "Japan Onsen 100 Tracker",
     "hoy_url": "https://hoy.tv/title/27930",
     "updated": "2026-10-20",
-    "updated_label": "最後更新：2026-10-20 19:57 Asia/Hong_Kong (HKT, UTC+8)｜方法：多源網絡交叉核對｜旅館 95 間｜含 2024／2026 排名對照",
+    "updated_label": "最後更新：2026-10-20 20:06 Asia/Hong_Kong (HKT, UTC+8)｜方法：多源網絡交叉核對｜旅館 95 間｜含 2024／2026 排名對照",
     "episodes": {
       "count_total": 7,
       "count_playable": 2,
@@ -151,7 +157,7 @@ window.ONSEN_DATA = {
       },
       {
         "level": "info",
-        "zh": "【新】每間旅館卡片與「排名對照」分頁可同時查看 2024／2026 溫泉地名次與升跌。"
+        "zh": "【新】頂部分頁可切換「溫泉地 Top 10」「排名對照（2024 ⇄ 2026）」「住宿／設施」；旅館卡片亦顯示兩年名次與升跌。"
       }
     ],
     "disclaimer_zh": "價錢為約2026年10月／節目摘要中的一泊二食（每人）參考價，會隨季節大幅波動。空白＝未能核實、不臆造。Rank 為溫泉地名次（非旅館個人名次）。本站與 HOY／電視東京／各旅館無隸屬關係，僅供私人行程規劃。",
