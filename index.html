@@ -56,6 +56,15 @@
         <label class="f">搜尋溫泉地
           <input id="compare-q" type="search" placeholder="箱根、月岡、阿蘇…" autocomplete="off" />
         </label>
+        <label class="f">排序
+          <select id="compare-sort">
+            <option value="rank2024">2024 排名（佳→差）</option>
+            <option value="rank2026">2026 排名（佳→差）</option>
+            <option value="improve">升幅最大</option>
+            <option value="drop">跌幅最大</option>
+            <option value="name">溫泉地名 A–Z</option>
+          </select>
+        </label>
       </div>
       <p class="stats" id="compare-stats"></p>
       <div class="compare-wrap">
@@ -76,7 +85,7 @@
 
     <section class="panel">
       <h2>住宿／設施一覽</h2>
-      <div class="filters">
+      <div class="filters filters-hotels">
         <label class="f">關鍵字
           <input id="q" type="search" placeholder="旅館名、溫泉地、賣點…" autocomplete="off" />
         </label>
@@ -85,6 +94,18 @@
         </label>
         <label class="f">價錢帶（約／人）
           <select id="band"><option value="">全部</option></select>
+        </label>
+        <label class="f">排序
+          <select id="sort">
+            <option value="rank2024">2024 排名（佳→差）</option>
+            <option value="rank2026">2026 排名（佳→差）</option>
+            <option value="improve">升幅最大（2024→2026）</option>
+            <option value="drop">跌幅最大（2024→2026）</option>
+            <option value="price_asc">價錢低→高</option>
+            <option value="price_desc">價錢高→低</option>
+            <option value="name_area">溫泉地名 A–Z</option>
+            <option value="name_prop">旅館名 A–Z</option>
+          </select>
         </label>
         <button type="button" class="reset" id="reset">重設</button>
       </div>

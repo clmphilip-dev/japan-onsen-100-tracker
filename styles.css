@@ -288,3 +288,16 @@ footer {
 #compare-panel .filters {
   grid-template-columns: 1fr 1.4fr;
 }
+
+.filters-hotels {
+  grid-template-columns: 1.3fr 0.9fr 0.9fr 1.1fr auto;
+}
+@media (max-width: 900px) {
+  .filters-hotels { grid-template-columns: 1fr 1fr; }
+}
+#compare-panel .filters {
+  grid-template-columns: 1fr 1.2fr 1fr;
+}
+.chip-up { background: #e8f6ee; color: var(--ok); border-color: #b7dcc5; font-weight: 800; }
+.chip-down { background: #fff1ee; color: var(--danger); border-color: #e2b4ac; font-weight: 800; }
+.rank-pair .chip { margin-left: 6px; vertical-align: middle; }

@@ -30,6 +30,12 @@
     return `2024 ${a}　／　2026 ${b}`;
   }
 
+  /** Positive = improved (rank number went down). null if either year missing. */
+  function rankDelta(r24, r26) {
+    if (r24 == null || r26 == null || r24 === "" || r26 === "") return null;
+    return Number(r24) - Number(r26);
+  }
+
   function renderRanks(list, mount) {
     mount.innerHTML = list.map(r => `
       <div class="rank-item">
@@ -63,7 +69,15 @@
       mount.innerHTML = '<p class="stats">沒有符合條件的住宿／設施。</p>';
       return;
     }
-    mount.innerHTML = hotels.map(h => `
+    mount.innerHTML = hotels.map(h => {
+      const delta = rankDelta(h.rank, h.rank_2026);
+      let deltaChip = "";
+      if (delta != null) {
+        if (delta > 0) deltaChip = `<span class="chip chip-up">↑${delta}</span>`;
+        else if (delta < 0) deltaChip = `<span class="chip chip-down">↓${Math.abs(delta)}</span>`;
+        else deltaChip = `<span class="chip">＝</span>`;
+      }
+      return `
       <article class="card" data-pref="${esc(h.prefecture || "")}" data-band="${esc(h.price_band || "")}">
         <div class="rank-badge">
           <span class="rank-line">2024 ${esc(fmtRank(h.rank))}</span>
@@ -73,7 +87,7 @@
           <span class="area">${esc(h.area_cn || "")}</span>
           <h3>${esc(h.property_cn || h.property_en || h.property_jp)}</h3>
           <div class="jp">${esc(h.property_jp)}${h.property_en ? " · " + esc(h.property_en) : ""}</div>
-          <div class="rank-pair">${esc(rankPairText(h))}</div>
+          <div class="rank-pair">${esc(rankPairText(h))} ${deltaChip}</div>
           <div class="meta">
             <span class="chip price">${esc(fmtPrice(h.price_jpy))}</span>
             <span class="chip">${esc(h.price_band || "")}</span>
@@ -96,17 +110,82 @@
             ${linkBtn(h.other_booking, "其他預約")}
           </div>
         </div>
-      </article>`).join("");
+      </article>`;
+    }).join("");
   }
 
   function unique(arr) {
     return Array.from(new Set(arr.filter(Boolean))).sort((a, b) => String(a).localeCompare(String(b), "zh-Hant"));
   }
 
+  function sortHotels(list, mode) {
+    const inf = 9999;
+    const copy = list.slice();
+    copy.sort((a, b) => {
+      if (mode === "rank2024") {
+        const ra = a.rank == null ? inf : Number(a.rank);
+        const rb = b.rank == null ? inf : Number(b.rank);
+        if (ra !== rb) return ra - rb;
+        return String(a.property_jp).localeCompare(String(b.property_jp), "ja");
+      }
+      if (mode === "rank2026") {
+        const ra = a.rank_2026 == null ? inf : Number(a.rank_2026);
+        const rb = b.rank_2026 == null ? inf : Number(b.rank_2026);
+        if (ra !== rb) return ra - rb;
+        return String(a.property_jp).localeCompare(String(b.property_jp), "ja");
+      }
+      if (mode === "improve") {
+        // largest positive delta first; missing delta last
+        const da = rankDelta(a.rank, a.rank_2026);
+        const db = rankDelta(b.rank, b.rank_2026);
+        const va = da == null ? -inf : da;
+        const vb = db == null ? -inf : db;
+        if (va !== vb) return vb - va;
+        return String(a.property_jp).localeCompare(String(b.property_jp), "ja");
+      }
+      if (mode === "drop") {
+        // most negative delta first (largest fall)
+        const da = rankDelta(a.rank, a.rank_2026);
+        const db = rankDelta(b.rank, b.rank_2026);
+        const va = da == null ? inf : da;
+        const vb = db == null ? inf : db;
+        if (va !== vb) return va - vb;
+        return String(a.property_jp).localeCompare(String(b.property_jp), "ja");
+      }
+      if (mode === "price_asc") {
+        const pa = a.price_jpy == null ? inf : Number(a.price_jpy);
+        const pb = b.price_jpy == null ? inf : Number(b.price_jpy);
+        if (pa !== pb) return pa - pb;
+        return String(a.property_jp).localeCompare(String(b.property_jp), "ja");
+      }
+      if (mode === "price_desc") {
+        const pa = a.price_jpy == null ? -1 : Number(a.price_jpy);
+        const pb = b.price_jpy == null ? -1 : Number(b.price_jpy);
+        if (pa !== pb) return pb - pa;
+        return String(a.property_jp).localeCompare(String(b.property_jp), "ja");
+      }
+      if (mode === "name_area") {
+        const aa = a.area_cn || a.onsen_area || "";
+        const bb = b.area_cn || b.onsen_area || "";
+        const c = String(aa).localeCompare(String(bb), "zh-Hant");
+        if (c !== 0) return c;
+        return String(a.property_jp).localeCompare(String(b.property_jp), "ja");
+      }
+      if (mode === "name_prop") {
+        const aa = a.property_cn || a.property_jp || "";
+        const bb = b.property_cn || b.property_jp || "";
+        return String(aa).localeCompare(String(bb), "zh-Hant");
+      }
+      return 0;
+    });
+    return copy;
+  }
+
   function applyFilters(data) {
     const q = ($("#q").value || "").trim().toLowerCase();
     const pref = $("#pref").value;
     const band = $("#band").value;
+    const mode = ($("#sort") && $("#sort").value) || "rank2024";
     let list = data.hotels.slice();
     if (pref) list = list.filter(h => h.prefecture === pref);
     if (band) list = list.filter(h => h.price_band === band);
@@ -119,16 +198,8 @@
         return blob.includes(q);
       });
     }
-    list.sort((a, b) => {
-      const ra = a.rank == null ? 999 : Number(a.rank);
-      const rb = b.rank == null ? 999 : Number(b.rank);
-      if (ra !== rb) return ra - rb;
-      const a6 = a.rank_2026 == null ? 999 : Number(a.rank_2026);
-      const b6 = b.rank_2026 == null ? 999 : Number(b.rank_2026);
-      if (a6 !== b6) return a6 - b6;
-      return String(a.property_jp).localeCompare(String(b.property_jp), "ja");
-    });
-    $("#stats").textContent = `顯示 ${list.length} / ${data.hotels.length} 間住宿／設施`;
+    list = sortHotels(list, mode);
+    $("#stats").textContent = `顯示 ${list.length} / ${data.hotels.length} 間住宿／設施 · 排序：${($("#sort").selectedOptions[0] || {}).textContent || mode}`;
     renderCards(list);
   }
 
@@ -138,11 +209,58 @@
     return isFinite(n) ? Math.abs(n) : 0;
   }
 
+  function parseChangeNum(ch) {
+    if (!ch || ch === "NEW" || ch === "DROPPED" || ch === "SAME") return null;
+    const n = parseInt(String(ch).replace("+", ""), 10);
+    return isFinite(n) ? n : null;
+  }
+
+  function sortCompare(list, mode) {
+    const inf = 9999;
+    const copy = list.slice();
+    copy.sort((a, b) => {
+      if (mode === "rank2024") {
+        const ra = a.rank_2024 == null ? inf : Number(a.rank_2024);
+        const rb = b.rank_2024 == null ? inf : Number(b.rank_2024);
+        if (ra !== rb) return ra - rb;
+        return String(a.area_jp).localeCompare(String(b.area_jp), "ja");
+      }
+      if (mode === "rank2026") {
+        const ra = a.rank_2026 == null ? inf : Number(a.rank_2026);
+        const rb = b.rank_2026 == null ? inf : Number(b.rank_2026);
+        if (ra !== rb) return ra - rb;
+        return String(a.area_jp).localeCompare(String(b.area_jp), "ja");
+      }
+      if (mode === "improve") {
+        const da = parseChangeNum(a.change);
+        const db = parseChangeNum(b.change);
+        const va = da == null ? -inf : da;
+        const vb = db == null ? -inf : db;
+        if (va !== vb) return vb - va;
+        return String(a.area_jp).localeCompare(String(b.area_jp), "ja");
+      }
+      if (mode === "drop") {
+        const da = parseChangeNum(a.change);
+        const db = parseChangeNum(b.change);
+        const va = da == null ? inf : da;
+        const vb = db == null ? inf : db;
+        if (va !== vb) return va - vb;
+        return String(a.area_jp).localeCompare(String(b.area_jp), "ja");
+      }
+      if (mode === "name") {
+        return String(a.area_cn || a.area_jp).localeCompare(String(b.area_cn || b.area_jp), "zh-Hant");
+      }
+      return 0;
+    });
+    return copy;
+  }
+
   function applyCompareFilters(data) {
     const body = $("#compare-body");
     if (!body || !data.ranking_compare) return;
     const mode = ($("#compare-filter") && $("#compare-filter").value) || "all";
     const q = (($("#compare-q") && $("#compare-q").value) || "").trim().toLowerCase();
+    const sortMode = ($("#compare-sort") && $("#compare-sort").value) || "rank2024";
     let list = data.ranking_compare.slice();
     if (mode === "both") list = list.filter(r => r.rank_2024 != null && r.rank_2026 != null);
     else if (mode === "up") list = list.filter(r => String(r.change || "").startsWith("+"));
@@ -156,7 +274,10 @@
         return blob.includes(q);
       });
     }
-    $("#compare-stats").textContent = `顯示 ${list.length} / ${data.ranking_compare.length} 個溫泉地`;
+    list = sortCompare(list, sortMode);
+    const sortLabel = ($("#compare-sort") && $("#compare-sort").selectedOptions[0])
+      ? $("#compare-sort").selectedOptions[0].textContent : sortMode;
+    $("#compare-stats").textContent = `顯示 ${list.length} / ${data.ranking_compare.length} 個溫泉地 · 排序：${sortLabel}`;
     body.innerHTML = list.map(r => `
       <tr>
         <td class="rk">${esc(fmtRank(r.rank_2024))}</td>
@@ -187,12 +308,11 @@
     ).join("");
 
     renderRanks(data.ranking_2024_top10, $("#rank-mount"));
-    let year = "2024";
     $$(".tab-btn").forEach(btn => {
       btn.addEventListener("click", () => {
         $$(".tab-btn").forEach(b => b.classList.remove("active"));
         btn.classList.add("active");
-        year = btn.dataset.year;
+        const year = btn.dataset.year;
         renderRanks(year === "2024" ? data.ranking_2024_top10 : data.ranking_2026_top10, $("#rank-mount"));
         $("#rank-caption").textContent = year === "2024"
           ? "2024 年版（HOY《日本溫泉100強》來源）前 10 名溫泉地"
@@ -215,19 +335,22 @@
       bandSel.appendChild(o);
     });
 
-    ["q", "pref", "band"].forEach(id => {
-      $(`#${id}`).addEventListener("input", () => applyFilters(data));
-      $(`#${id}`).addEventListener("change", () => applyFilters(data));
+    ["q", "pref", "band", "sort"].forEach(id => {
+      const el = $(`#${id}`);
+      if (!el) return;
+      el.addEventListener("input", () => applyFilters(data));
+      el.addEventListener("change", () => applyFilters(data));
     });
     $("#reset").addEventListener("click", () => {
       $("#q").value = "";
       $("#pref").value = "";
       $("#band").value = "";
+      if ($("#sort")) $("#sort").value = "rank2024";
       applyFilters(data);
     });
 
     if ($("#compare-filter")) {
-      ["compare-filter", "compare-q"].forEach(id => {
+      ["compare-filter", "compare-q", "compare-sort"].forEach(id => {
         const el = $(`#${id}`);
         if (!el) return;
         el.addEventListener("input", () => applyCompareFilters(data));
