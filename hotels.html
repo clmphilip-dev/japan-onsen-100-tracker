@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>住宿／設施 — 《日本溫泉100強》追蹤</title>
+  <meta name="description" content="節目提及旅館與設施：繁中介紹、參考價錢與訂房連結。" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="hotels">
+  <header class="app-header">
+    <div class="wrap">
+      <h1>《日本溫泉100強》追蹤</h1>
+      <p class="sub">住宿／設施一覽</p>
+      <div class="meta-row">
+        <a class="hoy" id="hoy-link" href="https://hoy.tv/title/27930" target="_blank" rel="noopener">在 HOY TV 觀看</a>
+        <span id="updated">最後更新：—</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="site-nav" aria-label="主要頁面">
+    <a href="index.html" class="site-nav-link">首頁</a>
+    <a href="ranks.html" class="site-nav-link">Top 10</a>
+    <a href="compare.html" class="site-nav-link">排名對照</a>
+    <a href="hotels.html" class="site-nav-link is-active" aria-current="page">住宿</a>
+  </nav>
+
+  <main>
+    <div id="source-banner" class="banner warn hidden" role="status"></div>
+
+    <section class="panel">
+      <h2>住宿／設施一覽</h2>
+      <div class="filters filters-hotels">
+        <label class="f">關鍵字
+          <input id="q" type="search" placeholder="旅館名、溫泉地、賣點…" autocomplete="off" />
+        </label>
+        <label class="f">都道府縣
+          <select id="pref"><option value="">全部</option></select>
+        </label>
+        <label class="f">價錢帶（約／人）
+          <select id="band"><option value="">全部</option></select>
+        </label>
+        <label class="f">排序
+          <select id="sort">
+            <option value="rank2024">2024 排名（佳→差）</option>
+            <option value="rank2026">2026 排名（佳→差）</option>
+            <option value="improve">升幅最大（2024→2026）</option>
+            <option value="drop">跌幅最大（2024→2026）</option>
+            <option value="price_asc">價錢低→高</option>
+            <option value="price_desc">價錢高→低</option>
+            <option value="name_area">溫泉地名 A–Z</option>
+            <option value="name_prop">旅館名 A–Z</option>
+          </select>
+        </label>
+        <button type="button" class="reset" id="reset">重設</button>
+      </div>
+      <p class="stats" id="stats"></p>
+      <div class="cards" id="cards"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p id="disclaimer"></p>
+    <p>資料來源：HOY TV <a href="https://hoy.tv/title/27930">hoy.tv/title/27930</a>、電視東京溫泉特番公開結果整理。</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

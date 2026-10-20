@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>排名對照（2024 ⇄ 2026）— 《日本溫泉100強》追蹤</title>
+  <meta name="description" content="同一溫泉地在 2024 與 2026 電視東京特番的名次對照與升跌。" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="compare">
+  <header class="app-header">
+    <div class="wrap">
+      <h1>《日本溫泉100強》追蹤</h1>
+      <p class="sub">排名對照 · 2024 ⇄ 2026</p>
+      <div class="meta-row">
+        <a class="hoy" id="hoy-link" href="https://hoy.tv/title/27930" target="_blank" rel="noopener">在 HOY TV 觀看</a>
+        <span id="updated">最後更新：—</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="site-nav" aria-label="主要頁面">
+    <a href="index.html" class="site-nav-link">首頁</a>
+    <a href="ranks.html" class="site-nav-link">Top 10</a>
+    <a href="compare.html" class="site-nav-link is-active" aria-current="page">排名對照</a>
+    <a href="hotels.html" class="site-nav-link">住宿</a>
+  </nav>
+
+  <main>
+    <div id="source-banner" class="banner warn hidden" role="status"></div>
+
+    <section class="panel" id="panel-compare">
+      <h2>排名對照（2024 ⇄ 2026）</h2>
+      <p class="stats" style="margin-top:0">同一溫泉地在兩屆電視東京特番的名次對照。Change：<strong>+N</strong>＝上升（名次數字變小）、<strong>-N</strong>＝下跌、<strong>NEW</strong>＝2026新上榜、<strong>DROPPED</strong>＝2026跌出前100、<strong>SAME</strong>＝名次不變。同率名次（2026：11／16／74／84）已保留。</p>
+      <div class="filters filters-compare">
+        <label class="f">篩選
+          <select id="compare-filter">
+            <option value="all">全部溫泉地</option>
+            <option value="both">兩年皆入榜</option>
+            <option value="up">上升（+）</option>
+            <option value="down">下跌（-）</option>
+            <option value="new">NEW（2026新上榜）</option>
+            <option value="dropped">DROPPED（跌出榜）</option>
+            <option value="big">大變動（±20以上）</option>
+          </select>
+        </label>
+        <label class="f">搜尋溫泉地
+          <input id="compare-q" type="search" placeholder="箱根、月岡、阿蘇…" autocomplete="off" />
+        </label>
+        <label class="f">排序
+          <select id="compare-sort">
+            <option value="rank2024">2024 排名（佳→差）</option>
+            <option value="rank2026">2026 排名（佳→差）</option>
+            <option value="improve">升幅最大</option>
+            <option value="drop">跌幅最大</option>
+            <option value="name">溫泉地名 A–Z</option>
+          </select>
+        </label>
+      </div>
+      <p class="stats" id="compare-stats"></p>
+      <div class="compare-wrap" id="compare-wrap">
+        <table class="compare-table" id="compare-table">
+          <thead>
+            <tr>
+              <th>2024</th>
+              <th>溫泉地</th>
+              <th>縣</th>
+              <th>2026</th>
+              <th>升跌</th>
+            </tr>
+          </thead>
+          <tbody id="compare-body"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p id="disclaimer"></p>
+    <p>資料來源：HOY TV <a href="https://hoy.tv/title/27930">hoy.tv/title/27930</a>、電視東京溫泉特番公開結果整理。</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

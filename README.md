@@ -5,6 +5,12 @@
 - Live: https://clmphilip-dev.github.io/japan-onsen-100-tracker/
 - HOY title: https://hoy.tv/title/27930
 
+## Pages
+- [`index.html`](index.html) — 首頁（節目狀態、提示、入口）
+- [`ranks.html`](ranks.html) — 溫泉地 Top 10（2024 / 2026）
+- [`compare.html`](compare.html) — 排名對照（2024 ⇄ 2026）
+- [`hotels.html`](hotels.html) — 住宿／設施
+
 ## Contents
 - 節目提及／整理的旅館與設施（約 95 間）
 - 2024（HOY）與 2026（電視東京）溫泉地 Top 100
@@ -16,3 +22,5 @@
 
 ## Episodes
 共 7 集：1–5＝HOY TV 2025-11（對應 2024 特番）；6–7＝HOY 77 2026-10（對應 2026 特番）。
+
+資料由各頁 `fetch("data.json")` 載入。

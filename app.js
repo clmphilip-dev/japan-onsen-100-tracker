@@ -37,6 +37,7 @@
   }
 
   function renderRanks(list, mount) {
+    if (!mount) return;
     mount.innerHTML = list.map(r => `
       <div class="rank-item">
         <div class="n">#${esc(r.rank)}</div>
@@ -65,6 +66,7 @@
 
   function renderCards(hotels) {
     const mount = $("#cards");
+    if (!mount) return;
     if (!hotels.length) {
       mount.innerHTML = '<p class="stats">沒有符合條件的住宿／設施。</p>';
       return;
@@ -135,7 +137,6 @@
         return String(a.property_jp).localeCompare(String(b.property_jp), "ja");
       }
       if (mode === "improve") {
-        // largest positive delta first; missing delta last
         const da = rankDelta(a.rank, a.rank_2026);
         const db = rankDelta(b.rank, b.rank_2026);
         const va = da == null ? -inf : da;
@@ -144,7 +145,6 @@
         return String(a.property_jp).localeCompare(String(b.property_jp), "ja");
       }
       if (mode === "drop") {
-        // most negative delta first (largest fall)
         const da = rankDelta(a.rank, a.rank_2026);
         const db = rankDelta(b.rank, b.rank_2026);
         const va = da == null ? inf : da;
@@ -182,10 +182,16 @@
   }
 
   function applyFilters(data) {
-    const q = ($("#q").value || "").trim().toLowerCase();
-    const pref = $("#pref").value;
-    const band = $("#band").value;
-    const mode = ($("#sort") && $("#sort").value) || "rank2024";
+    const cards = $("#cards");
+    if (!cards || !data.hotels) return;
+    const qEl = $("#q");
+    const prefEl = $("#pref");
+    const bandEl = $("#band");
+    const sortEl = $("#sort");
+    const q = (qEl && qEl.value || "").trim().toLowerCase();
+    const pref = prefEl ? prefEl.value : "";
+    const band = bandEl ? bandEl.value : "";
+    const mode = (sortEl && sortEl.value) || "rank2024";
     let list = data.hotels.slice();
     if (pref) list = list.filter(h => h.prefecture === pref);
     if (band) list = list.filter(h => h.price_band === band);
@@ -199,7 +205,12 @@
       });
     }
     list = sortHotels(list, mode);
-    $("#stats").textContent = `顯示 ${list.length} / ${data.hotels.length} 間住宿／設施 · 排序：${($("#sort").selectedOptions[0] || {}).textContent || mode}`;
+    const stats = $("#stats");
+    if (stats) {
+      const sortLabel = (sortEl && sortEl.selectedOptions[0])
+        ? sortEl.selectedOptions[0].textContent : mode;
+      stats.textContent = `顯示 ${list.length} / ${data.hotels.length} 間住宿／設施 · 排序：${sortLabel}`;
+    }
     renderCards(list);
   }
 
@@ -277,7 +288,10 @@
     list = sortCompare(list, sortMode);
     const sortLabel = ($("#compare-sort") && $("#compare-sort").selectedOptions[0])
       ? $("#compare-sort").selectedOptions[0].textContent : sortMode;
-    $("#compare-stats").textContent = `顯示 ${list.length} / ${data.ranking_compare.length} 個溫泉地 · 排序：${sortLabel}`;
+    const stats = $("#compare-stats");
+    if (stats) {
+      stats.textContent = `顯示 ${list.length} / ${data.ranking_compare.length} 個溫泉地 · 排序：${sortLabel}`;
+    }
     body.innerHTML = list.map(r => `
       <tr>
         <td class="rk">${esc(fmtRank(r.rank_2024))}</td>
@@ -291,103 +305,155 @@
       </tr>`).join("");
   }
 
-  function init(data) {
-    $("#updated").textContent = data.meta.updated_label;
+  function fillSharedMeta(data) {
+    const updated = $("#updated");
+    if (updated && data.meta && data.meta.updated_label) {
+      updated.textContent = data.meta.updated_label;
+    }
     const sb = $("#source-banner");
-    if (sb && data.meta.source_banner_zh) {
+    if (sb && data.meta && data.meta.source_banner_zh) {
       sb.textContent = data.meta.source_banner_zh;
       sb.classList.remove("hidden");
     }
+    const hoy = $("#hoy-link");
+    if (hoy && data.meta && data.meta.hoy_url) hoy.href = data.meta.hoy_url;
 
-    $("#hoy-link").href = data.meta.hoy_url;
-    $("#ep-note").textContent = data.meta.episodes.note_zh;
+    const ep = $("#ep-note");
+    if (ep && data.meta && data.meta.episodes) {
+      ep.textContent = data.meta.episodes.note_zh || "";
+    }
 
     const alerts = $("#alerts");
-    alerts.innerHTML = data.meta.alerts.map(a =>
-      `<div class="banner ${esc(a.level)}">${esc(a.zh)}</div>`
-    ).join("");
+    if (alerts && data.meta && data.meta.alerts) {
+      alerts.innerHTML = data.meta.alerts.map(a =>
+        `<div class="banner ${esc(a.level)}">${esc(a.zh)}</div>`
+      ).join("");
+    }
 
-    renderRanks(data.ranking_2024_top10, $("#rank-mount"));
-    $$("#panel-top10 .tab-btn").forEach(btn => {
+    const disc = $("#disclaimer");
+    if (disc && data.meta && data.meta.disclaimer_zh) {
+      disc.textContent = data.meta.disclaimer_zh;
+    }
+  }
+
+  function initHome(data) {
+    fillSharedMeta(data);
+    const hotelCount = (data.hotels && data.hotels.length) || 0;
+    const compareCount = (data.ranking_compare && data.ranking_compare.length) || 0;
+    const hc = $("#home-hotel-count");
+    if (hc) hc.textContent = String(hotelCount);
+    const cc = $("#home-compare-count");
+    if (cc) cc.textContent = String(compareCount);
+  }
+
+  function initRanks(data) {
+    fillSharedMeta(data);
+    const mount = $("#rank-mount");
+    if (!mount) return;
+    renderRanks(data.ranking_2024_top10 || [], mount);
+    $$(".year-tabs .tab-btn").forEach(btn => {
       btn.addEventListener("click", () => {
-        $$("#panel-top10 .tab-btn").forEach(b => b.classList.remove("active"));
+        $$(".year-tabs .tab-btn").forEach(b => b.classList.remove("active"));
         btn.classList.add("active");
         const year = btn.dataset.year;
-        renderRanks(year === "2024" ? data.ranking_2024_top10 : data.ranking_2026_top10, $("#rank-mount"));
-        $("#rank-caption").textContent = year === "2024"
-          ? "2024 年版（HOY《日本溫泉100強》來源）前 10 名溫泉地"
-          : "2026 年 2 月電視東京特番前 10 名溫泉地（名單與 2024 不同）";
+        renderRanks(
+          year === "2024" ? (data.ranking_2024_top10 || []) : (data.ranking_2026_top10 || []),
+          mount
+        );
+        const cap = $("#rank-caption");
+        if (cap) {
+          cap.textContent = year === "2024"
+            ? "2024 年版（HOY《日本溫泉100強》來源）前 10 名溫泉地"
+            : "2026 年 2 月電視東京特番前 10 名溫泉地（名單與 2024 不同）";
+        }
       });
     });
+  }
 
-    function showPanel(panelId) {
-      $$(".section-tab").forEach(b => {
-        const on = b.dataset.panel === panelId;
-        b.classList.toggle("is-active", on);
-        b.setAttribute("aria-selected", on ? "true" : "false");
-      });
-      $$(".content-panel").forEach(p => {
-        const on = p.dataset.panel === panelId;
-        p.classList.toggle("is-active", on);
-        p.classList.toggle("hidden", !on);
-      });
-      // Keep nodes; refresh visible panel data if needed
-      if (panelId === "compare") applyCompareFilters(data);
-      if (panelId === "hotels") applyFilters(data);
-    }
-    $$(".section-tab").forEach(btn => {
-      btn.addEventListener("click", () => showPanel(btn.dataset.panel));
+  function initCompare(data) {
+    fillSharedMeta(data);
+    if (!$("#compare-body")) return;
+    ["compare-filter", "compare-q", "compare-sort"].forEach(id => {
+      const el = $(`#${id}`);
+      if (!el) return;
+      el.addEventListener("input", () => applyCompareFilters(data));
+      el.addEventListener("change", () => applyCompareFilters(data));
     });
+    applyCompareFilters(data);
+  }
 
+  function initHotels(data) {
+    fillSharedMeta(data);
+    if (!$("#cards")) return;
     const prefs = unique(data.hotels.map(h => h.prefecture));
     const prefSel = $("#pref");
-    prefs.forEach(p => {
-      const o = document.createElement("option");
-      o.value = p; o.textContent = p;
-      prefSel.appendChild(o);
-    });
+    if (prefSel) {
+      prefs.forEach(p => {
+        const o = document.createElement("option");
+        o.value = p; o.textContent = p;
+        prefSel.appendChild(o);
+      });
+    }
     const bands = ["日歸／入浴", "¥15,000 以下", "¥15,000–30,000", "¥30,000–50,000", "¥50,000 以上", "未取得"];
     const bandSel = $("#band");
-    bands.forEach(b => {
-      const o = document.createElement("option");
-      o.value = b; o.textContent = b;
-      bandSel.appendChild(o);
-    });
-
+    if (bandSel) {
+      bands.forEach(b => {
+        const o = document.createElement("option");
+        o.value = b; o.textContent = b;
+        bandSel.appendChild(o);
+      });
+    }
     ["q", "pref", "band", "sort"].forEach(id => {
       const el = $(`#${id}`);
       if (!el) return;
       el.addEventListener("input", () => applyFilters(data));
       el.addEventListener("change", () => applyFilters(data));
     });
-    $("#reset").addEventListener("click", () => {
-      $("#q").value = "";
-      $("#pref").value = "";
-      $("#band").value = "";
-      if ($("#sort")) $("#sort").value = "rank2024";
-      applyFilters(data);
-    });
-
-    if ($("#compare-filter")) {
-      ["compare-filter", "compare-q", "compare-sort"].forEach(id => {
-        const el = $(`#${id}`);
-        if (!el) return;
-        el.addEventListener("input", () => applyCompareFilters(data));
-        el.addEventListener("change", () => applyCompareFilters(data));
+    const reset = $("#reset");
+    if (reset) {
+      reset.addEventListener("click", () => {
+        if ($("#q")) $("#q").value = "";
+        if ($("#pref")) $("#pref").value = "";
+        if ($("#band")) $("#band").value = "";
+        if ($("#sort")) $("#sort").value = "rank2024";
+        applyFilters(data);
       });
-      applyCompareFilters(data);
     }
-
-    $("#disclaimer").textContent = data.meta.disclaimer_zh;
     applyFilters(data);
+  }
+
+  function init(data) {
+    const page = (document.body && document.body.dataset.page) || "home";
+    if (page === "ranks") initRanks(data);
+    else if (page === "compare") initCompare(data);
+    else if (page === "hotels") initHotels(data);
+    else initHome(data);
+  }
+
+  function showLoadError(err) {
+    const main = $("main") || document.body;
+    const msg = `<p class="banner danger">無法載入資料：${esc(err && err.message ? err.message : err)}</p>`;
+    if ($("#cards")) $("#cards").innerHTML = msg;
+    else if ($("#compare-body")) {
+      const wrap = $("#compare-wrap") || main;
+      wrap.insertAdjacentHTML("beforebegin", msg);
+    } else if ($("#rank-mount")) {
+      $("#rank-mount").innerHTML = msg;
+    } else {
+      main.insertAdjacentHTML("afterbegin", msg);
+    }
   }
 
   const embedded = window.ONSEN_DATA;
   if (embedded) {
     init(embedded);
   } else {
-    fetch("data.json").then(r => r.json()).then(init).catch(err => {
-      $("#cards").innerHTML = `<p class="banner danger">無法載入資料：${esc(err.message)}</p>`;
-    });
+    fetch("data.json")
+      .then(r => {
+        if (!r.ok) throw new Error("HTTP " + r.status);
+        return r.json();
+      })
+      .then(init)
+      .catch(showLoadError);
   }
 })();
