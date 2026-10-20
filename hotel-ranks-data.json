@@ -1,0 +1,1018 @@
+{
+  "meta": {
+    "title_jp": "プロが選ぶ日本のホテル・旅館100選",
+    "title_cn": "專業人士選出的日本酒店・旅館100選",
+    "edition": "2026",
+    "edition_note": "綜合100選（來源：ryokan100.com；頁面標示 2026年ランキング）",
+    "source_url": "https://ryokan100.com/ja/ranking100/",
+    "source_org": "旅行新聞新社",
+    "method": "日本旅行社問卷投票（もてなし・料理・施設・企画 四部門合計）",
+    "disclaimer": "此榜為旅行社投票的旅館／酒店總排名，與 HOY／電視東京《日本溫泉100強》溫泉地名次無關。現有追蹤頁未改動。",
+    "updated": "2026-10-20",
+    "count": 100,
+    "jalan_sold_note": "另可參考じゃらん「売れた宿大賞」等銷量／人氣榜（與本頁無關）。",
+    "jalan_sold_url": "https://www.jalan.net/uw/uwp9000/uww9001.do"
+  },
+  "hotels": [
+    {
+      "rank": 1,
+      "property_jp": "水明館",
+      "property_cn": "水明館",
+      "onsen_area_jp": "下呂温泉",
+      "onsen_area_cn": "下呂溫泉",
+      "prefecture_jp": "岐阜県",
+      "prefecture_cn": "岐阜縣",
+      "url": "https://www.suimeikan.co.jp/"
+    },
+    {
+      "rank": 2,
+      "property_jp": "白玉の湯 泉慶・華鳳",
+      "property_cn": "白玉之湯 泉慶・華鳳",
+      "onsen_area_jp": "月岡温泉",
+      "onsen_area_cn": "月岡溫泉",
+      "prefecture_jp": "新潟県",
+      "prefecture_cn": "新潟縣",
+      "url": "https://www.senkei.com/brand/"
+    },
+    {
+      "rank": 3,
+      "property_jp": "八幡屋",
+      "property_cn": "八幡屋",
+      "onsen_area_jp": "母畑温泉",
+      "onsen_area_cn": "母畑溫泉",
+      "prefecture_jp": "福島県",
+      "prefecture_cn": "福島縣",
+      "url": "https://www.yahataya.co.jp/"
+    },
+    {
+      "rank": 4,
+      "property_jp": "ゆのくに天祥",
+      "property_cn": "湯之國天祥",
+      "onsen_area_jp": "山代温泉",
+      "onsen_area_cn": "山代溫泉",
+      "prefecture_jp": "石川県",
+      "prefecture_cn": "石川縣",
+      "url": "https://yunokunitensyo.jp/"
+    },
+    {
+      "rank": 5,
+      "property_jp": "稲取銀水荘",
+      "property_cn": "稻取銀水莊",
+      "onsen_area_jp": "稲取温泉",
+      "onsen_area_cn": "稻取溫泉",
+      "prefecture_jp": "静岡県",
+      "prefecture_cn": "靜岡縣",
+      "url": "https://www.inatori-ginsuiso.jp/"
+    },
+    {
+      "rank": 6,
+      "property_jp": "指宿白水館",
+      "property_cn": "指宿白水館",
+      "onsen_area_jp": "指宿温泉",
+      "onsen_area_cn": "指宿溫泉",
+      "prefecture_jp": "鹿児島県",
+      "prefecture_cn": "鹿兒島縣",
+      "url": "https://www.hakusuikan.co.jp/"
+    },
+    {
+      "rank": 7,
+      "property_jp": "富士山温泉 ホテル鐘山苑",
+      "property_cn": "富士山溫泉 酒店鐘山苑",
+      "onsen_area_jp": "富士山温泉",
+      "onsen_area_cn": "富士山溫泉",
+      "prefecture_jp": "山梨県",
+      "prefecture_cn": "山梨縣",
+      "url": "https://www.kaneyamaen.com/"
+    },
+    {
+      "rank": 8,
+      "property_jp": "萬国屋",
+      "property_cn": "萬國屋",
+      "onsen_area_jp": "あつみ温泉",
+      "onsen_area_cn": "溫海溫泉",
+      "prefecture_jp": "山形県",
+      "prefecture_cn": "山形縣",
+      "url": "https://www.bankokuya.jp/"
+    },
+    {
+      "rank": 9,
+      "property_jp": "大谷山荘",
+      "property_cn": "大谷山莊",
+      "onsen_area_jp": "長門湯本温泉",
+      "onsen_area_cn": "長門湯本溫泉",
+      "prefecture_jp": "山口県",
+      "prefecture_cn": "山口縣",
+      "url": "https://otanisanso.co.jp/"
+    },
+    {
+      "rank": 10,
+      "property_jp": "結びの宿 愛隣館",
+      "property_cn": "結緣之宿 愛鄰館",
+      "onsen_area_jp": "新鉛温泉",
+      "onsen_area_cn": "新鉛溫泉",
+      "prefecture_jp": "岩手県",
+      "prefecture_cn": "岩手縣",
+      "url": "https://www.airinkan.com/"
+    },
+    {
+      "rank": 11,
+      "property_jp": "匠のこころ 吉川屋",
+      "property_cn": "匠之心 吉川屋",
+      "onsen_area_jp": "穴原温泉",
+      "onsen_area_cn": "穴原溫泉",
+      "prefecture_jp": "福島県",
+      "prefecture_cn": "福島縣",
+      "url": "https://yosikawaya.com/"
+    },
+    {
+      "rank": 12,
+      "property_jp": "常磐ホテル",
+      "property_cn": "常磐酒店",
+      "onsen_area_jp": "信玄の湯 湯村温泉",
+      "onsen_area_cn": "信玄之湯 湯村溫泉",
+      "prefecture_jp": "山梨県",
+      "prefecture_cn": "山梨縣",
+      "url": "https://tokiwa-hotel.co.jp/"
+    },
+    {
+      "rank": 13,
+      "property_jp": "いぶすき秀水園",
+      "property_cn": "指宿秀水園",
+      "onsen_area_jp": "指宿温泉",
+      "onsen_area_cn": "指宿溫泉",
+      "prefecture_jp": "鹿児島県",
+      "prefecture_cn": "鹿兒島縣",
+      "url": "https://www.syusuien.co.jp/"
+    },
+    {
+      "rank": 14,
+      "property_jp": "南三陸ホテル観洋",
+      "property_cn": "南三陸酒店觀洋",
+      "onsen_area_jp": "南三陸温泉",
+      "onsen_area_cn": "南三陸溫泉",
+      "prefecture_jp": "宮城県",
+      "prefecture_cn": "宮城縣",
+      "url": "https://www.mkanyo.jp/"
+    },
+    {
+      "rank": 15,
+      "property_jp": "日本の宿 古窯",
+      "property_cn": "日本之宿 古窯",
+      "onsen_area_jp": "かみのやま温泉",
+      "onsen_area_cn": "上山溫泉",
+      "prefecture_jp": "山形県",
+      "prefecture_cn": "山形縣",
+      "url": "https://www.koyoga.com/"
+    },
+    {
+      "rank": 16,
+      "property_jp": "佳翠苑皆美",
+      "property_cn": "佳翠苑皆美",
+      "onsen_area_jp": "玉造温泉",
+      "onsen_area_cn": "玉造溫泉",
+      "prefecture_jp": "島根県",
+      "prefecture_cn": "島根縣",
+      "url": "https://www.kasuien-minami.jp/"
+    },
+    {
+      "rank": 17,
+      "property_jp": "あさや",
+      "property_cn": "朝屋（あさや）",
+      "onsen_area_jp": "鬼怒川温泉",
+      "onsen_area_cn": "鬼怒川溫泉",
+      "prefecture_jp": "栃木県",
+      "prefecture_cn": "栃木縣",
+      "url": "https://www.asaya-hotel.co.jp/"
+    },
+    {
+      "rank": 18,
+      "property_jp": "水が織りなす越後の宿 双葉",
+      "property_cn": "水織越後之宿 雙葉",
+      "onsen_area_jp": "越後湯沢温泉",
+      "onsen_area_cn": "越後湯澤溫泉",
+      "prefecture_jp": "新潟県",
+      "prefecture_cn": "新潟縣",
+      "url": "https://hotel-futaba.com/"
+    },
+    {
+      "rank": 19,
+      "property_jp": "草津温泉ホテル櫻井",
+      "property_cn": "草津溫泉酒店櫻井",
+      "onsen_area_jp": "草津温泉",
+      "onsen_area_cn": "草津溫泉",
+      "prefecture_jp": "群馬県",
+      "prefecture_cn": "群馬縣",
+      "url": "https://www.hotel-sakurai.co.jp/"
+    },
+    {
+      "rank": 20,
+      "property_jp": "佳泉郷井づつや",
+      "property_cn": "佳泉鄉井筒屋",
+      "onsen_area_jp": "湯村温泉",
+      "onsen_area_cn": "湯村溫泉",
+      "prefecture_jp": "兵庫県",
+      "prefecture_cn": "兵庫縣",
+      "url": "https://www.izutuya.com/"
+    },
+    {
+      "rank": 21,
+      "property_jp": "あかん遊久の里鶴雅",
+      "property_cn": "阿寒遊久之里鶴雅",
+      "onsen_area_jp": "阿寒湖温泉",
+      "onsen_area_cn": "阿寒湖溫泉",
+      "prefecture_jp": "北海道",
+      "prefecture_cn": "北海道",
+      "url": "https://www.tsuruga.com/"
+    },
+    {
+      "rank": 22,
+      "property_jp": "たちばなや",
+      "property_cn": "立花屋",
+      "onsen_area_jp": "あつみ温泉",
+      "onsen_area_cn": "溫海溫泉",
+      "prefecture_jp": "山形県",
+      "prefecture_cn": "山形縣",
+      "url": "https://www.tachibanaya.jp/"
+    },
+    {
+      "rank": 23,
+      "property_jp": "満ちてくる心の宿 吉夢",
+      "property_cn": "滿心之宿 吉夢",
+      "onsen_area_jp": "小湊温泉",
+      "onsen_area_cn": "小湊溫泉",
+      "prefecture_jp": "千葉県",
+      "prefecture_cn": "千葉縣",
+      "url": "https://www.kichimu.com/"
+    },
+    {
+      "rank": 24,
+      "property_jp": "しんわ千季戸田家",
+      "property_cn": "親和千季戶田家",
+      "onsen_area_jp": "鳥羽市",
+      "onsen_area_cn": "鳥羽市",
+      "prefecture_jp": "三重県",
+      "prefecture_cn": "三重縣",
+      "url": "https://www.todaya.co.jp/"
+    },
+    {
+      "rank": 25,
+      "property_jp": "ホテル華の湯",
+      "property_cn": "酒店華之湯",
+      "onsen_area_jp": "磐梯熱海温泉",
+      "onsen_area_cn": "磐梯熱海溫泉",
+      "prefecture_jp": "福島県",
+      "prefecture_cn": "福島縣",
+      "url": "http://www.hotelhananoyu.jp/"
+    },
+    {
+      "rank": 26,
+      "property_jp": "飲泉・自家源泉かけ流しの秘湯 観音温泉",
+      "property_cn": "飲泉・自家源泉掛流秘湯 觀音溫泉",
+      "onsen_area_jp": "観音温泉",
+      "onsen_area_cn": "觀音溫泉",
+      "prefecture_jp": "静岡県",
+      "prefecture_cn": "靜岡縣",
+      "url": "https://www.kannon-onsen.com/"
+    },
+    {
+      "rank": 27,
+      "property_jp": "源泉湯の宿 松乃井",
+      "property_cn": "源泉湯之宿 松乃井",
+      "onsen_area_jp": "水上温泉",
+      "onsen_area_cn": "水上溫泉",
+      "prefecture_jp": "群馬県",
+      "prefecture_cn": "群馬縣",
+      "url": "https://www.matsunoi.com/"
+    },
+    {
+      "rank": 28,
+      "property_jp": "全館源泉掛け流しの宿 慶雲館",
+      "property_cn": "全館源泉掛流之宿 慶雲館",
+      "onsen_area_jp": "西山温泉",
+      "onsen_area_cn": "西山溫泉",
+      "prefecture_jp": "山梨県",
+      "prefecture_cn": "山梨縣",
+      "url": "https://www.keiunkan.co.jp/"
+    },
+    {
+      "rank": 29,
+      "property_jp": "翔峰",
+      "property_cn": "翔峰",
+      "onsen_area_jp": "美ヶ原温泉",
+      "onsen_area_cn": "美之原溫泉",
+      "prefecture_jp": "長野県",
+      "prefecture_cn": "長野縣",
+      "url": "https://www.hotel-shoho.jp/"
+    },
+    {
+      "rank": 30,
+      "property_jp": "里山の別邸 下田セントラルホテル",
+      "property_cn": "里山別邸 下田 Central Hotel",
+      "onsen_area_jp": "下田温泉",
+      "onsen_area_cn": "下田溫泉",
+      "prefecture_jp": "静岡県",
+      "prefecture_cn": "靜岡縣",
+      "url": "https://www.shimoda-central-hotel.co.jp/"
+    },
+    {
+      "rank": 31,
+      "property_jp": "ホテル花水木",
+      "property_cn": "酒店花水木",
+      "onsen_area_jp": "長島温泉",
+      "onsen_area_cn": "長島溫泉",
+      "prefecture_jp": "三重県",
+      "prefecture_cn": "三重縣",
+      "url": "https://www.nagashima-onsen.co.jp/hanamizuki/"
+    },
+    {
+      "rank": 32,
+      "property_jp": "日光千姫物語",
+      "property_cn": "日光千姬物語",
+      "onsen_area_jp": "日光温泉",
+      "onsen_area_cn": "日光溫泉",
+      "prefecture_jp": "栃木県",
+      "prefecture_cn": "栃木縣",
+      "url": "http://www.senhime.co.jp/"
+    },
+    {
+      "rank": 33,
+      "property_jp": "湯元こんぴら温泉華の湯 紅梅亭",
+      "property_cn": "湯元金刀比羅溫泉華之湯 紅梅亭",
+      "onsen_area_jp": "こんぴら温泉郷",
+      "onsen_area_cn": "金刀比羅溫泉鄉",
+      "prefecture_jp": "香川県",
+      "prefecture_cn": "香川縣",
+      "url": "https://www.koubaitei.jp"
+    },
+    {
+      "rank": 34,
+      "property_jp": "まつや千千",
+      "property_cn": "松屋千千",
+      "onsen_area_jp": "あわら温泉",
+      "onsen_area_cn": "あわら溫泉",
+      "prefecture_jp": "福井県",
+      "prefecture_cn": "福井縣",
+      "url": "https://matuyasensen.co.jp/"
+    },
+    {
+      "rank": 35,
+      "property_jp": "別邸仙寿庵",
+      "property_cn": "別邸仙壽庵",
+      "onsen_area_jp": "谷川温泉",
+      "onsen_area_cn": "谷川溫泉",
+      "prefecture_jp": "群馬県",
+      "prefecture_cn": "群馬縣",
+      "url": "https://www.senjyuan.jp/"
+    },
+    {
+      "rank": 36,
+      "property_jp": "一番湯の宿 ホテル木暮",
+      "property_cn": "一番湯之宿 酒店木暮",
+      "onsen_area_jp": "伊香保温泉",
+      "onsen_area_cn": "伊香保溫泉",
+      "prefecture_jp": "群馬県",
+      "prefecture_cn": "群馬縣",
+      "url": "https://www.hotel-kogure.com/"
+    },
+    {
+      "rank": 37,
+      "property_jp": "舌切雀のお宿ホテル磯部ガーデン",
+      "property_cn": "舌切雀之宿 酒店磯部 Garden",
+      "onsen_area_jp": "磯部温泉",
+      "onsen_area_cn": "磯部溫泉",
+      "prefecture_jp": "群馬県",
+      "prefecture_cn": "群馬縣",
+      "url": "https://www.isobesuzume.co.jp/"
+    },
+    {
+      "rank": 38,
+      "property_jp": "由良温泉 八乙女",
+      "property_cn": "由良溫泉 八乙女",
+      "onsen_area_jp": "由良温泉",
+      "onsen_area_cn": "由良溫泉",
+      "prefecture_jp": "山形県",
+      "prefecture_cn": "山形縣",
+      "url": "http://yaotome.in.net/"
+    },
+    {
+      "rank": 39,
+      "property_jp": "若草の宿 丸栄",
+      "property_cn": "若草之宿 丸榮",
+      "onsen_area_jp": "富士河口湖温泉郷",
+      "onsen_area_cn": "富士河口湖溫泉鄉",
+      "prefecture_jp": "山梨県",
+      "prefecture_cn": "山梨縣",
+      "url": "https://maruei55.com/"
+    },
+    {
+      "rank": 40,
+      "property_jp": "ホテル森の風鶯宿",
+      "property_cn": "酒店森之風鶯宿",
+      "onsen_area_jp": "鶯宿温泉",
+      "onsen_area_cn": "鶯宿溫泉",
+      "prefecture_jp": "岩手県",
+      "prefecture_cn": "岩手縣",
+      "url": "https://www.morinokaze.com/"
+    },
+    {
+      "rank": 41,
+      "property_jp": "鬼怒川グランドホテル夢の季",
+      "property_cn": "鬼怒川 Grand Hotel 夢之季",
+      "onsen_area_jp": "鬼怒川温泉",
+      "onsen_area_cn": "鬼怒川溫泉",
+      "prefecture_jp": "栃木県",
+      "prefecture_cn": "栃木縣",
+      "url": "https://kgh.co.jp/"
+    },
+    {
+      "rank": 42,
+      "property_jp": "華水亭",
+      "property_cn": "華水亭",
+      "onsen_area_jp": "皆生温泉",
+      "onsen_area_cn": "皆生溫泉",
+      "prefecture_jp": "鳥取県",
+      "prefecture_cn": "鳥取縣",
+      "url": "https://kaikeonsenkasuitei.jp/"
+    },
+    {
+      "rank": 43,
+      "property_jp": "ホテル清風苑",
+      "property_cn": "酒店清風苑",
+      "onsen_area_jp": "月岡温泉",
+      "onsen_area_cn": "月岡溫泉",
+      "prefecture_jp": "新潟県",
+      "prefecture_cn": "新潟縣",
+      "url": "https://www.seifuen.com/"
+    },
+    {
+      "rank": 44,
+      "property_jp": "大川荘",
+      "property_cn": "大川莊",
+      "onsen_area_jp": "芦ノ牧温泉",
+      "onsen_area_cn": "蘆之牧溫泉",
+      "prefecture_jp": "福島県",
+      "prefecture_cn": "福島縣",
+      "url": "https://www.ookawaso.co.jp/"
+    },
+    {
+      "rank": 45,
+      "property_jp": "庄助の宿 瀧の湯",
+      "property_cn": "庄助之宿 瀧之湯",
+      "onsen_area_jp": "東山温泉",
+      "onsen_area_cn": "東山溫泉",
+      "prefecture_jp": "福島県",
+      "prefecture_cn": "福島縣",
+      "url": "https://shousuke.com/"
+    },
+    {
+      "rank": 46,
+      "property_jp": "八右衛門の湯 蔵王国際ホテル",
+      "property_cn": "八右衛門之湯 藏王國際酒店",
+      "onsen_area_jp": "蔵王温泉",
+      "onsen_area_cn": "藏王溫泉",
+      "prefecture_jp": "山形県",
+      "prefecture_cn": "山形縣",
+      "url": "https://www.zao-kokusaihotel.jp/"
+    },
+    {
+      "rank": 47,
+      "property_jp": "西村屋ホテル招月庭",
+      "property_cn": "西村屋酒店招月庭",
+      "onsen_area_jp": "城崎温泉",
+      "onsen_area_cn": "城崎溫泉",
+      "prefecture_jp": "兵庫県",
+      "prefecture_cn": "兵庫縣",
+      "url": "https://www.nishimuraya.ne.jp/shogetsu/"
+    },
+    {
+      "rank": 48,
+      "property_jp": "グランディア芳泉",
+      "property_cn": "Grandia 芳泉",
+      "onsen_area_jp": "あわら温泉",
+      "onsen_area_cn": "あわら溫泉",
+      "prefecture_jp": "福井県",
+      "prefecture_cn": "福井縣",
+      "url": "https://www.g-housen.co.jp/"
+    },
+    {
+      "rank": 49,
+      "property_jp": "ことひら温泉琴参閣",
+      "property_cn": "金刀比羅溫泉 琴參閣",
+      "onsen_area_jp": "こんぴら温泉郷",
+      "onsen_area_cn": "金刀比羅溫泉鄉",
+      "prefecture_jp": "香川県",
+      "prefecture_cn": "香川縣",
+      "url": "https://www.kotosankaku.jp/"
+    },
+    {
+      "rank": 50,
+      "property_jp": "海一望絶景の宿いなとり荘",
+      "property_cn": "海望絕景之宿 稻取莊",
+      "onsen_area_jp": "稲取温泉",
+      "onsen_area_cn": "稻取溫泉",
+      "prefecture_jp": "静岡県",
+      "prefecture_cn": "靜岡縣",
+      "url": "https://www.inatoriso.com/"
+    },
+    {
+      "rank": 51,
+      "property_jp": "第一滝本館",
+      "property_cn": "第一瀧本館",
+      "onsen_area_jp": "登別温泉",
+      "onsen_area_cn": "登別溫泉",
+      "prefecture_jp": "北海道",
+      "prefecture_cn": "北海道",
+      "url": "https://takimotokan.co.jp"
+    },
+    {
+      "rank": 52,
+      "property_jp": "皆生つるや",
+      "property_cn": "皆生鶴屋",
+      "onsen_area_jp": "皆生温泉",
+      "onsen_area_cn": "皆生溫泉",
+      "prefecture_jp": "鳥取県",
+      "prefecture_cn": "鳥取縣",
+      "url": "https://kaiketuruya.com/"
+    },
+    {
+      "rank": 53,
+      "property_jp": "ホテル鹿角",
+      "property_cn": "酒店鹿角",
+      "onsen_area_jp": "大湯温泉",
+      "onsen_area_cn": "大湯溫泉",
+      "prefecture_jp": "秋田県",
+      "prefecture_cn": "秋田縣",
+      "url": "https://www.h-kazuno.co.jp/"
+    },
+    {
+      "rank": 54,
+      "property_jp": "離れ湯百八歩 蔵王四季のホテル",
+      "property_cn": "離湯百八步 藏王四季酒店",
+      "onsen_area_jp": "蔵王温泉",
+      "onsen_area_cn": "藏王溫泉",
+      "prefecture_jp": "山形県",
+      "prefecture_cn": "山形縣",
+      "url": "https://www.zao-shikinohotel.jp/"
+    },
+    {
+      "rank": 55,
+      "property_jp": "扉温泉 明神館",
+      "property_cn": "扉溫泉 明神館",
+      "onsen_area_jp": "扉温泉",
+      "onsen_area_cn": "扉溫泉",
+      "prefecture_jp": "長野県",
+      "prefecture_cn": "長野縣",
+      "url": "https://www.tobira-group.com/myojinkan/"
+    },
+    {
+      "rank": 56,
+      "property_jp": "堂ヶ島ニュー銀水",
+      "property_cn": "堂島 New 銀水",
+      "onsen_area_jp": "堂ヶ島温泉",
+      "onsen_area_cn": "堂島溫泉",
+      "prefecture_jp": "静岡県",
+      "prefecture_cn": "靜岡縣",
+      "url": "https://www.dougashima-newginsui.jp/"
+    },
+    {
+      "rank": 57,
+      "property_jp": "たちばな四季亭",
+      "property_cn": "立花四季亭",
+      "onsen_area_jp": "山代温泉",
+      "onsen_area_cn": "山代溫泉",
+      "prefecture_jp": "石川県",
+      "prefecture_cn": "石川縣",
+      "url": "https://www.shikitei.com/"
+    },
+    {
+      "rank": 58,
+      "property_jp": "池の平ホテル＆リゾーツ",
+      "property_cn": "池之平 Hotel & Resorts",
+      "onsen_area_jp": "池の平温泉",
+      "onsen_area_cn": "池之平溫泉",
+      "prefecture_jp": "長野県",
+      "prefecture_cn": "長野縣",
+      "url": "https://www.shirakabaresort.jp/ikenotaira-hotel/"
+    },
+    {
+      "rank": 59,
+      "property_jp": "ホテル金波楼",
+      "property_cn": "酒店金波樓",
+      "onsen_area_jp": "日和山温泉",
+      "onsen_area_cn": "日和山溫泉",
+      "prefecture_jp": "兵庫県",
+      "prefecture_cn": "兵庫縣",
+      "url": "https://www.kinparo.com/"
+    },
+    {
+      "rank": 60,
+      "property_jp": "旅館花屋",
+      "property_cn": "旅館花屋",
+      "onsen_area_jp": "別所温泉",
+      "onsen_area_cn": "別所溫泉",
+      "prefecture_jp": "長野県",
+      "prefecture_cn": "長野縣",
+      "url": "https://www.hanaya.ne.jp/"
+    },
+    {
+      "rank": 61,
+      "property_jp": "別府温泉杉乃井ホテル",
+      "property_cn": "別府溫泉杉乃井酒店",
+      "onsen_area_jp": "別府八湯",
+      "onsen_area_cn": "別府八湯",
+      "prefecture_jp": "大分県",
+      "prefecture_cn": "大分縣",
+      "url": "https://suginoi.orixhotelsandresorts.com/"
+    },
+    {
+      "rank": 62,
+      "property_jp": "銘石の宿かげつ",
+      "property_cn": "銘石之宿 花月",
+      "onsen_area_jp": "石和温泉",
+      "onsen_area_cn": "石和溫泉",
+      "prefecture_jp": "山梨県",
+      "prefecture_cn": "山梨縣",
+      "url": "https://www.isawa-kagetsu.com/"
+    },
+    {
+      "rank": 63,
+      "property_jp": "ホテルふじ",
+      "property_cn": "酒店富士",
+      "onsen_area_jp": "石和温泉",
+      "onsen_area_cn": "石和溫泉",
+      "prefecture_jp": "山梨県",
+      "prefecture_cn": "山梨縣",
+      "url": "http://www.hotel-fuji.jp/"
+    },
+    {
+      "rank": 64,
+      "property_jp": "淡路インターナショナルホテル ザ・サンプラザ",
+      "property_cn": "淡路 International Hotel The Sun Plaza",
+      "onsen_area_jp": "洲本温泉",
+      "onsen_area_cn": "洲本溫泉",
+      "prefecture_jp": "兵庫県",
+      "prefecture_cn": "兵庫縣",
+      "url": "https://www.the-sunplaza.co.jp/"
+    },
+    {
+      "rank": 65,
+      "property_jp": "夕凪の湯HOTEL花樹海",
+      "property_cn": "夕凪之湯 Hotel 花樹海",
+      "onsen_area_jp": "花樹海温泉",
+      "onsen_area_cn": "花樹海溫泉",
+      "prefecture_jp": "香川県",
+      "prefecture_cn": "香川縣",
+      "url": "https://www.hanajyukai.jp/"
+    },
+    {
+      "rank": 66,
+      "property_jp": "湯の杜ホテル志戸平",
+      "property_cn": "湯之杜酒店志戶平",
+      "onsen_area_jp": "志戸平温泉",
+      "onsen_area_cn": "志戶平溫泉",
+      "prefecture_jp": "岩手県",
+      "prefecture_cn": "岩手縣",
+      "url": "https://www.shidotaira.co.jp/"
+    },
+    {
+      "rank": 67,
+      "property_jp": "朝野家",
+      "property_cn": "朝野家",
+      "onsen_area_jp": "湯村温泉",
+      "onsen_area_cn": "湯村溫泉",
+      "prefecture_jp": "兵庫県",
+      "prefecture_cn": "兵庫縣",
+      "url": "https://www.asanoya.co.jp/"
+    },
+    {
+      "rank": 68,
+      "property_jp": "SHIROYAMA HOTEL kagoshima",
+      "property_cn": "城山酒店鹿兒島",
+      "onsen_area_jp": "鹿児島市",
+      "onsen_area_cn": "鹿兒島市",
+      "prefecture_jp": "鹿児島県",
+      "prefecture_cn": "鹿兒島縣",
+      "url": "https://www.shiroyama-g.co.jp/"
+    },
+    {
+      "rank": 69,
+      "property_jp": "鳥羽シーサイドホテル",
+      "property_cn": "鳥羽 Seaside Hotel",
+      "onsen_area_jp": "鳥羽市",
+      "onsen_area_cn": "鳥羽市",
+      "prefecture_jp": "三重県",
+      "prefecture_cn": "三重縣",
+      "url": "https://www.tobaseasidehotel.co.jp/"
+    },
+    {
+      "rank": 70,
+      "property_jp": "緑霞山宿 藤井荘",
+      "property_cn": "綠霞山宿 藤井莊",
+      "onsen_area_jp": "山田温泉",
+      "onsen_area_cn": "山田溫泉",
+      "prefecture_jp": "長野県",
+      "prefecture_cn": "長野縣",
+      "url": "https://www.fujiiso.co.jp/"
+    },
+    {
+      "rank": 71,
+      "property_jp": "日本の宿 のと楽",
+      "property_cn": "日本之宿 能登樂",
+      "onsen_area_jp": "和倉温泉",
+      "onsen_area_cn": "和倉溫泉",
+      "prefecture_jp": "石川県",
+      "prefecture_cn": "石川縣",
+      "url": "https://www.notoraku.co.jp/"
+    },
+    {
+      "rank": 72,
+      "property_jp": "ホテルニュー水戸屋",
+      "property_cn": "酒店 New 水戶屋",
+      "onsen_area_jp": "秋保温泉",
+      "onsen_area_cn": "秋保溫泉",
+      "prefecture_jp": "宮城県",
+      "prefecture_cn": "宮城縣",
+      "url": "https://www.mitoya-group.co.jp/"
+    },
+    {
+      "rank": 73,
+      "property_jp": "うぶや",
+      "property_cn": "產屋（うぶや）",
+      "onsen_area_jp": "富士河口湖温泉郷",
+      "onsen_area_cn": "富士河口湖溫泉鄉",
+      "prefecture_jp": "山梨県",
+      "prefecture_cn": "山梨縣",
+      "url": "https://www.ubuya.co.jp/"
+    },
+    {
+      "rank": 74,
+      "property_jp": "万座温泉日進舘",
+      "property_cn": "萬座溫泉日進館",
+      "onsen_area_jp": "万座温泉",
+      "onsen_area_cn": "萬座溫泉",
+      "prefecture_jp": "群馬県",
+      "prefecture_cn": "群馬縣",
+      "url": "https://www.manza.co.jp/"
+    },
+    {
+      "rank": 75,
+      "property_jp": "登別石水亭",
+      "property_cn": "登別石水亭",
+      "onsen_area_jp": "登別温泉",
+      "onsen_area_cn": "登別溫泉",
+      "prefecture_jp": "北海道",
+      "prefecture_cn": "北海道",
+      "url": "https://www.sekisuitei.com/"
+    },
+    {
+      "rank": 76,
+      "property_jp": "ホテルくさかべアルメリア",
+      "property_cn": "酒店草壁 Almeria",
+      "onsen_area_jp": "下呂温泉",
+      "onsen_area_cn": "下呂溫泉",
+      "prefecture_jp": "岐阜県",
+      "prefecture_cn": "岐阜縣",
+      "url": "https://www.armeria.co.jp/"
+    },
+    {
+      "rank": 77,
+      "property_jp": "ＴＨＥ ＫＵＫＵＮＡ",
+      "property_cn": "THE KUKUNA",
+      "onsen_area_jp": "富士河口湖温泉郷",
+      "onsen_area_cn": "富士河口湖溫泉鄉",
+      "prefecture_jp": "山梨県",
+      "prefecture_cn": "山梨縣",
+      "url": "https://kukuna.jp/"
+    },
+    {
+      "rank": 78,
+      "property_jp": "風待ちの湯 福寿荘",
+      "property_cn": "待風之湯 福壽莊",
+      "onsen_area_jp": "磯部わたかの温泉",
+      "onsen_area_cn": "磯部渡鹿野溫泉",
+      "prefecture_jp": "三重県",
+      "prefecture_cn": "三重縣",
+      "url": "https://www.fukujyuso.co.jp/"
+    },
+    {
+      "rank": 79,
+      "property_jp": "百名伽藍",
+      "property_cn": "百名伽藍",
+      "onsen_area_jp": "南城市",
+      "onsen_area_cn": "南城市",
+      "prefecture_jp": "沖縄県",
+      "prefecture_cn": "沖繩縣",
+      "url": "https://www.hyakunagaran.com/"
+    },
+    {
+      "rank": 80,
+      "property_jp": "鬼怒川温泉ホテル",
+      "property_cn": "鬼怒川溫泉酒店",
+      "onsen_area_jp": "鬼怒川温泉",
+      "onsen_area_cn": "鬼怒川溫泉",
+      "prefecture_jp": "栃木県",
+      "prefecture_cn": "栃木縣",
+      "url": "https://www.kinugawaonsenhotel.com/"
+    },
+    {
+      "rank": 81,
+      "property_jp": "鶴の湯温泉",
+      "property_cn": "鶴之湯溫泉",
+      "onsen_area_jp": "乳頭温泉郷",
+      "onsen_area_cn": "乳頭溫泉鄉",
+      "prefecture_jp": "秋田県",
+      "prefecture_cn": "秋田縣",
+      "url": "http://www.tsurunoyu.com/"
+    },
+    {
+      "rank": 82,
+      "property_jp": "富士レークホテル",
+      "property_cn": "富士 Lake Hotel",
+      "onsen_area_jp": "富士河口湖温泉郷",
+      "onsen_area_cn": "富士河口湖溫泉鄉",
+      "prefecture_jp": "山梨県",
+      "prefecture_cn": "山梨縣",
+      "url": "https://www.fujilake.co.jp/"
+    },
+    {
+      "rank": 83,
+      "property_jp": "道後プリンスホテル",
+      "property_cn": "道後 Prince Hotel",
+      "onsen_area_jp": "道後温泉",
+      "onsen_area_cn": "道後溫泉",
+      "prefecture_jp": "愛媛県",
+      "prefecture_cn": "愛媛縣",
+      "url": "https://www.dogoprince.co.jp/"
+    },
+    {
+      "rank": 84,
+      "property_jp": "依山楼岩崎",
+      "property_cn": "依山樓岩崎",
+      "onsen_area_jp": "三朝温泉",
+      "onsen_area_cn": "三朝溫泉",
+      "prefecture_jp": "鳥取県",
+      "prefecture_cn": "鳥取縣",
+      "url": "https://izanro.co.jp/"
+    },
+    {
+      "rank": 85,
+      "property_jp": "瑠璃光",
+      "property_cn": "瑠璃光",
+      "onsen_area_jp": "山代温泉",
+      "onsen_area_cn": "山代溫泉",
+      "prefecture_jp": "石川県",
+      "prefecture_cn": "石川縣",
+      "url": "https://rurikoh.jp/"
+    },
+    {
+      "rank": 86,
+      "property_jp": "あぶらや燈千",
+      "property_cn": "油屋燈千",
+      "onsen_area_jp": "湯田中温泉",
+      "onsen_area_cn": "湯田中溫泉",
+      "prefecture_jp": "長野県",
+      "prefecture_cn": "長野縣",
+      "url": "https://www.aburaya-tousen.co.jp/"
+    },
+    {
+      "rank": 87,
+      "property_jp": "福一",
+      "property_cn": "福一",
+      "onsen_area_jp": "伊香保温泉",
+      "onsen_area_cn": "伊香保溫泉",
+      "prefecture_jp": "群馬県",
+      "prefecture_cn": "群馬縣",
+      "url": "https://www.fukuichi.jp/"
+    },
+    {
+      "rank": 88,
+      "property_jp": "人吉温泉あゆの里",
+      "property_cn": "人吉溫泉香魚之里",
+      "onsen_area_jp": "人吉温泉",
+      "onsen_area_cn": "人吉溫泉",
+      "prefecture_jp": "熊本県",
+      "prefecture_cn": "熊本縣",
+      "url": "https://www.ayunosato.jp/"
+    },
+    {
+      "rank": 89,
+      "property_jp": "四万やまぐち館",
+      "property_cn": "四萬山口館",
+      "onsen_area_jp": "四万温泉",
+      "onsen_area_cn": "四萬溫泉",
+      "prefecture_jp": "群馬県",
+      "prefecture_cn": "群馬縣",
+      "url": "http://www.yamaguchikan.co.jp/"
+    },
+    {
+      "rank": 90,
+      "property_jp": "華やぎの章 慶山",
+      "property_cn": "華之章 慶山",
+      "onsen_area_jp": "石和温泉",
+      "onsen_area_cn": "石和溫泉",
+      "prefecture_jp": "山梨県",
+      "prefecture_cn": "山梨縣",
+      "url": "https://keizan.com/"
+    },
+    {
+      "rank": 91,
+      "property_jp": "喜びの宿 高松",
+      "property_cn": "喜悅之宿 高松",
+      "onsen_area_jp": "草津温泉",
+      "onsen_area_cn": "草津溫泉",
+      "prefecture_jp": "群馬県",
+      "prefecture_cn": "群馬縣",
+      "url": "http://www.h-takamatsu.com/"
+    },
+    {
+      "rank": 92,
+      "property_jp": "如心の里 ひびき野",
+      "property_cn": "如心之里 響野",
+      "onsen_area_jp": "伊香保温泉",
+      "onsen_area_cn": "伊香保溫泉",
+      "prefecture_jp": "群馬県",
+      "prefecture_cn": "群馬縣",
+      "url": "https://www.j-hibikino.com/"
+    },
+    {
+      "rank": 93,
+      "property_jp": "べっぷの宿 ホテル白菊",
+      "property_cn": "別府之宿 酒店白菊",
+      "onsen_area_jp": "別府八湯",
+      "onsen_area_cn": "別府八湯",
+      "prefecture_jp": "大分県",
+      "prefecture_cn": "大分縣",
+      "url": "https://www.shiragiku.co.jp/"
+    },
+    {
+      "rank": 94,
+      "property_jp": "賢島宝生苑",
+      "property_cn": "賢島寶生苑",
+      "onsen_area_jp": "伊勢志摩温泉",
+      "onsen_area_cn": "伊勢志摩溫泉",
+      "prefecture_jp": "三重県",
+      "prefecture_cn": "三重縣",
+      "url": "https://www.hojoen.com/"
+    },
+    {
+      "rank": 95,
+      "property_jp": "水織音の宿 山水荘",
+      "property_cn": "水織音之宿 山水莊",
+      "onsen_area_jp": "土湯温泉",
+      "onsen_area_cn": "土湯溫泉",
+      "prefecture_jp": "福島県",
+      "prefecture_cn": "福島縣",
+      "url": "https://www.sansuiso.jp/"
+    },
+    {
+      "rank": 96,
+      "property_jp": "悠の湯 風の季",
+      "property_cn": "悠之湯 風之季",
+      "onsen_area_jp": "松倉温泉",
+      "onsen_area_cn": "松倉溫泉",
+      "prefecture_jp": "岩手県",
+      "prefecture_cn": "岩手縣",
+      "url": "https://kazenotoki.jp/"
+    },
+    {
+      "rank": 97,
+      "property_jp": "乃木温泉ホテル",
+      "property_cn": "乃木溫泉酒店",
+      "onsen_area_jp": "乃木温泉",
+      "onsen_area_cn": "乃木溫泉",
+      "prefecture_jp": "栃木県",
+      "prefecture_cn": "栃木縣",
+      "url": "https://www.nogionsen.com/"
+    },
+    {
+      "rank": 98,
+      "property_jp": "みやびの宿 加賀百万石",
+      "property_cn": "雅之宿 加賀百萬石",
+      "onsen_area_jp": "山代温泉",
+      "onsen_area_cn": "山代溫泉",
+      "prefecture_jp": "石川県",
+      "prefecture_cn": "石川縣",
+      "url": "https://www.kaga-hyakumangoku.jp/"
+    },
+    {
+      "rank": 99,
+      "property_jp": "金太郎温泉",
+      "property_cn": "金太郎溫泉",
+      "onsen_area_jp": "金太郎温泉",
+      "onsen_area_cn": "金太郎溫泉",
+      "prefecture_jp": "富山県",
+      "prefecture_cn": "富山縣",
+      "url": "https://kintarouonsen.co.jp"
+    },
+    {
+      "rank": 100,
+      "property_jp": "湯沢グランドホテル",
+      "property_cn": "湯澤 Grand Hotel",
+      "onsen_area_jp": "越後湯沢温泉",
+      "onsen_area_cn": "越後湯澤溫泉",
+      "prefecture_jp": "新潟県",
+      "prefecture_cn": "新潟縣",
+      "url": "https://yuzawagrandhotel.jp/"
+    }
+  ]
+}

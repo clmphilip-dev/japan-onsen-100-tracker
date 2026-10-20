@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>旅館排名 — プロが選ぶ日本のホテル・旅館100選</title>
+  <meta name="description" content="旅行社投票「プロが選ぶ日本のホテル・旅館100選」綜合排名（與 HOY《日本溫泉100強》溫泉地名次無關）。" />
+  <link rel="stylesheet" href="styles.css?v=20261020c" />
+  <link rel="stylesheet" href="hotel-ranks.css?v=20261020d" />
+  <script>
+    (function () {
+      try {
+        if (!(window.matchMedia && window.matchMedia("(max-width: 700px)").matches)) return;
+        document.documentElement.classList.add("is-narrow");
+        var close = function () {
+          document.querySelectorAll(".filter-drawer").forEach(function (d) { d.open = false; });
+        };
+        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", close);
+        else close();
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-page="hotel-ranks" class="page-compact">
+  <header class="app-header compact">
+    <div class="wrap header-bar">
+      <div>
+        <h1>旅館排名</h1>
+        <p class="sub">プロが選ぶ日本のホテル・旅館100選</p>
+      </div>
+      <div class="meta-row">
+        <a class="hoy" href="https://ryokan100.com/ja/ranking100/" target="_blank" rel="noopener">官方榜</a>
+        <span id="hr-updated" class="updated-short">—</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="site-nav sticky-nav" aria-label="主要頁面">
+    <a href="index.html" class="site-nav-link">首頁</a>
+    <a href="ranks.html" class="site-nav-link">Top 10</a>
+    <a href="compare.html" class="site-nav-link">排名對照</a>
+    <a href="hotels.html" class="site-nav-link">住宿</a>
+    <a href="hotel-ranks.html" class="site-nav-link is-active" aria-current="page">旅館排名</a>
+  </nav>
+
+  <main>
+    <div class="banner warn" role="status">
+      <strong>此頁＝旅行社投票「旅館100選」</strong>，<strong>不是</strong> HOY／電視東京《日本溫泉100強》溫泉地名次。
+      現有追蹤頁（首頁／Top 10／排名對照／住宿）未改動；此頁為獨立新增，舊版導覽不會出現連結，請直接收藏本 URL。
+    </div>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>綜合100選</h2>
+        <span class="hr-edition" id="hr-edition">—</span>
+      </div>
+      <p class="lede lede-hide-mobile">
+        資料來源：<a href="https://ryokan100.com/ja/ranking100/" target="_blank" rel="noopener">ryokan100.com</a>（旅行新聞新社）。
+        由日本旅行社問卷投票，按「もてなし・料理・施設・企画」合計排出旅館／酒店總排名。
+        另可參考 <a href="https://www.jalan.net/uw/uwp9000/uww9001.do" target="_blank" rel="noopener">じゃらん「売れた宿」</a> 等銷量／人氣榜（與本頁無關）。
+      </p>
+
+      <details class="filter-drawer" id="hr-filter-drawer">
+        <summary class="filter-drawer-summary">
+          <span class="filter-drawer-title">篩選／搜尋</span>
+          <span class="filter-drawer-hint" id="hr-filter-hint" hidden></span>
+          <span class="filter-drawer-chevron" aria-hidden="true"></span>
+        </summary>
+        <div class="filters filters-hotels" id="hr-filters">
+          <label class="f">關鍵字
+            <input id="hr-q" type="search" placeholder="旅館、溫泉地、縣…" autocomplete="off" />
+          </label>
+          <label class="f">溫泉地
+            <select id="hr-area"><option value="">全部溫泉地</option></select>
+          </label>
+          <label class="f">都道府縣
+            <select id="hr-pref"><option value="">全部</option></select>
+          </label>
+          <button type="button" class="reset" id="hr-reset">重設</button>
+        </div>
+      </details>
+      <p class="stats" id="hr-stats"></p>
+
+      <div class="table-wrap hotels-table-wrap hr-table-wrap">
+        <table class="hotels-table hr-table" id="hr-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>旅館</th>
+              <th>溫泉地</th>
+              <th>縣</th>
+              <th>連結</th>
+            </tr>
+          </thead>
+          <tbody id="hr-body"></tbody>
+        </table>
+      </div>
+      <div id="hr-error" class="banner danger hidden" role="alert"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>此頁獨立於《日本溫泉100強》追蹤資料；請勿與溫泉地名次混用。</p>
+    <p>資料來源：<a href="https://ryokan100.com/ja/ranking100/" target="_blank" rel="noopener">プロが選ぶ日本のホテル・旅館100選</a>（旅行新聞新社）。</p>
+  </footer>
+
+  <script src="hotel-ranks.js?v=20261020d"></script>
+</body>
+</html>

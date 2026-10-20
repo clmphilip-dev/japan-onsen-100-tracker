@@ -1,0 +1,39 @@
+/* Page-specific styles for hotel-ranks.html only (linked only from that page). */
+body[data-page="hotel-ranks"] .hr-edition {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--muted);
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 4px 10px;
+}
+body[data-page="hotel-ranks"] .hr-table {
+  min-width: 640px;
+}
+body[data-page="hotel-ranks"] .hr-table .rk {
+  font-variant-numeric: tabular-nums;
+}
+body[data-page="hotel-ranks"] .hr-link {
+  text-decoration: none;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 4px 9px;
+  border-radius: 6px;
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  color: var(--accent2);
+  white-space: nowrap;
+}
+body[data-page="hotel-ranks"] .hr-link:hover {
+  background: #f0ddd0;
+}
+body[data-page="hotel-ranks"] .hr-muted {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+@media (max-width: 700px) {
+  body[data-page="hotel-ranks"] .lede-hide-mobile {
+    display: none;
+  }
+}
