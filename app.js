@@ -9,15 +9,26 @@
   }
 
   function fmtPrice(p) {
-    if (p == null || p === "") return "價錢待查";
+    if (p == null || p === "") return "—";
     const n = Number(p);
-    if (!isFinite(n)) return "價錢待查";
-    return "約 ¥" + n.toLocaleString("ja-JP") + "／人";
+    if (!isFinite(n)) return "—";
+    return "約 ¥" + n.toLocaleString("ja-JP");
   }
 
   function linkBtn(url, label) {
     if (!url) return `<a class="disabled" href="#">${esc(label)}</a>`;
     return `<a href="${esc(url)}" target="_blank" rel="noopener noreferrer">${esc(label)}</a>`;
+  }
+
+  function bookLinks(h) {
+    const items = [];
+    if (h.official_url) items.push(`<a href="${esc(h.official_url)}" target="_blank" rel="noopener">官方</a>`);
+    if (h.rakuten_url) items.push(`<a href="${esc(h.rakuten_url)}" target="_blank" rel="noopener">楽天</a>`);
+    if (h.jalan_url) items.push(`<a href="${esc(h.jalan_url)}" target="_blank" rel="noopener">Jalan</a>`);
+    if (h.booking_url) items.push(`<a href="${esc(h.booking_url)}" target="_blank" rel="noopener">Booking</a>`);
+    if (h.other_booking) items.push(`<a href="${esc(h.other_booking)}" target="_blank" rel="noopener">其他</a>`);
+    if (!items.length) return '<span class="muted">連結待補</span>';
+    return `<div class="book-links">${items.join("")}</div>`;
   }
 
   function fmtRank(r) {
@@ -30,7 +41,6 @@
     return `2024 ${a}　／　2026 ${b}`;
   }
 
-  /** Positive = improved (rank number went down). null if either year missing. */
   function rankDelta(r24, r26) {
     if (r24 == null || r26 == null || r24 === "" || r26 === "") return null;
     return Number(r24) - Number(r26);
@@ -80,40 +90,64 @@
         else deltaChip = `<span class="chip">＝</span>`;
       }
       return `
-      <article class="card" data-pref="${esc(h.prefecture || "")}" data-band="${esc(h.price_band || "")}">
+      <article class="card">
         <div class="rank-badge">
           <span class="rank-line">2024 ${esc(fmtRank(h.rank))}</span>
           <span class="rank-line">2026 ${esc(fmtRank(h.rank_2026))}</span>
         </div>
         <div>
-          <span class="area">${esc(h.area_cn || "")}</span>
+          <span class="area">${esc(h.area_cn || h.onsen_area || "")}</span>
           <h3>${esc(h.property_cn || h.property_en || h.property_jp)}</h3>
           <div class="jp">${esc(h.property_jp)}${h.property_en ? " · " + esc(h.property_en) : ""}</div>
           <div class="rank-pair">${esc(rankPairText(h))} ${deltaChip}</div>
           <div class="meta">
-            <span class="chip price">${esc(fmtPrice(h.price_jpy))}</span>
+            <span class="chip price">${esc(fmtPrice(h.price_jpy))}${h.price_jpy != null ? "／人" : ""}</span>
             <span class="chip">${esc(h.price_band || "")}</span>
             <span class="chip">${esc(h.type || "")}</span>
-            <span class="chip">${esc(h.source || "")}</span>
-            <span class="chip">${esc(
-              h.source_quality === "web_summary_crosschecked" ? "多源交叉核對" :
-              h.source_quality === "web_summary_not_watched" ? "網摘／未觀看" :
-              (h.source_quality || "")
-            )}</span>
             ${alertChip(h)}
           </div>
           <p class="desc">${esc(h.description_cn || "")}</p>
-          ${h.highlights ? `<p class="hl">節目／已知賣點：${esc(h.highlights)}</p>` : ""}
+          ${h.highlights ? `<p class="hl">賣點：${esc(h.highlights)}</p>` : ""}
           <div class="links">
             ${linkBtn(h.official_url, "官方")}
-            ${linkBtn(h.rakuten_url, "樂天旅遊")}
+            ${linkBtn(h.rakuten_url, "楽天")}
             ${linkBtn(h.jalan_url, "Jalan")}
             ${linkBtn(h.booking_url, "Booking")}
-            ${linkBtn(h.other_booking, "其他預約")}
+            ${linkBtn(h.other_booking, "其他")}
           </div>
         </div>
       </article>`;
     }).join("");
+  }
+
+  function renderHotelsTable(hotels) {
+    const body = $("#hotels-body");
+    if (!body) return;
+    if (!hotels.length) {
+      body.innerHTML = '<tr><td colspan="8">沒有符合條件的住宿／設施。</td></tr>';
+      return;
+    }
+    body.innerHTML = hotels.map(h => `
+      <tr>
+        <td class="rk">${esc(fmtRank(h.rank))}</td>
+        <td class="rk">${esc(fmtRank(h.rank_2026))}</td>
+        <td>
+          <div class="area-cn">${esc((h.area_cn || h.onsen_area || "").replace(/（.*?）/, "") || h.onsen_area || "")}</div>
+          <div class="area-jp">${esc(h.onsen_area || "")}</div>
+        </td>
+        <td>
+          <div class="prop-cn">${esc(h.property_cn || h.property_jp)}</div>
+          <div class="prop-jp">${esc(h.property_jp)}${h.alert ? " · " + (
+            h.alert === "closed" ? "休館中" :
+            h.alert === "phone_only" ? "僅電話" :
+            h.alert === "day_onsen" ? "日歸" : esc(h.alert)
+          ) : ""}</div>
+        </td>
+        <td>${esc(h.prefecture || "")}</td>
+        <td class="price">${esc(fmtPrice(h.price_jpy))}</td>
+        <td>${esc(h.price_band || "未取得")}</td>
+        <td>${bookLinks(h)}</td>
+      </tr>`).join("");
   }
 
   function unique(arr) {
@@ -181,19 +215,19 @@
     return copy;
   }
 
+  let hotelView = "table";
+
   function applyFilters(data) {
-    const cards = $("#cards");
-    if (!cards || !data.hotels) return;
-    const qEl = $("#q");
-    const prefEl = $("#pref");
-    const bandEl = $("#band");
-    const sortEl = $("#sort");
-    const q = (qEl && qEl.value || "").trim().toLowerCase();
-    const pref = prefEl ? prefEl.value : "";
-    const band = bandEl ? bandEl.value : "";
-    const mode = (sortEl && sortEl.value) || "rank2024";
+    if (!data.hotels) return;
+    if (!$("#hotels-body") && !$("#cards")) return;
+    const q = (($("#q") && $("#q").value) || "").trim().toLowerCase();
+    const pref = $("#pref") ? $("#pref").value : "";
+    const area = $("#area") ? $("#area").value : "";
+    const band = $("#band") ? $("#band").value : "";
+    const mode = ($("#sort") && $("#sort").value) || "rank2024";
     let list = data.hotels.slice();
     if (pref) list = list.filter(h => h.prefecture === pref);
+    if (area) list = list.filter(h => h.onsen_area === area);
     if (band) list = list.filter(h => h.price_band === band);
     if (q) {
       list = list.filter(h => {
@@ -207,11 +241,19 @@
     list = sortHotels(list, mode);
     const stats = $("#stats");
     if (stats) {
-      const sortLabel = (sortEl && sortEl.selectedOptions[0])
-        ? sortEl.selectedOptions[0].textContent : mode;
-      stats.textContent = `顯示 ${list.length} / ${data.hotels.length} 間住宿／設施 · 排序：${sortLabel}`;
+      const sortLabel = ($("#sort") && $("#sort").selectedOptions[0])
+        ? $("#sort").selectedOptions[0].textContent : mode;
+      stats.textContent = `顯示 ${list.length} / ${data.hotels.length} 間 · 排序：${sortLabel}`;
     }
-    renderCards(list);
+    if (hotelView === "cards") {
+      renderCards(list);
+      if ($("#hotels-table-wrap")) $("#hotels-table-wrap").classList.add("hidden");
+      if ($("#cards")) $("#cards").classList.remove("hidden");
+    } else {
+      renderHotelsTable(list);
+      if ($("#hotels-table-wrap")) $("#hotels-table-wrap").classList.remove("hidden");
+      if ($("#cards")) $("#cards").classList.add("hidden");
+    }
   }
 
   function changeMagnitude(ch) {
@@ -309,6 +351,7 @@
     const updated = $("#updated");
     if (updated && data.meta && data.meta.updated_label) {
       updated.textContent = data.meta.updated_label;
+      updated.title = data.meta.updated_label;
     }
     const sb = $("#source-banner");
     if (sb && data.meta && data.meta.source_banner_zh) {
@@ -382,9 +425,15 @@
     applyCompareFilters(data);
   }
 
+  function areaLabel(h) {
+    const cn = (h.area_cn || "").replace(/（.*?）/g, "").trim();
+    return cn ? `${cn}（${h.onsen_area}）` : h.onsen_area;
+  }
+
   function initHotels(data) {
     fillSharedMeta(data);
-    if (!$("#cards")) return;
+    if (!$("#hotels-body") && !$("#cards")) return;
+
     const prefs = unique(data.hotels.map(h => h.prefecture));
     const prefSel = $("#pref");
     if (prefSel) {
@@ -394,6 +443,29 @@
         prefSel.appendChild(o);
       });
     }
+
+    // Area filter: unique onsen_area with CN label, sorted by rank then name
+    const areaSel = $("#area");
+    if (areaSel) {
+      const byArea = new Map();
+      data.hotels.forEach(h => {
+        if (!h.onsen_area) return;
+        if (!byArea.has(h.onsen_area)) byArea.set(h.onsen_area, h);
+      });
+      const areas = Array.from(byArea.values()).sort((a, b) => {
+        const ra = a.rank == null ? 9999 : Number(a.rank);
+        const rb = b.rank == null ? 9999 : Number(b.rank);
+        if (ra !== rb) return ra - rb;
+        return String(a.onsen_area).localeCompare(String(b.onsen_area), "ja");
+      });
+      areas.forEach(h => {
+        const o = document.createElement("option");
+        o.value = h.onsen_area;
+        o.textContent = areaLabel(h);
+        areaSel.appendChild(o);
+      });
+    }
+
     const bands = ["日歸／入浴", "¥15,000 以下", "¥15,000–30,000", "¥30,000–50,000", "¥50,000 以上", "未取得"];
     const bandSel = $("#band");
     if (bandSel) {
@@ -403,22 +475,35 @@
         bandSel.appendChild(o);
       });
     }
-    ["q", "pref", "band", "sort"].forEach(id => {
+
+    ["q", "pref", "area", "band", "sort"].forEach(id => {
       const el = $(`#${id}`);
       if (!el) return;
       el.addEventListener("input", () => applyFilters(data));
       el.addEventListener("change", () => applyFilters(data));
     });
+
     const reset = $("#reset");
     if (reset) {
       reset.addEventListener("click", () => {
         if ($("#q")) $("#q").value = "";
         if ($("#pref")) $("#pref").value = "";
+        if ($("#area")) $("#area").value = "";
         if ($("#band")) $("#band").value = "";
         if ($("#sort")) $("#sort").value = "rank2024";
         applyFilters(data);
       });
     }
+
+    $$(".view-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        $$(".view-btn").forEach(b => b.classList.remove("is-active"));
+        btn.classList.add("is-active");
+        hotelView = btn.dataset.view || "table";
+        applyFilters(data);
+      });
+    });
+
     applyFilters(data);
   }
 
@@ -433,7 +518,9 @@
   function showLoadError(err) {
     const main = $("main") || document.body;
     const msg = `<p class="banner danger">無法載入資料：${esc(err && err.message ? err.message : err)}</p>`;
-    if ($("#cards")) $("#cards").innerHTML = msg;
+    if ($("#hotels-body")) {
+      $("#hotels-body").innerHTML = `<tr><td colspan="8">${msg}</td></tr>`;
+    } else if ($("#cards")) $("#cards").innerHTML = msg;
     else if ($("#compare-body")) {
       const wrap = $("#compare-wrap") || main;
       wrap.insertAdjacentHTML("beforebegin", msg);

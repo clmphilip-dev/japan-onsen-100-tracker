@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>《日本溫泉100強》追蹤 — Philip 行程計劃</title>
-  <meta name="description" content="HOY TV《日本溫泉100強》旅館／溫泉地追蹤：繁中介紹、參考價錢與訂房連結。" />
+  <meta name="description" content="HOY TV《日本溫泉100強》溫泉地排名對照與代表性旅館：繁中介紹、參考價錢與訂房連結。" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body data-page="home">
@@ -19,7 +19,7 @@
     </div>
   </header>
 
-  <nav class="site-nav" aria-label="主要頁面">
+  <nav class="site-nav sticky-nav" aria-label="主要頁面">
     <a href="index.html" class="site-nav-link is-active" aria-current="page">首頁</a>
     <a href="ranks.html" class="site-nav-link">Top 10</a>
     <a href="compare.html" class="site-nav-link">排名對照</a>
@@ -27,37 +27,44 @@
   </nav>
 
   <main>
-    <section class="panel">
-      <h2>節目重溫狀態</h2>
-      <p id="ep-note" style="margin:0;font-size:0.95rem;"></p>
-    </section>
-
-    <section id="alerts" aria-label="重要提示"></section>
-    <div id="source-banner" class="banner warn hidden" role="status"></div>
-
-    <section class="panel">
+    <section class="panel home-hero">
       <h2>開始瀏覽</h2>
-      <p class="stats" style="margin-top:0">網站已分成獨立頁面，避免單頁過長。請選下方入口：</p>
+      <div class="count-row" id="home-counts">
+        <div class="count-pill"><strong id="home-compare-count">—</strong><span>溫泉地對照</span></div>
+        <div class="count-pill"><strong id="home-hotel-count">—</strong><span>旅館／設施</span></div>
+        <div class="count-pill"><strong>2</strong><span>年度 Top 10</span></div>
+      </div>
       <div class="home-cards">
-        <a class="home-card" href="ranks.html">
-          <strong>溫泉地 Top 10</strong>
-          <span>2024（HOY）與 2026（電視東京）前 10 名溫泉地</span>
+        <a class="home-card" href="hotels.html">
+          <strong>住宿／設施表格</strong>
+          <span>按溫泉地・縣・價錢篩選，一覽訂房連結</span>
         </a>
         <a class="home-card" href="compare.html">
-          <strong>排名對照（2024 ⇄ 2026）</strong>
-          <span>全部 <em id="home-compare-count">—</em> 個溫泉地兩年名次與升跌</span>
+          <strong>排名對照 2024 ⇄ 2026</strong>
+          <span>全部溫泉地兩年名次與升跌</span>
         </a>
-        <a class="home-card" href="hotels.html">
-          <strong>住宿／設施</strong>
-          <span>約 <em id="home-hotel-count">—</em> 間旅館與設施：價錢、賣點、訂房連結</span>
+        <a class="home-card" href="ranks.html">
+          <strong>溫泉地 Top 10</strong>
+          <span>2024（HOY）與 2026（電視東京）前十</span>
         </a>
       </div>
     </section>
+
+    <section class="panel">
+      <h2>節目重溫狀態</h2>
+      <p id="ep-note" class="lede"></p>
+    </section>
+
+    <details class="alerts-accordion panel" id="alerts-wrap">
+      <summary>重要提示（休館／預約／方法）</summary>
+      <section id="alerts" aria-label="重要提示"></section>
+      <div id="source-banner" class="banner warn hidden" role="status"></div>
+    </details>
   </main>
 
   <footer>
     <p id="disclaimer"></p>
-    <p>資料來源：HOY TV <a href="https://hoy.tv/title/27930">hoy.tv/title/27930</a>、電視東京溫泉特番公開結果整理。資料載入自 <code>data.json</code>。</p>
+    <p>資料來源：HOY TV、<a href="https://hoy.tv/title/27930">hoy.tv/title/27930</a>、電視東京溫泉特番、じゃらん／楽天區域人氣榜。資料載入自 <code>data.json</code>。</p>
   </footer>
 
   <script src="app.js"></script>

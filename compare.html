@@ -7,24 +7,27 @@
   <meta name="description" content="同一溫泉地在 2024 與 2026 電視東京特番的名次對照與升跌。" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body data-page="compare">
-  <header class="app-header">
-    <div class="wrap">
-      <h1>《日本溫泉100強》追蹤</h1>
-      <p class="sub">排名對照 · 2024 ⇄ 2026</p>
+<body data-page="compare" class="page-compact">
+    <header class="app-header compact">
+    <div class="wrap header-bar">
+      <div>
+        <h1>《日本溫泉100強》</h1>
+        <p class="sub">排名對照 · 2024 ⇄ 2026</p>
+      </div>
       <div class="meta-row">
-        <a class="hoy" id="hoy-link" href="https://hoy.tv/title/27930" target="_blank" rel="noopener">在 HOY TV 觀看</a>
-        <span id="updated">最後更新：—</span>
+        <a class="hoy" id="hoy-link" href="https://hoy.tv/title/27930" target="_blank" rel="noopener">HOY TV</a>
+        <span id="updated" class="updated-short">—</span>
       </div>
     </div>
   </header>
 
-  <nav class="site-nav" aria-label="主要頁面">
+  <nav class="site-nav sticky-nav" aria-label="主要頁面">
     <a href="index.html" class="site-nav-link">首頁</a>
     <a href="ranks.html" class="site-nav-link">Top 10</a>
     <a href="compare.html" class="site-nav-link is-active" aria-current="page">排名對照</a>
     <a href="hotels.html" class="site-nav-link">住宿</a>
   </nav>
+
 
   <main>
     <div id="source-banner" class="banner warn hidden" role="status"></div>
@@ -32,7 +35,7 @@
     <section class="panel" id="panel-compare">
       <h2>排名對照（2024 ⇄ 2026）</h2>
       <p class="stats" style="margin-top:0">同一溫泉地在兩屆電視東京特番的名次對照。Change：<strong>+N</strong>＝上升（名次數字變小）、<strong>-N</strong>＝下跌、<strong>NEW</strong>＝2026新上榜、<strong>DROPPED</strong>＝2026跌出前100、<strong>SAME</strong>＝名次不變。同率名次（2026：11／16／74／84）已保留。</p>
-      <div class="filters filters-compare">
+      <div class="filters filters-compare sticky-filters">
         <label class="f">篩選
           <select id="compare-filter">
             <option value="all">全部溫泉地</option>

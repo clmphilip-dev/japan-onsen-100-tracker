@@ -4,22 +4,24 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>住宿／設施 — 《日本溫泉100強》追蹤</title>
-  <meta name="description" content="節目提及旅館與設施：繁中介紹、參考價錢與訂房連結。" />
+  <meta name="description" content="排名溫泉地代表性旅館：可篩選溫泉地／縣／價錢，表格檢視訂房連結。資料來自じゃらん／楽天區域人氣榜與節目交叉核對。" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-<body data-page="hotels">
-  <header class="app-header">
-    <div class="wrap">
-      <h1>《日本溫泉100強》追蹤</h1>
-      <p class="sub">住宿／設施一覽</p>
+<body data-page="hotels" class="page-compact">
+  <header class="app-header compact">
+    <div class="wrap header-bar">
+      <div>
+        <h1>《日本溫泉100強》</h1>
+        <p class="sub">住宿／設施一覽</p>
+      </div>
       <div class="meta-row">
-        <a class="hoy" id="hoy-link" href="https://hoy.tv/title/27930" target="_blank" rel="noopener">在 HOY TV 觀看</a>
-        <span id="updated">最後更新：—</span>
+        <a class="hoy" id="hoy-link" href="https://hoy.tv/title/27930" target="_blank" rel="noopener">HOY TV</a>
+        <span id="updated" class="updated-short">—</span>
       </div>
     </div>
   </header>
 
-  <nav class="site-nav" aria-label="主要頁面">
+  <nav class="site-nav sticky-nav" aria-label="主要頁面">
     <a href="index.html" class="site-nav-link">首頁</a>
     <a href="ranks.html" class="site-nav-link">Top 10</a>
     <a href="compare.html" class="site-nav-link">排名對照</a>
@@ -27,42 +29,69 @@
   </nav>
 
   <main>
-    <div id="source-banner" class="banner warn hidden" role="status"></div>
+    <section class="panel panel-hotels">
+      <div class="panel-head">
+        <h2>住宿／設施</h2>
+        <div class="view-toggle" role="group" aria-label="檢視模式">
+          <button type="button" class="view-btn is-active" id="view-table" data-view="table">表格</button>
+          <button type="button" class="view-btn" id="view-cards" data-view="cards">卡片</button>
+        </div>
+      </div>
+      <p class="lede">以 2024＋2026 排名溫泉地為範圍，整理じゃらん／楽天等人氣宿。非日本全國穷尽名單；價錢空白＝未核實。</p>
 
-    <section class="panel">
-      <h2>住宿／設施一覽</h2>
-      <div class="filters filters-hotels">
+      <div class="filters filters-hotels sticky-filters" id="hotel-filters">
         <label class="f">關鍵字
-          <input id="q" type="search" placeholder="旅館名、溫泉地、賣點…" autocomplete="off" />
+          <input id="q" type="search" placeholder="旅館、溫泉地、賣點…" autocomplete="off" />
+        </label>
+        <label class="f">溫泉地
+          <select id="area"><option value="">全部溫泉地</option></select>
         </label>
         <label class="f">都道府縣
           <select id="pref"><option value="">全部</option></select>
         </label>
-        <label class="f">價錢帶（約／人）
+        <label class="f">價錢帶
           <select id="band"><option value="">全部</option></select>
         </label>
         <label class="f">排序
           <select id="sort">
-            <option value="rank2024">2024 排名（佳→差）</option>
-            <option value="rank2026">2026 排名（佳→差）</option>
-            <option value="improve">升幅最大（2024→2026）</option>
-            <option value="drop">跌幅最大（2024→2026）</option>
+            <option value="rank2024">2024 排名</option>
+            <option value="rank2026">2026 排名</option>
+            <option value="improve">升幅最大</option>
+            <option value="drop">跌幅最大</option>
             <option value="price_asc">價錢低→高</option>
             <option value="price_desc">價錢高→低</option>
-            <option value="name_area">溫泉地名 A–Z</option>
-            <option value="name_prop">旅館名 A–Z</option>
+            <option value="name_area">溫泉地名</option>
+            <option value="name_prop">旅館名</option>
           </select>
         </label>
         <button type="button" class="reset" id="reset">重設</button>
       </div>
       <p class="stats" id="stats"></p>
-      <div class="cards" id="cards"></div>
+
+      <div class="table-wrap hotels-table-wrap" id="hotels-table-wrap">
+        <table class="hotels-table" id="hotels-table">
+          <thead>
+            <tr>
+              <th>2024</th>
+              <th>2026</th>
+              <th>溫泉地</th>
+              <th>旅館</th>
+              <th>縣</th>
+              <th>約價錢</th>
+              <th>價錢帶</th>
+              <th>訂房</th>
+            </tr>
+          </thead>
+          <tbody id="hotels-body"></tbody>
+        </table>
+      </div>
+      <div class="cards hidden" id="cards"></div>
     </section>
   </main>
 
   <footer>
     <p id="disclaimer"></p>
-    <p>資料來源：HOY TV <a href="https://hoy.tv/title/27930">hoy.tv/title/27930</a>、電視東京溫泉特番公開結果整理。</p>
+    <p>資料來源：HOY TV <a href="https://hoy.tv/title/27930">hoy.tv/title/27930</a>、電視東京公開結果、じゃらんnet／楽天トラベル區域人氣・銷售榜整理。</p>
   </footer>
 
   <script src="app.js"></script>

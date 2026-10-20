@@ -1,26 +1,19 @@
 # 《日本溫泉100強》追蹤
 
-香港旅客用溫泉行程計劃站（繁中）。
+靜態站（GitHub Pages）：HOY TV／電視東京溫泉地排名對照＋代表性溫泉旅館一覽。
 
-- Live: https://clmphilip-dev.github.io/japan-onsen-100-tracker/
-- HOY title: https://hoy.tv/title/27930
+## 頁面
 
-## Pages
-- [`index.html`](index.html) — 首頁（節目狀態、提示、入口）
-- [`ranks.html`](ranks.html) — 溫泉地 Top 10（2024 / 2026）
-- [`compare.html`](compare.html) — 排名對照（2024 ⇄ 2026）
-- [`hotels.html`](hotels.html) — 住宿／設施
+- [首頁](https://clmphilip-dev.github.io/japan-onsen-100-tracker/)
+- [Top 10](https://clmphilip-dev.github.io/japan-onsen-100-tracker/ranks.html)
+- [排名對照](https://clmphilip-dev.github.io/japan-onsen-100-tracker/compare.html)
+- [住宿／設施](https://clmphilip-dev.github.io/japan-onsen-100-tracker/hotels.html)（表格為主，可篩溫泉地）
 
-## Contents
-- 節目提及／整理的旅館與設施（約 95 間）
-- 2024（HOY）與 2026（電視東京）溫泉地 Top 100
-- **排名對照**：同一溫泉地兩年名次與升跌（NEW / DROPPED / ±N）
-- 參考一泊二食價錢與訂房連結
+## 資料
 
-## Data quality
-`web_summary_crosschecked` — 多源合法網絡摘要交叉核對（非 HOY 全集逐集觀看）。
+- `data.json`：排名＋旅館（節目交叉核對＋じゃらん／楽天區域人氣榜擴充）
+- 住宿範圍＝2024＋2026 榜上溫泉地之代表性旅館，**非**日本全國所有溫泉旅館
 
-## Episodes
-共 7 集：1–5＝HOY TV 2025-11（對應 2024 特番）；6–7＝HOY 77 2026-10（對應 2026 特番）。
+## 本地
 
-資料由各頁 `fetch("data.json")` 載入。
+用任意靜態伺服器開啟（需能讀 `data.json`），例如：`python3 -m http.server 8080`
