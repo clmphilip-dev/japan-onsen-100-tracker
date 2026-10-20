@@ -45,7 +45,7 @@
     }
     mount.innerHTML = hotels.map(h => `
       <article class="card" data-pref="${esc(h.prefecture || "")}" data-band="${esc(h.price_band || "")}">
-        <div class="rank-badge"><small>2024</small>#${esc(h.rank ?? "—")}</div>
+        <div class="rank-badge"><small>2024</small>#${esc(h.rank ?? "—")}${h.rank_2026 != null ? `<br><small>2026</small>#${esc(h.rank_2026)}` : ""}</div>
         <div>
           <span class="area">${esc(h.area_cn || "")}</span>
           <h3>${esc(h.property_cn || h.property_en || h.property_jp)}</h3>
@@ -55,7 +55,11 @@
             <span class="chip">${esc(h.price_band || "")}</span>
             <span class="chip">${esc(h.type || "")}</span>
             <span class="chip">${esc(h.source || "")}</span>
-            <span class="chip">${esc(h.source_quality === "web_summary_not_watched" ? "網摘／未觀看" : (h.source_quality || ""))}</span>
+            <span class="chip">${esc(
+              h.source_quality === "web_summary_crosschecked" ? "多源交叉核對" :
+              h.source_quality === "web_summary_not_watched" ? "網摘／未觀看" :
+              (h.source_quality || "")
+            )}</span>
             ${alertChip(h)}
           </div>
           <p class="desc">${esc(h.description_cn || "")}</p>
