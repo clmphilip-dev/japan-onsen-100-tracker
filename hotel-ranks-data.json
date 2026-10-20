@@ -11,7 +11,8 @@
     "updated": "2026-10-20",
     "count": 100,
     "jalan_sold_note": "另可參考じゃらん「売れた宿大賞」等銷量／人氣榜（與本頁無關）。",
-    "jalan_sold_url": "https://www.jalan.net/uw/uwp9000/uww9001.do"
+    "jalan_sold_url": "https://www.jalan.net/uw/uwp9000/uww9001.do",
+    "description_note": "description_cn 依 ryokan100.com 官方簡介與公開資料整理為繁中，僅供參考。"
   },
   "hotels": [
     {
@@ -22,7 +23,8 @@
       "onsen_area_cn": "下呂溫泉",
       "prefecture_jp": "岐阜県",
       "prefecture_cn": "岐阜縣",
-      "url": "https://www.suimeikan.co.jp/"
+      "url": "https://www.suimeikan.co.jp/",
+      "description_cn": "下呂溫泉老舗旅館，飛驒川畔可暢遊三處浴場；以「美人的湯」與款待聞名，長期居於旅行社投票綜合榜前列。"
     },
     {
       "rank": 2,
@@ -32,7 +34,8 @@
       "onsen_area_cn": "月岡溫泉",
       "prefecture_jp": "新潟県",
       "prefecture_cn": "新潟縣",
-      "url": "https://www.senkei.com/brand/"
+      "url": "https://www.senkei.com/brand/",
+      "description_cn": "月岡溫泉名宿，主打「美人的湯」與無微不至的款待；泉慶・華鳳品牌旗下，以服務細節著稱。"
     },
     {
       "rank": 3,
@@ -42,7 +45,8 @@
       "onsen_area_cn": "母畑溫泉",
       "prefecture_jp": "福島県",
       "prefecture_cn": "福島縣",
-      "url": "https://www.yahataya.co.jp/"
+      "url": "https://www.yahataya.co.jp/",
+      "description_cn": "福島母畑溫泉的名宿，散發山里自然與人情暖意；以質樸款待深受旅行社專業人士推崇。"
     },
     {
       "rank": 4,
@@ -52,7 +56,8 @@
       "onsen_area_cn": "山代溫泉",
       "prefecture_jp": "石川県",
       "prefecture_cn": "石川縣",
-      "url": "https://yunokunitensyo.jp/"
+      "url": "https://yunokunitensyo.jp/",
+      "description_cn": "山代溫泉自家源泉開湯，三座大浴場、十八湯船，主打「一泊三湯十八湯巡」。"
     },
     {
       "rank": 5,
@@ -62,7 +67,8 @@
       "onsen_area_cn": "稻取溫泉",
       "prefecture_jp": "静岡県",
       "prefecture_cn": "靜岡縣",
-      "url": "https://www.inatori-ginsuiso.jp/"
+      "url": "https://www.inatori-ginsuiso.jp/",
+      "description_cn": "靜岡稻取溫泉旅館，以當地名物金目鯛會席料理聞名，兼享伊豆海邊溫泉氛圍。"
     },
     {
       "rank": 6,
@@ -72,7 +78,8 @@
       "onsen_area_cn": "指宿溫泉",
       "prefecture_jp": "鹿児島県",
       "prefecture_cn": "鹿兒島縣",
-      "url": "https://www.hakusuikan.co.jp/"
+      "url": "https://www.hakusuikan.co.jp/",
+      "description_cn": "指宿溫泉代表宿，主打「湯・味・心」並融入薩摩歷史風情；砂浴與溫泉度假氛圍並重。"
     },
     {
       "rank": 7,
@@ -82,7 +89,8 @@
       "onsen_area_cn": "富士山溫泉",
       "prefecture_jp": "山梨県",
       "prefecture_cn": "山梨縣",
-      "url": "https://www.kaneyamaen.com/"
+      "url": "https://www.kaneyamaen.com/",
+      "description_cn": "面向富士山的溫泉酒店，擁有廣闊日本庭園，以景觀與感動式款待見稱。"
     },
     {
       "rank": 8,
@@ -92,7 +100,8 @@
       "onsen_area_cn": "溫海溫泉",
       "prefecture_jp": "山形県",
       "prefecture_cn": "山形縣",
-      "url": "https://www.bankokuya.jp/"
+      "url": "https://www.bankokuya.jp/",
+      "description_cn": "溫海溫泉創業約三百年的純和風旅館，傳承山里風情與款待之心。"
     },
     {
       "rank": 9,
@@ -102,7 +111,8 @@
       "onsen_area_cn": "長門湯本溫泉",
       "prefecture_jp": "山口県",
       "prefecture_cn": "山口縣",
-      "url": "https://otanisanso.co.jp/"
+      "url": "https://otanisanso.co.jp/",
+      "description_cn": "長門湯本溫泉名宿，強調貼合心意的款待，讓旅人盡情放鬆一天。"
     },
     {
       "rank": 10,
@@ -112,7 +122,8 @@
       "onsen_area_cn": "新鉛溫泉",
       "prefecture_jp": "岩手県",
       "prefecture_cn": "岩手縣",
-      "url": "https://www.airinkan.com/"
+      "url": "https://www.airinkan.com/",
+      "description_cn": "新鉛溫泉宿，以房食、里山料理與約十七處溫泉浴場深受好評。"
     },
     {
       "rank": 11,
@@ -122,7 +133,8 @@
       "onsen_area_cn": "穴原溫泉",
       "prefecture_jp": "福島県",
       "prefecture_cn": "福島縣",
-      "url": "https://yosikawaya.com/"
+      "url": "https://yosikawaya.com/",
+      "description_cn": "穴原溫泉，摺上川溪谷畔；從浴場可欣賞四季自然景致。"
     },
     {
       "rank": 12,
@@ -132,7 +144,8 @@
       "onsen_area_cn": "信玄之湯 湯村溫泉",
       "prefecture_jp": "山梨県",
       "prefecture_cn": "山梨縣",
-      "url": "https://tokiwa-hotel.co.jp/"
+      "url": "https://tokiwa-hotel.co.jp/",
+      "description_cn": "湯村（信玄之湯）酒店，擁有美麗日本庭園，亦曾接待皇族與貴賓。"
     },
     {
       "rank": 13,
@@ -142,7 +155,8 @@
       "onsen_area_cn": "指宿溫泉",
       "prefecture_jp": "鹿児島県",
       "prefecture_cn": "鹿兒島縣",
-      "url": "https://www.syusuien.co.jp/"
+      "url": "https://www.syusuien.co.jp/",
+      "description_cn": "指宿的和風旅館，枯山水庭園與季節豐富的會席料理定評甚高。"
     },
     {
       "rank": 14,
@@ -152,7 +166,8 @@
       "onsen_area_cn": "南三陸溫泉",
       "prefecture_jp": "宮城県",
       "prefecture_cn": "宮城縣",
-      "url": "https://www.mkanyo.jp/"
+      "url": "https://www.mkanyo.jp/",
+      "description_cn": "南三陸溫泉酒店，以海天相連的「無限景觀溫泉」絕景著稱。"
     },
     {
       "rank": 15,
@@ -162,7 +177,8 @@
       "onsen_area_cn": "上山溫泉",
       "prefecture_jp": "山形県",
       "prefecture_cn": "山形縣",
-      "url": "https://www.koyoga.com/"
+      "url": "https://www.koyoga.com/",
+      "description_cn": "上山溫泉「日本之宿」，以真心款待與山形風土、風景、風味料理迎客。"
     },
     {
       "rank": 16,
@@ -172,7 +188,8 @@
       "onsen_area_cn": "玉造溫泉",
       "prefecture_jp": "島根県",
       "prefecture_cn": "島根縣",
-      "url": "https://www.kasuien-minami.jp/"
+      "url": "https://www.kasuien-minami.jp/",
+      "description_cn": "玉造溫泉逾百三十年歷史名宿，以細緻和式款待與傳統滋味聞名。"
     },
     {
       "rank": 17,
@@ -182,7 +199,8 @@
       "onsen_area_cn": "鬼怒川溫泉",
       "prefecture_jp": "栃木県",
       "prefecture_cn": "栃木縣",
-      "url": "https://www.asaya-hotel.co.jp/"
+      "url": "https://www.asaya-hotel.co.jp/",
+      "description_cn": "鬼怒川溫泉創業約一百三十年、當地最具歷史的宿之一。"
     },
     {
       "rank": 18,
@@ -192,7 +210,8 @@
       "onsen_area_cn": "越後湯澤溫泉",
       "prefecture_jp": "新潟県",
       "prefecture_cn": "新潟縣",
-      "url": "https://hotel-futaba.com/"
+      "url": "https://hotel-futaba.com/",
+      "description_cn": "越後湯澤高台上的和風旅館，以「水織」意象與溫泉體驗見稱。"
     },
     {
       "rank": 19,
@@ -202,7 +221,8 @@
       "onsen_area_cn": "草津溫泉",
       "prefecture_jp": "群馬県",
       "prefecture_cn": "群馬縣",
-      "url": "https://www.hotel-sakurai.co.jp/"
+      "url": "https://www.hotel-sakurai.co.jp/",
+      "description_cn": "草津溫泉街規模最大級之一的源泉掛流大浴場與露天風呂為賣點。"
     },
     {
       "rank": 20,
@@ -212,7 +232,8 @@
       "onsen_area_cn": "湯村溫泉",
       "prefecture_jp": "兵庫県",
       "prefecture_cn": "兵庫縣",
-      "url": "https://www.izutuya.com/"
+      "url": "https://www.izutuya.com/",
+      "description_cn": "湯村溫泉街高台老舗，創業約三百年，可一覽溫泉街景色。"
     },
     {
       "rank": 21,
@@ -222,7 +243,8 @@
       "onsen_area_cn": "阿寒湖溫泉",
       "prefecture_jp": "北海道",
       "prefecture_cn": "北海道",
-      "url": "https://www.tsuruga.com/"
+      "url": "https://www.tsuruga.com/",
+      "description_cn": "阿寒湖溫泉度假SPA，由個性不同的兩座設施組成鶴雅品牌代表宿。"
     },
     {
       "rank": 22,
@@ -232,7 +254,8 @@
       "onsen_area_cn": "溫海溫泉",
       "prefecture_jp": "山形県",
       "prefecture_cn": "山形縣",
-      "url": "https://www.tachibanaya.jp/"
+      "url": "https://www.tachibanaya.jp/",
+      "description_cn": "溫海溫泉的療癒湯宿，強調被綠意與人情溫柔包圍的放鬆體驗。"
     },
     {
       "rank": 23,
@@ -242,7 +265,8 @@
       "onsen_area_cn": "小湊溫泉",
       "prefecture_jp": "千葉県",
       "prefecture_cn": "千葉縣",
-      "url": "https://www.kichimu.com/"
+      "url": "https://www.kichimu.com/",
+      "description_cn": "小湊溫泉宿，以約三十五米高的天空露天風呂與新鮮海鮮著稱。"
     },
     {
       "rank": 24,
@@ -252,7 +276,8 @@
       "onsen_area_cn": "鳥羽市",
       "prefecture_jp": "三重県",
       "prefecture_cn": "三重縣",
-      "url": "https://www.todaya.co.jp/"
+      "url": "https://www.todaya.co.jp/",
+      "description_cn": "近鐵鳥羽站步行約三分鐘（有接送），作為伊勢志摩觀光據點位置極佳。"
     },
     {
       "rank": 25,
@@ -262,7 +287,8 @@
       "onsen_area_cn": "磐梯熱海溫泉",
       "prefecture_jp": "福島県",
       "prefecture_cn": "福島縣",
-      "url": "http://www.hotelhananoyu.jp/"
+      "url": "http://www.hotelhananoyu.jp/",
+      "description_cn": "磐梯熱海溫泉酒店，庭園露天與展望風呂合計約三十種浴場可暢遊。"
     },
     {
       "rank": 26,
@@ -272,7 +298,8 @@
       "onsen_area_cn": "觀音溫泉",
       "prefecture_jp": "静岡県",
       "prefecture_cn": "靜岡縣",
-      "url": "https://www.kannon-onsen.com/"
+      "url": "https://www.kannon-onsen.com/",
+      "description_cn": "奧下田山間秘湯，可飲泉，自家源泉掛流一百％。"
     },
     {
       "rank": 27,
@@ -282,7 +309,8 @@
       "onsen_area_cn": "水上溫泉",
       "prefecture_jp": "群馬県",
       "prefecture_cn": "群馬縣",
-      "url": "https://www.matsunoi.com/"
+      "url": "https://www.matsunoi.com/",
+      "description_cn": "水上溫泉「源泉湯之宿」，庭園露天風呂與鮪魚壽司放題等頗受歡迎。"
     },
     {
       "rank": 28,
@@ -292,7 +320,8 @@
       "onsen_area_cn": "西山溫泉",
       "prefecture_jp": "山梨県",
       "prefecture_cn": "山梨縣",
-      "url": "https://www.keiunkan.co.jp/"
+      "url": "https://www.keiunkan.co.jp/",
+      "description_cn": "西山溫泉名宿，開湯逾一千三百年；二〇一一年獲健力士認證為「世界歷史最悠久的宿」。"
     },
     {
       "rank": 29,
@@ -302,7 +331,8 @@
       "onsen_area_cn": "美之原溫泉",
       "prefecture_jp": "長野県",
       "prefecture_cn": "長野縣",
-      "url": "https://www.hotel-shoho.jp/"
+      "url": "https://www.hotel-shoho.jp/",
+      "description_cn": "客房可眺望北阿爾卑斯與城下町，廣闊溫泉與展望風呂亦是魅力。"
     },
     {
       "rank": 30,
@@ -312,7 +342,8 @@
       "onsen_area_cn": "下田溫泉",
       "prefecture_jp": "静岡県",
       "prefecture_cn": "靜岡縣",
-      "url": "https://www.shimoda-central-hotel.co.jp/"
+      "url": "https://www.shimoda-central-hotel.co.jp/",
+      "description_cn": "下田里山風景中的自家源泉宿，強調回歸原風景的靜謐氛圍。"
     },
     {
       "rank": 31,
@@ -322,7 +353,8 @@
       "onsen_area_cn": "長島溫泉",
       "prefecture_jp": "三重県",
       "prefecture_cn": "三重縣",
-      "url": "https://www.nagashima-onsen.co.jp/hanamizuki/"
+      "url": "https://www.nagashima-onsen.co.jp/hanamizuki/",
+      "description_cn": "長島溫泉酒店花水木，以日本人珍惜自然與情趣之心為款待原點。"
     },
     {
       "rank": 32,
@@ -332,7 +364,8 @@
       "onsen_area_cn": "日光溫泉",
       "prefecture_jp": "栃木県",
       "prefecture_cn": "栃木縣",
-      "url": "http://www.senhime.co.jp/"
+      "url": "http://www.senhime.co.jp/",
+      "description_cn": "距日光東照宮步行約五分鐘的純和風旅館，以時令懷石料理迎客。"
     },
     {
       "rank": 33,
@@ -342,7 +375,8 @@
       "onsen_area_cn": "金刀比羅溫泉鄉",
       "prefecture_jp": "香川県",
       "prefecture_cn": "香川縣",
-      "url": "https://www.koubaitei.jp"
+      "url": "https://www.koubaitei.jp",
+      "description_cn": "金刀比羅溫泉鄉和風宿，多樣浴場可體驗兩種泉質，主打更高一層的放鬆。"
     },
     {
       "rank": 34,
@@ -352,7 +386,8 @@
       "onsen_area_cn": "あわら溫泉",
       "prefecture_jp": "福井県",
       "prefecture_cn": "福井縣",
-      "url": "https://matuyasensen.co.jp/"
+      "url": "https://matuyasensen.co.jp/",
+      "description_cn": "あわら溫泉名宿，擁有北陸最大級之一的「日本之風呂」療癒空間。"
     },
     {
       "rank": 35,
@@ -362,7 +397,8 @@
       "onsen_area_cn": "谷川溫泉",
       "prefecture_jp": "群馬県",
       "prefecture_cn": "群馬縣",
-      "url": "https://www.senjyuan.jp/"
+      "url": "https://www.senjyuan.jp/",
+      "description_cn": "谷川溫泉別邸，活用谷川岳大自然空間與傳統工藝建築。"
     },
     {
       "rank": 36,
@@ -372,7 +408,8 @@
       "onsen_area_cn": "伊香保溫泉",
       "prefecture_jp": "群馬県",
       "prefecture_cn": "群馬縣",
-      "url": "https://www.hotel-kogure.com/"
+      "url": "https://www.hotel-kogure.com/",
+      "description_cn": "伊香保創業逾四百年，擁有當地屈指可數的湯量（每分鐘約一千公升）。"
     },
     {
       "rank": 37,
@@ -382,7 +419,8 @@
       "onsen_area_cn": "磯部溫泉",
       "prefecture_jp": "群馬県",
       "prefecture_cn": "群馬縣",
-      "url": "https://www.isobesuzume.co.jp/"
+      "url": "https://www.isobesuzume.co.jp/",
+      "description_cn": "磯部溫泉，童話《舌切雀》發祥地相關的人氣宿。"
     },
     {
       "rank": 38,
@@ -392,7 +430,8 @@
       "onsen_area_cn": "由良溫泉",
       "prefecture_jp": "山形県",
       "prefecture_cn": "山形縣",
-      "url": "http://yaotome.in.net/"
+      "url": "http://yaotome.in.net/",
+      "description_cn": "由良溫泉，全室與大浴場均可眺望日本海壯闊全景。"
     },
     {
       "rank": 39,
@@ -402,7 +441,8 @@
       "onsen_area_cn": "富士河口湖溫泉鄉",
       "prefecture_jp": "山梨県",
       "prefecture_cn": "山梨縣",
-      "url": "https://maruei55.com/"
+      "url": "https://maruei55.com/",
+      "description_cn": "富士河口湖畔的日本旅館，座落於富士山下優美自然之中。"
     },
     {
       "rank": 40,
@@ -412,7 +452,8 @@
       "onsen_area_cn": "鶯宿溫泉",
       "prefecture_jp": "岩手県",
       "prefecture_cn": "岩手縣",
-      "url": "https://www.morinokaze.com/"
+      "url": "https://www.morinokaze.com/",
+      "description_cn": "鶯宿溫泉酒店，有太鼓、搗麻糬活動與約三十四萬燈飾等每晚娛樂。"
     },
     {
       "rank": 41,
@@ -422,7 +463,8 @@
       "onsen_area_cn": "鬼怒川溫泉",
       "prefecture_jp": "栃木県",
       "prefecture_cn": "栃木縣",
-      "url": "https://kgh.co.jp/"
+      "url": "https://kgh.co.jp/",
+      "description_cn": "鬼怒川溫泉酒店，以瀑布日本庭園為中心，華麗而沉穩的氛圍。"
     },
     {
       "rank": 42,
@@ -432,7 +474,8 @@
       "onsen_area_cn": "皆生溫泉",
       "prefecture_jp": "鳥取県",
       "prefecture_cn": "鳥取縣",
-      "url": "https://kaikeonsenkasuitei.jp/"
+      "url": "https://kaikeonsenkasuitei.jp/",
+      "description_cn": "皆生溫泉宿，奢華款待與自家源泉，可在絕景露天風呂盡情享受。"
     },
     {
       "rank": 43,
@@ -442,7 +485,8 @@
       "onsen_area_cn": "月岡溫泉",
       "prefecture_jp": "新潟県",
       "prefecture_cn": "新潟縣",
-      "url": "https://www.seifuen.com/"
+      "url": "https://www.seifuen.com/",
+      "description_cn": "月岡溫泉酒店，男女合計四座大浴場、十二浴槽（含六座露天）可風呂三昧。"
     },
     {
       "rank": 44,
@@ -452,7 +496,8 @@
       "onsen_area_cn": "蘆之牧溫泉",
       "prefecture_jp": "福島県",
       "prefecture_cn": "福島縣",
-      "url": "https://www.ookawaso.co.jp/"
+      "url": "https://www.ookawaso.co.jp/",
+      "description_cn": "蘆之牧溫泉，臨大川溪谷美景的絕景溫泉宿。"
     },
     {
       "rank": 45,
@@ -462,7 +507,8 @@
       "onsen_area_cn": "東山溫泉",
       "prefecture_jp": "福島県",
       "prefecture_cn": "福島縣",
-      "url": "https://shousuke.com/"
+      "url": "https://shousuke.com/",
+      "description_cn": "東山溫泉，會津東山發祥之湯；創業逾百三十年，曾為文人墨客所愛。"
     },
     {
       "rank": 46,
@@ -472,7 +518,8 @@
       "onsen_area_cn": "藏王溫泉",
       "prefecture_jp": "山形県",
       "prefecture_cn": "山形縣",
-      "url": "https://www.zao-kokusaihotel.jp/"
+      "url": "https://www.zao-kokusaihotel.jp/",
+      "description_cn": "藏王溫泉，挑高全木造「八右衛門之湯」，可享掛流天然溫泉。"
     },
     {
       "rank": 47,
@@ -482,7 +529,8 @@
       "onsen_area_cn": "城崎溫泉",
       "prefecture_jp": "兵庫県",
       "prefecture_cn": "兵庫縣",
-      "url": "https://www.nishimuraya.ne.jp/shogetsu/"
+      "url": "https://www.nishimuraya.ne.jp/shogetsu/",
+      "description_cn": "城崎溫泉西村屋系列，望約五萬坪森林庭園的溫泉度假美食宿。"
     },
     {
       "rank": 48,
@@ -492,7 +540,8 @@
       "onsen_area_cn": "あわら溫泉",
       "prefecture_jp": "福井県",
       "prefecture_cn": "福井縣",
-      "url": "https://www.g-housen.co.jp/"
+      "url": "https://www.g-housen.co.jp/",
+      "description_cn": "あわら溫泉，多樣客房、優質溫泉與越前味覺打造療癒空間。"
     },
     {
       "rank": 49,
@@ -502,7 +551,8 @@
       "onsen_area_cn": "金刀比羅溫泉鄉",
       "prefecture_jp": "香川県",
       "prefecture_cn": "香川縣",
-      "url": "https://www.kotosankaku.jp/"
+      "url": "https://www.kotosankaku.jp/",
+      "description_cn": "金刀比羅溫泉鄉，位於金刀比羅宮山腳的溫泉旅館，會席與溫泉並重。"
     },
     {
       "rank": 50,
@@ -512,7 +562,8 @@
       "onsen_area_cn": "稻取溫泉",
       "prefecture_jp": "静岡県",
       "prefecture_cn": "靜岡縣",
-      "url": "https://www.inatoriso.com/"
+      "url": "https://www.inatoriso.com/",
+      "description_cn": "稻取溫泉，全室海景；漁村海鮮與絕景露天風呂備受好評。"
     },
     {
       "rank": 51,
@@ -522,7 +573,8 @@
       "onsen_area_cn": "登別溫泉",
       "prefecture_jp": "北海道",
       "prefecture_cn": "北海道",
-      "url": "https://takimotokan.co.jp"
+      "url": "https://takimotokan.co.jp",
+      "description_cn": "登別溫泉老舗，逾一百六十年歷史；約五千平方米大浴場為最大賣點。"
     },
     {
       "rank": 52,
@@ -532,7 +584,8 @@
       "onsen_area_cn": "皆生溫泉",
       "prefecture_jp": "鳥取県",
       "prefecture_cn": "鳥取縣",
-      "url": "https://kaiketuruya.com/"
+      "url": "https://kaiketuruya.com/",
+      "description_cn": "皆生溫泉，九樓「大山」廳可一望山陰大自然。"
     },
     {
       "rank": 53,
@@ -542,7 +595,8 @@
       "onsen_area_cn": "大湯溫泉",
       "prefecture_jp": "秋田県",
       "prefecture_cn": "秋田縣",
-      "url": "https://www.h-kazuno.co.jp/"
+      "url": "https://www.h-kazuno.co.jp/",
+      "description_cn": "大湯溫泉，十和田湖南側入口；開湯約八百年名湯與秋田鄉土料理。"
     },
     {
       "rank": 54,
@@ -552,7 +606,8 @@
       "onsen_area_cn": "藏王溫泉",
       "prefecture_jp": "山形県",
       "prefecture_cn": "山形縣",
-      "url": "https://www.zao-shikinohotel.jp/"
+      "url": "https://www.zao-shikinohotel.jp/",
+      "description_cn": "藏王溫泉，乳白色硫磺泉「離湯百八步」；木影中的時尚酒店氛圍。"
     },
     {
       "rank": 55,
@@ -562,7 +617,8 @@
       "onsen_area_cn": "扉溫泉",
       "prefecture_jp": "長野県",
       "prefecture_cn": "長野縣",
-      "url": "https://www.tobira-group.com/myojinkan/"
+      "url": "https://www.tobira-group.com/myojinkan/",
+      "description_cn": "扉溫泉明神館，可近距離感受悠久自然，風格沉穩偏奢華。"
     },
     {
       "rank": 56,
@@ -572,7 +628,8 @@
       "onsen_area_cn": "堂島溫泉",
       "prefecture_jp": "静岡県",
       "prefecture_cn": "靜岡縣",
-      "url": "https://www.dougashima-newginsui.jp/"
+      "url": "https://www.dougashima-newginsui.jp/",
+      "description_cn": "堂島溫泉，西伊豆「夕陽日本第一」宣言之地的景色為賣點。"
     },
     {
       "rank": 57,
@@ -582,7 +639,8 @@
       "onsen_area_cn": "山代溫泉",
       "prefecture_jp": "石川県",
       "prefecture_cn": "石川縣",
-      "url": "https://www.shikitei.com/"
+      "url": "https://www.shikitei.com/",
+      "description_cn": "山代溫泉，原則上一室一名客室服務員，細緻款待。"
     },
     {
       "rank": 58,
@@ -592,7 +650,8 @@
       "onsen_area_cn": "池之平溫泉",
       "prefecture_jp": "長野県",
       "prefecture_cn": "長野縣",
-      "url": "https://www.shirakabaresort.jp/ikenotaira-hotel/"
+      "url": "https://www.shirakabaresort.jp/ikenotaira-hotel/",
+      "description_cn": "白樺湖畔綜合度假設施（茅野市），適合家庭與多樣活動行程。"
     },
     {
       "rank": 59,
@@ -602,7 +661,8 @@
       "onsen_area_cn": "日和山溫泉",
       "prefecture_jp": "兵庫県",
       "prefecture_cn": "兵庫縣",
-      "url": "https://www.kinparo.com/"
+      "url": "https://www.kinparo.com/",
+      "description_cn": "日和山溫泉，位於山陰海岸國立公園，眺望日本海為賣點。"
     },
     {
       "rank": 60,
@@ -612,7 +672,8 @@
       "onsen_area_cn": "別所溫泉",
       "prefecture_jp": "長野県",
       "prefecture_cn": "長野縣",
-      "url": "https://www.hanaya.ne.jp/"
+      "url": "https://www.hanaya.ne.jp/",
+      "description_cn": "別所溫泉，大正六年創業，大正浪漫日本美之宿；文化廳登錄有形文化財。"
     },
     {
       "rank": 61,
@@ -622,7 +683,8 @@
       "onsen_area_cn": "別府八湯",
       "prefecture_jp": "大分県",
       "prefecture_cn": "大分縣",
-      "url": "https://suginoi.orixhotelsandresorts.com/"
+      "url": "https://suginoi.orixhotelsandresorts.com/",
+      "description_cn": "別府八湯高台度假酒店，可望別府灣，適合三代同遊。"
     },
     {
       "rank": 62,
@@ -632,7 +694,8 @@
       "onsen_area_cn": "石和溫泉",
       "prefecture_jp": "山梨県",
       "prefecture_cn": "山梨縣",
-      "url": "https://www.isawa-kagetsu.com/"
+      "url": "https://www.isawa-kagetsu.com/",
+      "description_cn": "石和溫泉，銘石裝點的日本庭園，優雅靜謐的和式空間。"
     },
     {
       "rank": 63,
@@ -642,7 +705,8 @@
       "onsen_area_cn": "石和溫泉",
       "prefecture_jp": "山梨県",
       "prefecture_cn": "山梨縣",
-      "url": "http://www.hotel-fuji.jp/"
+      "url": "http://www.hotel-fuji.jp/",
+      "description_cn": "石和溫泉，縣內最大級之一岩風呂與豐富創作自助餐。"
     },
     {
       "rank": 64,
@@ -652,7 +716,8 @@
       "onsen_area_cn": "洲本溫泉",
       "prefecture_jp": "兵庫県",
       "prefecture_cn": "兵庫縣",
-      "url": "https://www.the-sunplaza.co.jp/"
+      "url": "https://www.the-sunplaza.co.jp/",
+      "description_cn": "洲本溫泉，窗景海景人氣的溫泉宿。"
     },
     {
       "rank": 65,
@@ -662,7 +727,8 @@
       "onsen_area_cn": "花樹海溫泉",
       "prefecture_jp": "香川県",
       "prefecture_cn": "香川縣",
-      "url": "https://www.hanajyukai.jp/"
+      "url": "https://www.hanajyukai.jp/",
+      "description_cn": "花樹海溫泉，絕景高台「花之宿」，四季草花環繞。"
     },
     {
       "rank": 66,
@@ -672,7 +738,8 @@
       "onsen_area_cn": "志戶平溫泉",
       "prefecture_jp": "岩手県",
       "prefecture_cn": "岩手縣",
-      "url": "https://www.shidotaira.co.jp/"
+      "url": "https://www.shidotaira.co.jp/",
+      "description_cn": "志戶平溫泉酒店，以溪流露天風呂為首的三處露天風呂為賣點。"
     },
     {
       "rank": 67,
@@ -682,7 +749,8 @@
       "onsen_area_cn": "湯村溫泉",
       "prefecture_jp": "兵庫県",
       "prefecture_cn": "兵庫縣",
-      "url": "https://www.asanoya.co.jp/"
+      "url": "https://www.asanoya.co.jp/",
+      "description_cn": "湯村溫泉「湯煙之宿」，溫泉街氛圍濃厚。"
     },
     {
       "rank": 68,
@@ -692,7 +760,8 @@
       "onsen_area_cn": "鹿兒島市",
       "prefecture_jp": "鹿児島県",
       "prefecture_cn": "鹿兒島縣",
-      "url": "https://www.shiroyama-g.co.jp/"
+      "url": "https://www.shiroyama-g.co.jp/",
+      "description_cn": "鹿兒島市高台「城山」（海拔約一百零八米）酒店，可俯瞰市街。"
     },
     {
       "rank": 69,
@@ -702,7 +771,8 @@
       "onsen_area_cn": "鳥羽市",
       "prefecture_jp": "三重県",
       "prefecture_cn": "三重縣",
-      "url": "https://www.tobaseasidehotel.co.jp/"
+      "url": "https://www.tobaseasidehotel.co.jp/",
+      "description_cn": "鳥羽灣絕景與三座大浴場巡湯可盡情享受。"
     },
     {
       "rank": 70,
@@ -712,7 +782,8 @@
       "onsen_area_cn": "山田溫泉",
       "prefecture_jp": "長野県",
       "prefecture_cn": "長野縣",
-      "url": "https://www.fujiiso.co.jp/"
+      "url": "https://www.fujiiso.co.jp/",
+      "description_cn": "山田溫泉溪谷中的信州傳統旅館，幽玄四季景色。"
     },
     {
       "rank": 71,
@@ -722,7 +793,8 @@
       "onsen_area_cn": "和倉溫泉",
       "prefecture_jp": "石川県",
       "prefecture_cn": "石川縣",
-      "url": "https://www.notoraku.co.jp/"
+      "url": "https://www.notoraku.co.jp/",
+      "description_cn": "和倉溫泉「日本之宿」，日本海新鮮海味與名湯、和風款待並重。"
     },
     {
       "rank": 72,
@@ -732,7 +804,8 @@
       "onsen_area_cn": "秋保溫泉",
       "prefecture_jp": "宮城県",
       "prefecture_cn": "宮城縣",
-      "url": "https://www.mitoya-group.co.jp/"
+      "url": "https://www.mitoya-group.co.jp/",
+      "description_cn": "秋保溫泉酒店，以真心款待讓旅人舒適享受旅程。"
     },
     {
       "rank": 73,
@@ -742,7 +815,8 @@
       "onsen_area_cn": "富士河口湖溫泉鄉",
       "prefecture_jp": "山梨県",
       "prefecture_cn": "山梨縣",
-      "url": "https://www.ubuya.co.jp/"
+      "url": "https://www.ubuya.co.jp/",
+      "description_cn": "富士河口湖溫泉鄉旅館，目標成為與重要之人同住的特別之宿。"
     },
     {
       "rank": 74,
@@ -752,7 +826,8 @@
       "onsen_area_cn": "萬座溫泉",
       "prefecture_jp": "群馬県",
       "prefecture_cn": "群馬縣",
-      "url": "https://www.manza.co.jp/"
+      "url": "https://www.manza.co.jp/",
+      "description_cn": "萬座溫泉海拔約一千八百米，「離星星最近」的高原溫泉宿。"
     },
     {
       "rank": 75,
@@ -762,7 +837,8 @@
       "onsen_area_cn": "登別溫泉",
       "prefecture_jp": "北海道",
       "prefecture_cn": "北海道",
-      "url": "https://www.sekisuitei.com/"
+      "url": "https://www.sekisuitei.com/",
+      "description_cn": "登別溫泉名宿，可在名湯中享受奢華湯浴。"
     },
     {
       "rank": 76,
@@ -772,7 +848,8 @@
       "onsen_area_cn": "下呂溫泉",
       "prefecture_jp": "岐阜県",
       "prefecture_cn": "岐阜縣",
-      "url": "https://www.armeria.co.jp/"
+      "url": "https://www.armeria.co.jp/",
+      "description_cn": "下呂溫泉街可俯瞰的健康度假型酒店，以絕景著稱。"
     },
     {
       "rank": 77,
@@ -782,7 +859,8 @@
       "onsen_area_cn": "富士河口湖溫泉鄉",
       "prefecture_jp": "山梨県",
       "prefecture_cn": "山梨縣",
-      "url": "https://kukuna.jp/"
+      "url": "https://kukuna.jp/",
+      "description_cn": "富士河口湖溫泉鄉，可一望四季富士與河口湖的眺望絕景宿。"
     },
     {
       "rank": 78,
@@ -792,7 +870,8 @@
       "onsen_area_cn": "磯部渡鹿野溫泉",
       "prefecture_jp": "三重県",
       "prefecture_cn": "三重縣",
-      "url": "https://www.fukujyuso.co.jp/"
+      "url": "https://www.fukujyuso.co.jp/",
+      "description_cn": "磯部渡鹿野溫泉，的矢灣「心形」渡鹿野島上的療癒之宿。"
     },
     {
       "rank": 79,
@@ -802,7 +881,8 @@
       "onsen_area_cn": "南城市",
       "prefecture_jp": "沖縄県",
       "prefecture_cn": "沖繩縣",
-      "url": "https://www.hyakunagaran.com/"
+      "url": "https://www.hyakunagaran.com/",
+      "description_cn": "沖繩南城市高級宿百名伽藍，氛圍靜謐、以深度歡喜與放鬆著稱。"
     },
     {
       "rank": 80,
@@ -812,7 +892,8 @@
       "onsen_area_cn": "鬼怒川溫泉",
       "prefecture_jp": "栃木県",
       "prefecture_cn": "栃木縣",
-      "url": "https://www.kinugawaonsenhotel.com/"
+      "url": "https://www.kinugawaonsenhotel.com/",
+      "description_cn": "鬼怒川溫泉酒店，主打「結旅——連結心的旅程」主題款待。"
     },
     {
       "rank": 81,
@@ -822,7 +903,8 @@
       "onsen_area_cn": "乳頭溫泉鄉",
       "prefecture_jp": "秋田県",
       "prefecture_cn": "秋田縣",
-      "url": "http://www.tsurunoyu.com/"
+      "url": "http://www.tsurunoyu.com/",
+      "description_cn": "乳頭溫泉鄉秘湯，擁有四種不同泉質的山間名宿。"
     },
     {
       "rank": 82,
@@ -832,7 +914,8 @@
       "onsen_area_cn": "富士河口湖溫泉鄉",
       "prefecture_jp": "山梨県",
       "prefecture_cn": "山梨縣",
-      "url": "https://www.fujilake.co.jp/"
+      "url": "https://www.fujilake.co.jp/",
+      "description_cn": "河口湖畔昭和七年創業的景勝地酒店，氛圍靜謐。"
     },
     {
       "rank": 83,
@@ -842,7 +925,8 @@
       "onsen_area_cn": "道後溫泉",
       "prefecture_jp": "愛媛県",
       "prefecture_cn": "愛媛縣",
-      "url": "https://www.dogoprince.co.jp/"
+      "url": "https://www.dogoprince.co.jp/",
+      "description_cn": "道後溫泉，當地屈指可數的寬敞大浴場與個性豐富露天風呂。"
     },
     {
       "rank": 84,
@@ -852,7 +936,8 @@
       "onsen_area_cn": "三朝溫泉",
       "prefecture_jp": "鳥取県",
       "prefecture_cn": "鳥取縣",
-      "url": "https://izanro.co.jp/"
+      "url": "https://izanro.co.jp/",
+      "description_cn": "三朝溫泉老舗，以三朝川眺望一流的風呂與庭園自豪。"
     },
     {
       "rank": 85,
@@ -862,7 +947,8 @@
       "onsen_area_cn": "山代溫泉",
       "prefecture_jp": "石川県",
       "prefecture_cn": "石川縣",
-      "url": "https://rurikoh.jp/"
+      "url": "https://rurikoh.jp/",
+      "description_cn": "山代溫泉，傳統與現代調和的加賀風情款待之宿。"
     },
     {
       "rank": 86,
@@ -872,7 +958,8 @@
       "onsen_area_cn": "湯田中溫泉",
       "prefecture_jp": "長野県",
       "prefecture_cn": "長野縣",
-      "url": "https://www.aburaya-tousen.co.jp/"
+      "url": "https://www.aburaya-tousen.co.jp/",
+      "description_cn": "湯田中溫泉，強調與重要之人共度更特別的一日。"
     },
     {
       "rank": 87,
@@ -882,7 +969,8 @@
       "onsen_area_cn": "伊香保溫泉",
       "prefecture_jp": "群馬県",
       "prefecture_cn": "群馬縣",
-      "url": "https://www.fukuichi.jp/"
+      "url": "https://www.fukuichi.jp/",
+      "description_cn": "伊香保石段街最上段，創業約四百四十年；擁有「黃金之湯」「白銀之湯」兩湯的少數宿之一。"
     },
     {
       "rank": 88,
@@ -892,7 +980,8 @@
       "onsen_area_cn": "人吉溫泉",
       "prefecture_jp": "熊本県",
       "prefecture_cn": "熊本縣",
-      "url": "https://www.ayunosato.jp/"
+      "url": "https://www.ayunosato.jp/",
+      "description_cn": "人吉溫泉，在和風空間玩樂、享受和心的宿。"
     },
     {
       "rank": 89,
@@ -902,7 +991,8 @@
       "onsen_area_cn": "四萬溫泉",
       "prefecture_jp": "群馬県",
       "prefecture_cn": "群馬縣",
-      "url": "http://www.yamaguchikan.co.jp/"
+      "url": "http://www.yamaguchikan.co.jp/",
+      "description_cn": "四萬溫泉，溪流旁露天風呂與客房溫泉為賣點，標榜「想成為大家的故鄉」。"
     },
     {
       "rank": 90,
@@ -912,7 +1002,8 @@
       "onsen_area_cn": "石和溫泉",
       "prefecture_jp": "山梨県",
       "prefecture_cn": "山梨縣",
-      "url": "https://keizan.com/"
+      "url": "https://keizan.com/",
+      "description_cn": "石和溫泉，自家源泉掛流大浴場、露天風呂與太鼓秀為賣點。"
     },
     {
       "rank": 91,
@@ -922,7 +1013,8 @@
       "onsen_area_cn": "草津溫泉",
       "prefecture_jp": "群馬県",
       "prefecture_cn": "群馬縣",
-      "url": "http://www.h-takamatsu.com/"
+      "url": "http://www.h-takamatsu.com/",
+      "description_cn": "草津溫泉，以五個「喜悅之處」與每月更換會席料理款待。"
     },
     {
       "rank": 92,
@@ -932,7 +1024,8 @@
       "onsen_area_cn": "伊香保溫泉",
       "prefecture_jp": "群馬県",
       "prefecture_cn": "群馬縣",
-      "url": "https://www.j-hibikino.com/"
+      "url": "https://www.j-hibikino.com/",
+      "description_cn": "伊香保溫泉，館內季節擺設料理與兩座源泉大浴場。"
     },
     {
       "rank": 93,
@@ -942,7 +1035,8 @@
       "onsen_area_cn": "別府八湯",
       "prefecture_jp": "大分県",
       "prefecture_cn": "大分縣",
-      "url": "https://www.shiragiku.co.jp/"
+      "url": "https://www.shiragiku.co.jp/",
+      "description_cn": "別府八湯，晚餐可選房食或餐廳；清涼感天然溫泉亦稱「美人的湯」。"
     },
     {
       "rank": 94,
@@ -952,7 +1046,8 @@
       "onsen_area_cn": "伊勢志摩溫泉",
       "prefecture_jp": "三重県",
       "prefecture_cn": "三重縣",
-      "url": "https://www.hojoen.com/"
+      "url": "https://www.hojoen.com/",
+      "description_cn": "伊勢志摩溫泉，全室海景；可望英虞灣的庭園露天風呂備受好評。"
     },
     {
       "rank": 95,
@@ -962,7 +1057,8 @@
       "onsen_area_cn": "土湯溫泉",
       "prefecture_jp": "福島県",
       "prefecture_cn": "福島縣",
-      "url": "https://www.sansuiso.jp/"
+      "url": "https://www.sansuiso.jp/",
+      "description_cn": "土湯溫泉，千坪日本庭園、展望大浴場與貸切風呂等「湯盡」體驗。"
     },
     {
       "rank": 96,
@@ -972,7 +1068,8 @@
       "onsen_area_cn": "松倉溫泉",
       "prefecture_jp": "岩手県",
       "prefecture_cn": "岩手縣",
-      "url": "https://kazenotoki.jp/"
+      "url": "https://kazenotoki.jp/",
+      "description_cn": "松倉溫泉，和現代開放空間與安穩氛圍。"
     },
     {
       "rank": 97,
@@ -982,7 +1079,8 @@
       "onsen_area_cn": "乃木溫泉",
       "prefecture_jp": "栃木県",
       "prefecture_cn": "栃木縣",
-      "url": "https://www.nogionsen.com/"
+      "url": "https://www.nogionsen.com/",
+      "description_cn": "乃木溫泉，位處日光與那須之間的溫泉酒店。"
     },
     {
       "rank": 98,
@@ -992,7 +1090,8 @@
       "onsen_area_cn": "山代溫泉",
       "prefecture_jp": "石川県",
       "prefecture_cn": "石川縣",
-      "url": "https://www.kaga-hyakumangoku.jp/"
+      "url": "https://www.kaga-hyakumangoku.jp/",
+      "description_cn": "山代溫泉，自家源泉、季節彩妝與池泉回遊式庭園為賣點。"
     },
     {
       "rank": 99,
@@ -1002,7 +1101,8 @@
       "onsen_area_cn": "金太郎溫泉",
       "prefecture_jp": "富山県",
       "prefecture_cn": "富山縣",
-      "url": "https://kintarouonsen.co.jp"
+      "url": "https://kintarouonsen.co.jp",
+      "description_cn": "金太郎溫泉，硫磺香源泉掛流濁湯與壓倒性規模的風呂設施。"
     },
     {
       "rank": 100,
@@ -1012,7 +1112,8 @@
       "onsen_area_cn": "越後湯澤溫泉",
       "prefecture_jp": "新潟県",
       "prefecture_cn": "新潟縣",
-      "url": "https://yuzawagrandhotel.jp/"
+      "url": "https://yuzawagrandhotel.jp/",
+      "description_cn": "越後湯澤站步行約三分鐘，卻有「山中一軒宿」氛圍；大浴場開放感十足。"
     }
   ]
 }

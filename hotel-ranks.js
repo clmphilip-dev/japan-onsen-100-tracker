@@ -1,8 +1,8 @@
 (function () {
   "use strict";
 
-  var DATA_URL = "hotel-ranks-data.json?v=20261020d";
-  var state = { hotels: [], meta: null, filtered: [] };
+  var DATA_URL = "hotel-ranks-data.json?v=20261020e";
+  var state = { hotels: [], meta: null, filtered: [], sort: "rank_asc" };
 
   function $(id) { return document.getElementById(id); }
   function esc(s) {
@@ -46,10 +46,44 @@
     });
   }
 
+  function sortKeyName(h) {
+    return (h.property_cn || h.property_jp || "").toString();
+  }
+  function sortKeyArea(h) {
+    return (h.onsen_area_cn || h.onsen_area_jp || "").toString();
+  }
+  function sortKeyPref(h) {
+    return (h.prefecture_cn || h.prefecture_jp || "").toString();
+  }
+
+  function sortList(list, mode) {
+    var out = list.slice();
+    if (mode === "rank_desc") {
+      out.sort(function (a, b) { return b.rank - a.rank; });
+    } else if (mode === "name") {
+      out.sort(function (a, b) {
+        return sortKeyName(a).localeCompare(sortKeyName(b), "zh-Hant") || a.rank - b.rank;
+      });
+    } else if (mode === "area") {
+      out.sort(function (a, b) {
+        return sortKeyArea(a).localeCompare(sortKeyArea(b), "zh-Hant") || a.rank - b.rank;
+      });
+    } else if (mode === "pref") {
+      out.sort(function (a, b) {
+        return sortKeyPref(a).localeCompare(sortKeyPref(b), "zh-Hant") || a.rank - b.rank;
+      });
+    } else {
+      out.sort(function (a, b) { return a.rank - b.rank; });
+    }
+    return out;
+  }
+
   function applyFilters() {
     var q = ($("hr-q").value || "").trim().toLowerCase();
     var area = $("hr-area").value || "";
     var pref = $("hr-pref").value || "";
+    var sortEl = $("hr-sort");
+    state.sort = (sortEl && sortEl.value) || "rank_asc";
     var list = state.hotels.filter(function (h) {
       if (area && h.onsen_area_cn !== area && h.onsen_area_jp !== area) return false;
       if (pref && h.prefecture_cn !== pref && h.prefecture_jp !== pref) return false;
@@ -58,11 +92,12 @@
         h.property_jp, h.property_cn,
         h.onsen_area_jp, h.onsen_area_cn,
         h.prefecture_jp, h.prefecture_cn,
+        h.description_cn,
         String(h.rank)
       ].join(" ").toLowerCase();
       return blob.indexOf(q) >= 0;
     });
-    state.filtered = list;
+    state.filtered = sortList(list, state.sort);
     render();
   }
 
@@ -72,10 +107,15 @@
     var q = ($("hr-q").value || "").trim();
     var area = $("hr-area").value || "";
     var pref = $("hr-pref").value || "";
+    var sortEl = $("hr-sort");
+    var sortLabel = sortEl && sortEl.options[sortEl.selectedIndex]
+      ? sortEl.options[sortEl.selectedIndex].text
+      : "";
     var parts = [];
     if (q) parts.push("「" + q + "」");
     if (area) parts.push(area);
     if (pref) parts.push(pref);
+    if (sortLabel && state.sort !== "rank_asc") parts.push(sortLabel);
     if (parts.length) {
       hint.hidden = false;
       hint.textContent = parts.join(" · ");
@@ -103,6 +143,9 @@
       var nameJp = h.property_jp && h.property_jp !== h.property_cn
         ? '<div class="prop-jp">' + esc(h.property_jp) + "</div>"
         : "";
+      var desc = h.description_cn
+        ? '<details class="hr-desc"><summary>簡介</summary><p>' + esc(h.description_cn) + "</p></details>"
+        : "";
       var area = esc(h.onsen_area_cn || h.onsen_area_jp || "—");
       var areaJp = h.onsen_area_jp && h.onsen_area_jp !== h.onsen_area_cn
         ? '<div class="area-jp">' + esc(h.onsen_area_jp) + "</div>"
@@ -114,7 +157,7 @@
       return (
         "<tr>" +
         '<td class="rk">' + esc(h.rank) + "</td>" +
-        '<td><div class="prop-cn">' + name + "</div>" + nameJp + "</td>" +
+        '<td><div class="prop-cn">' + name + "</div>" + nameJp + desc + "</td>" +
         '<td><div class="area-cn">' + area + "</div>" + areaJp + "</td>" +
         "<td>" + pref + "</td>" +
         "<td>" + link + "</td>" +
@@ -124,7 +167,7 @@
   }
 
   function bind() {
-    ["hr-q", "hr-area", "hr-pref"].forEach(function (id) {
+    ["hr-q", "hr-area", "hr-pref", "hr-sort"].forEach(function (id) {
       var el = $(id);
       if (!el) return;
       el.addEventListener("input", applyFilters);
@@ -136,6 +179,7 @@
         $("hr-q").value = "";
         $("hr-area").value = "";
         $("hr-pref").value = "";
+        if ($("hr-sort")) $("hr-sort").value = "rank_asc";
         applyFilters();
       });
     }

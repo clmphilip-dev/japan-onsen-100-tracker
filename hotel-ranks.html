@@ -6,7 +6,7 @@
   <title>旅館排名 — プロが選ぶ日本のホテル・旅館100選</title>
   <meta name="description" content="旅行社投票「プロが選ぶ日本のホテル・旅館100選」綜合排名（與 HOY《日本溫泉100強》溫泉地名次無關）。" />
   <link rel="stylesheet" href="styles.css?v=20261020c" />
-  <link rel="stylesheet" href="hotel-ranks.css?v=20261020d" />
+  <link rel="stylesheet" href="hotel-ranks.css?v=20261020e" />
   <script>
     (function () {
       try {
@@ -46,7 +46,6 @@
   <main>
     <div class="banner warn" role="status">
       <strong>此頁＝旅行社投票「旅館100選」</strong>，<strong>不是</strong> HOY／電視東京《日本溫泉100強》溫泉地名次。
-      現有追蹤頁（首頁／Top 10／排名對照／住宿）未改動；此頁為獨立新增，舊版導覽不會出現連結，請直接收藏本 URL。
     </div>
 
     <section class="panel">
@@ -57,24 +56,33 @@
       <p class="lede lede-hide-mobile">
         資料來源：<a href="https://ryokan100.com/ja/ranking100/" target="_blank" rel="noopener">ryokan100.com</a>（旅行新聞新社）。
         由日本旅行社問卷投票，按「もてなし・料理・施設・企画」合計排出旅館／酒店總排名。
-        另可參考 <a href="https://www.jalan.net/uw/uwp9000/uww9001.do" target="_blank" rel="noopener">じゃらん「売れた宿」</a> 等銷量／人氣榜（與本頁無關）。
+        簡介依官方榜文案整理為繁中，僅供參考。
       </p>
 
       <details class="filter-drawer" id="hr-filter-drawer">
         <summary class="filter-drawer-summary">
-          <span class="filter-drawer-title">篩選／搜尋</span>
+          <span class="filter-drawer-title">篩選／搜尋／排序</span>
           <span class="filter-drawer-hint" id="hr-filter-hint" hidden></span>
           <span class="filter-drawer-chevron" aria-hidden="true"></span>
         </summary>
         <div class="filters filters-hotels" id="hr-filters">
           <label class="f">關鍵字
-            <input id="hr-q" type="search" placeholder="旅館、溫泉地、縣…" autocomplete="off" />
+            <input id="hr-q" type="search" placeholder="旅館、溫泉地、縣、簡介…" autocomplete="off" />
           </label>
           <label class="f">溫泉地
             <select id="hr-area"><option value="">全部溫泉地</option></select>
           </label>
           <label class="f">都道府縣
             <select id="hr-pref"><option value="">全部</option></select>
+          </label>
+          <label class="f">排序
+            <select id="hr-sort">
+              <option value="rank_asc">排名（1→100）</option>
+              <option value="rank_desc">排名（100→1）</option>
+              <option value="name">旅館名</option>
+              <option value="area">溫泉地</option>
+              <option value="pref">都道府縣</option>
+            </select>
           </label>
           <button type="button" class="reset" id="hr-reset">重設</button>
         </div>
@@ -86,7 +94,7 @@
           <thead>
             <tr>
               <th>#</th>
-              <th>旅館</th>
+              <th>旅館／簡介</th>
               <th>溫泉地</th>
               <th>縣</th>
               <th>連結</th>
@@ -104,6 +112,6 @@
     <p>資料來源：<a href="https://ryokan100.com/ja/ranking100/" target="_blank" rel="noopener">プロが選ぶ日本のホテル・旅館100選</a>（旅行新聞新社）。</p>
   </footer>
 
-  <script src="hotel-ranks.js?v=20261020d"></script>
+  <script src="hotel-ranks.js?v=20261020e"></script>
 </body>
 </html>
