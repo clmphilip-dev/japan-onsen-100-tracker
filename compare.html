@@ -5,7 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>排名對照（2024 ⇄ 2026）— 《日本溫泉100強》追蹤</title>
   <meta name="description" content="同一溫泉地在 2024 與 2026 電視東京特番的名次對照與升跌。" />
-  <link rel="stylesheet" href="styles.css?v=20261020b" />
+  <link rel="stylesheet" href="styles.css?v=20261020c" />
+  <script>
+    (function () {
+      try {
+        if (!(window.matchMedia && window.matchMedia("(max-width: 700px)").matches)) return;
+        document.documentElement.classList.add("is-narrow");
+        var close = function () {
+          document.querySelectorAll(".filter-drawer").forEach(function (d) { d.open = false; });
+        };
+        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", close);
+        else close();
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body data-page="compare" class="page-compact">
     <header class="app-header compact">
@@ -34,32 +47,39 @@
 
     <section class="panel" id="panel-compare">
       <h2>排名對照（2024 ⇄ 2026）</h2>
-      <p class="stats" style="margin-top:0">同一溫泉地在兩屆電視東京特番的名次對照。Change：<strong>+N</strong>＝上升（名次數字變小）、<strong>-N</strong>＝下跌、<strong>NEW</strong>＝2026新上榜、<strong>DROPPED</strong>＝2026跌出前100、<strong>SAME</strong>＝名次不變。同率名次（2026：11／16／74／84）已保留。</p>
-      <div class="filters filters-compare sticky-filters">
-        <label class="f">篩選
-          <select id="compare-filter">
-            <option value="all">全部溫泉地</option>
-            <option value="both">兩年皆入榜</option>
-            <option value="up">上升（+）</option>
-            <option value="down">下跌（-）</option>
-            <option value="new">NEW（2026新上榜）</option>
-            <option value="dropped">DROPPED（跌出榜）</option>
-            <option value="big">大變動（±20以上）</option>
-          </select>
-        </label>
-        <label class="f">搜尋溫泉地
-          <input id="compare-q" type="search" placeholder="箱根、月岡、阿蘇…" autocomplete="off" />
-        </label>
-        <label class="f">排序
-          <select id="compare-sort">
-            <option value="rank2024">2024 排名（佳→差）</option>
-            <option value="rank2026">2026 排名（佳→差）</option>
-            <option value="improve">升幅最大</option>
-            <option value="drop">跌幅最大</option>
-            <option value="name">溫泉地名 A–Z</option>
-          </select>
-        </label>
-      </div>
+      <p class="stats lede-hide-mobile" style="margin-top:0">同一溫泉地在兩屆電視東京特番的名次對照。Change：<strong>+N</strong>＝上升（名次數字變小）、<strong>-N</strong>＝下跌、<strong>NEW</strong>＝2026新上榜、<strong>DROPPED</strong>＝2026跌出前100、<strong>SAME</strong>＝名次不變。同率名次（2026：11／16／74／84）已保留。</p>
+      <details class="filter-drawer" id="compare-filter-drawer">
+        <summary class="filter-drawer-summary">
+          <span class="filter-drawer-title">篩選／搜尋</span>
+          <span class="filter-drawer-hint" id="compare-filter-hint" hidden></span>
+          <span class="filter-drawer-chevron" aria-hidden="true"></span>
+        </summary>
+        <div class="filters filters-compare" id="compare-filters">
+          <label class="f">篩選
+            <select id="compare-filter">
+              <option value="all">全部溫泉地</option>
+              <option value="both">兩年皆入榜</option>
+              <option value="up">上升（+）</option>
+              <option value="down">下跌（-）</option>
+              <option value="new">NEW（2026新上榜）</option>
+              <option value="dropped">DROPPED（跌出榜）</option>
+              <option value="big">大變動（±20以上）</option>
+            </select>
+          </label>
+          <label class="f">搜尋溫泉地
+            <input id="compare-q" type="search" placeholder="箱根、月岡、阿蘇…" autocomplete="off" />
+          </label>
+          <label class="f">排序
+            <select id="compare-sort">
+              <option value="rank2024">2024 排名（佳→差）</option>
+              <option value="rank2026">2026 排名（佳→差）</option>
+              <option value="improve">升幅最大</option>
+              <option value="drop">跌幅最大</option>
+              <option value="name">溫泉地名 A–Z</option>
+            </select>
+          </label>
+        </div>
+      </details>
       <p class="stats" id="compare-stats"></p>
       <div class="compare-wrap" id="compare-wrap">
         <table class="compare-table" id="compare-table">
@@ -83,6 +103,6 @@
     <p>資料來源：HOY TV <a href="https://hoy.tv/title/27930">hoy.tv/title/27930</a>、電視東京溫泉特番公開結果整理。</p>
   </footer>
 
-  <script src="app.js?v=20261020b"></script>
+  <script src="app.js?v=20261020c"></script>
 </body>
 </html>

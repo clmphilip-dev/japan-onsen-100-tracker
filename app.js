@@ -264,6 +264,67 @@
     });
   }
 
+
+  function isMobileFilterView() {
+    return window.matchMedia && window.matchMedia("(max-width: 700px)").matches;
+  }
+
+  function syncFilterDrawers() {
+    const mobile = isMobileFilterView();
+    $$(".filter-drawer").forEach(d => {
+      // Desktop: CSS forces .filters visible even when closed; leave open=false.
+      // Mobile: default closed so the table fills the viewport.
+      if (mobile) {
+        if (!d.dataset.userToggled) d.open = false;
+      } else {
+        d.open = false;
+        delete d.dataset.userToggled;
+      }
+    });
+  }
+
+  function bindFilterDrawerToggle() {
+    $$(".filter-drawer").forEach(d => {
+      d.addEventListener("toggle", () => {
+        if (isMobileFilterView()) d.dataset.userToggled = "1";
+      });
+    });
+  }
+
+  function updateHotelFilterHint() {
+    const hint = $("#hotel-filter-hint");
+    if (!hint) return;
+    let n = 0;
+    if ((($("#q") && $("#q").value) || "").trim()) n++;
+    if ($("#pref") && $("#pref").value) n++;
+    if ($("#area") && $("#area").value) n++;
+    if ($("#band") && $("#band").value) n++;
+    if ($("#sort") && $("#sort").value && $("#sort").value !== "rank2024") n++;
+    if (n) {
+      hint.hidden = false;
+      hint.textContent = `（已套用 ${n} 項）`;
+    } else {
+      hint.hidden = true;
+      hint.textContent = "";
+    }
+  }
+
+  function updateCompareFilterHint() {
+    const hint = $("#compare-filter-hint");
+    if (!hint) return;
+    let n = 0;
+    if ($("#compare-filter") && $("#compare-filter").value && $("#compare-filter").value !== "all") n++;
+    if ((($("#compare-q") && $("#compare-q").value) || "").trim()) n++;
+    if ($("#compare-sort") && $("#compare-sort").value && $("#compare-sort").value !== "rank2024") n++;
+    if (n) {
+      hint.hidden = false;
+      hint.textContent = `（已套用 ${n} 項）`;
+    } else {
+      hint.hidden = true;
+      hint.textContent = "";
+    }
+  }
+
   function applyFilters(data) {
     try {
       if (!data || !data.hotels) return;
@@ -303,6 +364,7 @@
       if (stats) {
         stats.textContent = `${listLabel} · 符合 ${list.length} / 全庫 ${data.hotels.length} 間 · 排序：${sortLabel}`;
       }
+      updateHotelFilterHint();
 
       // Prefer table when hotels-body exists; fall back to cards if table mount missing
       const hasTable = !!$("#hotels-body");
@@ -403,6 +465,7 @@
     if (stats) {
       stats.textContent = `顯示 ${list.length} / ${data.ranking_compare.length} 個溫泉地 · 排序：${sortLabel}`;
     }
+    updateCompareFilterHint();
     body.innerHTML = list.map(r => `
       <tr>
         <td class="rk">${esc(fmtRank(r.rank_2024))}</td>
@@ -489,6 +552,17 @@
   function initCompare(data) {
     fillSharedMeta(data);
     if (!$("#compare-body")) return;
+    bindFilterDrawerToggle();
+    syncFilterDrawers();
+    if (window.matchMedia) {
+      const mq = window.matchMedia("(max-width: 700px)");
+      const onChange = () => {
+        $$(".filter-drawer").forEach(d => { delete d.dataset.userToggled; });
+        syncFilterDrawers();
+      };
+      if (mq.addEventListener) mq.addEventListener("change", onChange);
+      else if (mq.addListener) mq.addListener(onChange);
+    }
     ["compare-filter", "compare-q", "compare-sort"].forEach(id => {
       const el = $(`#${id}`);
       if (!el) return;
@@ -545,6 +619,17 @@
       hotelPage = 1;
       hotelView = "table";
       syncListTabs();
+      bindFilterDrawerToggle();
+      syncFilterDrawers();
+      if (window.matchMedia) {
+        const mq = window.matchMedia("(max-width: 700px)");
+        const onChange = () => {
+          $$(".filter-drawer").forEach(d => { delete d.dataset.userToggled; });
+          syncFilterDrawers();
+        };
+        if (mq.addEventListener) mq.addEventListener("change", onChange);
+        else if (mq.addListener) mq.addListener(onChange);
+      }
       // Ensure table is visible by default
       if ($("#hotels-table-wrap")) $("#hotels-table-wrap").classList.remove("hidden");
       if ($("#cards")) $("#cards").classList.add("hidden");
