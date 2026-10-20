@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>《日本溫泉100強》追蹤 — Philip 行程計劃</title>
   <meta name="description" content="HOY TV《日本溫泉100強》溫泉地排名對照與代表性旅館：繁中介紹、參考價錢與訂房連結。" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=20261020b" />
 </head>
 <body data-page="home">
   <header class="app-header">
@@ -31,13 +31,18 @@
       <h2>開始瀏覽</h2>
       <div class="count-row" id="home-counts">
         <div class="count-pill"><strong id="home-compare-count">—</strong><span>溫泉地對照</span></div>
+        <div class="count-pill"><strong id="home-show-count">—</strong><span>節目推薦宿</span></div>
         <div class="count-pill"><strong id="home-hotel-count">—</strong><span>旅館／設施</span></div>
         <div class="count-pill"><strong>2</strong><span>年度 Top 10</span></div>
       </div>
       <div class="home-cards">
-        <a class="home-card" href="hotels.html">
-          <strong>住宿／設施表格</strong>
-          <span>按溫泉地・縣・價錢篩選，一覽訂房連結</span>
+        <a class="home-card" href="hotels.html?list=show">
+          <strong>節目推薦旅館</strong>
+          <span>HOY／電視東京提及的約 95 間（預設名單）</span>
+        </a>
+        <a class="home-card" href="hotels.html?list=all">
+          <strong>全部住宿表格</strong>
+          <span>節目＋溫泉地人氣宿，按縣／價錢篩選</span>
         </a>
         <a class="home-card" href="compare.html">
           <strong>排名對照 2024 ⇄ 2026</strong>
@@ -67,6 +72,6 @@
     <p>資料來源：HOY TV、<a href="https://hoy.tv/title/27930">hoy.tv/title/27930</a>、電視東京溫泉特番、じゃらん／楽天區域人氣榜。資料載入自 <code>data.json</code>。</p>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=20261020b"></script>
 </body>
 </html>

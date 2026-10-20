@@ -4,8 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>住宿／設施 — 《日本溫泉100強》追蹤</title>
-  <meta name="description" content="排名溫泉地代表性旅館：可篩選溫泉地／縣／價錢，表格檢視訂房連結。資料來自じゃらん／楽天區域人氣榜與節目交叉核對。" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="節目推薦旅館與排名溫泉地人氣宿：可篩選溫泉地／縣／價錢，表格檢視訂房連結。" />
+  <link rel="stylesheet" href="styles.css?v=20261020b" />
 </head>
 <body data-page="hotels" class="page-compact">
   <header class="app-header compact">
@@ -29,6 +29,8 @@
   </nav>
 
   <main>
+    <div id="error-banner" class="banner danger hidden" role="alert"></div>
+
     <section class="panel panel-hotels">
       <div class="panel-head">
         <h2>住宿／設施</h2>
@@ -37,7 +39,13 @@
           <button type="button" class="view-btn" id="view-cards" data-view="cards">卡片</button>
         </div>
       </div>
-      <p class="lede">以 2024＋2026 排名溫泉地為範圍，整理じゃらん／楽天等人氣宿。非日本全國穷尽名單；價錢空白＝未核實。</p>
+      <p class="lede">「節目推薦」＝HOY／電視東京提及的旅館；「溫泉地人氣宿」＝じゃらん／楽天區域人氣榜擴充。價錢空白＝未核實。</p>
+
+      <div class="list-tabs" role="tablist" aria-label="名單類型" id="list-tabs">
+        <button type="button" class="list-tab" role="tab" data-list="all" id="list-all">全部</button>
+        <button type="button" class="list-tab is-active" role="tab" data-list="show" id="list-show" aria-selected="true">節目推薦</button>
+        <button type="button" class="list-tab" role="tab" data-list="area" id="list-area">溫泉地人氣宿</button>
+      </div>
 
       <div class="filters filters-hotels sticky-filters" id="hotel-filters">
         <label class="f">關鍵字
@@ -68,6 +76,12 @@
       </div>
       <p class="stats" id="stats"></p>
 
+      <div class="pager" id="hotels-pager" hidden>
+        <button type="button" class="pager-btn" id="page-prev">上一頁</button>
+        <span class="pager-info" id="page-info">—</span>
+        <button type="button" class="pager-btn" id="page-next">下一頁</button>
+      </div>
+
       <div class="table-wrap hotels-table-wrap" id="hotels-table-wrap">
         <table class="hotels-table" id="hotels-table">
           <thead>
@@ -86,6 +100,12 @@
         </table>
       </div>
       <div class="cards hidden" id="cards"></div>
+
+      <div class="pager" id="hotels-pager-bottom" hidden>
+        <button type="button" class="pager-btn" id="page-prev-b">上一頁</button>
+        <span class="pager-info" id="page-info-b">—</span>
+        <button type="button" class="pager-btn" id="page-next-b">下一頁</button>
+      </div>
     </section>
   </main>
 
@@ -94,6 +114,6 @@
     <p>資料來源：HOY TV <a href="https://hoy.tv/title/27930">hoy.tv/title/27930</a>、電視東京公開結果、じゃらんnet／楽天トラベル區域人氣・銷售榜整理。</p>
   </footer>
 
-  <script src="app.js"></script>
+  <script src="app.js?v=20261020b"></script>
 </body>
 </html>

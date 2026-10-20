@@ -132,7 +132,7 @@
         <td class="rk">${esc(fmtRank(h.rank))}</td>
         <td class="rk">${esc(fmtRank(h.rank_2026))}</td>
         <td>
-          <div class="area-cn">${esc((h.area_cn || h.onsen_area || "").replace(/（.*?）/, "") || h.onsen_area || "")}</div>
+          <div class="area-cn">${esc(areaCnShort(h))}</div>
           <div class="area-jp">${esc(h.onsen_area || "")}</div>
         </td>
         <td>
@@ -216,43 +216,112 @@
   }
 
   let hotelView = "table";
+  let hotelListMode = "show"; // all | show | area
+  let hotelPage = 1;
+  const HOTEL_PAGE_SIZE = 50;
+  let lastFilteredHotels = [];
+
+  function readListModeFromUrl() {
+    try {
+      const p = new URLSearchParams(location.search).get("list");
+      if (p === "all" || p === "show" || p === "area") return p;
+    } catch (e) {}
+    return "show";
+  }
+
+  function syncListTabs() {
+    $$(".list-tab").forEach(btn => {
+      const on = btn.dataset.list === hotelListMode;
+      btn.classList.toggle("is-active", on);
+      btn.setAttribute("aria-selected", on ? "true" : "false");
+    });
+  }
+
+  function updatePagers(total, page, pageSize) {
+    const pages = Math.max(1, Math.ceil(total / pageSize) || 1);
+    const start = total ? (page - 1) * pageSize + 1 : 0;
+    const end = Math.min(page * pageSize, total);
+    const label = total ? `顯示 ${start}–${end} / ${total}` : "顯示 0 / 0";
+    ["hotels-pager", "hotels-pager-bottom"].forEach(id => {
+      const el = $(`#${id}`);
+      if (!el) return;
+      if (hotelView === "cards" || total <= pageSize) el.hidden = true;
+      else el.hidden = false;
+    });
+    const info = $("#page-info");
+    const infoB = $("#page-info-b");
+    if (info) info.textContent = label;
+    if (infoB) infoB.textContent = label;
+    const prevDisabled = page <= 1;
+    const nextDisabled = page >= pages;
+    ["page-prev", "page-prev-b"].forEach(id => {
+      const b = $(`#${id}`);
+      if (b) b.disabled = prevDisabled;
+    });
+    ["page-next", "page-next-b"].forEach(id => {
+      const b = $(`#${id}`);
+      if (b) b.disabled = nextDisabled;
+    });
+  }
 
   function applyFilters(data) {
-    if (!data.hotels) return;
-    if (!$("#hotels-body") && !$("#cards")) return;
-    const q = (($("#q") && $("#q").value) || "").trim().toLowerCase();
-    const pref = $("#pref") ? $("#pref").value : "";
-    const area = $("#area") ? $("#area").value : "";
-    const band = $("#band") ? $("#band").value : "";
-    const mode = ($("#sort") && $("#sort").value) || "rank2024";
-    let list = data.hotels.slice();
-    if (pref) list = list.filter(h => h.prefecture === pref);
-    if (area) list = list.filter(h => h.onsen_area === area);
-    if (band) list = list.filter(h => h.price_band === band);
-    if (q) {
-      list = list.filter(h => {
-        const blob = [
-          h.property_jp, h.property_cn, h.property_en, h.area_cn,
-          h.onsen_area, h.description_cn, h.highlights, h.prefecture
-        ].join(" ").toLowerCase();
-        return blob.includes(q);
-      });
-    }
-    list = sortHotels(list, mode);
-    const stats = $("#stats");
-    if (stats) {
+    try {
+      if (!data || !data.hotels) return;
+      if (!$("#hotels-body") && !$("#cards")) return;
+      const q = (($("#q") && $("#q").value) || "").trim().toLowerCase();
+      const pref = $("#pref") ? $("#pref").value : "";
+      const area = $("#area") ? $("#area").value : "";
+      const band = $("#band") ? $("#band").value : "";
+      const mode = ($("#sort") && $("#sort").value) || "rank2024";
+      let list = data.hotels.slice();
+      if (hotelListMode === "show") list = list.filter(isShowHotel);
+      else if (hotelListMode === "area") list = list.filter(h => !isShowHotel(h));
+      if (pref) list = list.filter(h => h.prefecture === pref);
+      if (area) list = list.filter(h => h.onsen_area === area);
+      if (band) list = list.filter(h => h.price_band === band);
+      if (q) {
+        list = list.filter(h => {
+          const blob = [
+            h.property_jp, h.property_cn, h.property_en, h.area_cn,
+            h.onsen_area, h.description_cn, h.highlights, h.prefecture
+          ].join(" ").toLowerCase();
+          return blob.includes(q);
+        });
+      }
+      list = sortHotels(list, mode);
+      lastFilteredHotels = list;
+
+      const pages = Math.max(1, Math.ceil(list.length / HOTEL_PAGE_SIZE) || 1);
+      if (hotelPage > pages) hotelPage = pages;
+      if (hotelPage < 1) hotelPage = 1;
+
       const sortLabel = ($("#sort") && $("#sort").selectedOptions[0])
         ? $("#sort").selectedOptions[0].textContent : mode;
-      stats.textContent = `顯示 ${list.length} / ${data.hotels.length} 間 · 排序：${sortLabel}`;
-    }
-    if (hotelView === "cards") {
-      renderCards(list);
-      if ($("#hotels-table-wrap")) $("#hotels-table-wrap").classList.add("hidden");
-      if ($("#cards")) $("#cards").classList.remove("hidden");
-    } else {
-      renderHotelsTable(list);
-      if ($("#hotels-table-wrap")) $("#hotels-table-wrap").classList.remove("hidden");
-      if ($("#cards")) $("#cards").classList.add("hidden");
+      const listLabel = hotelListMode === "show" ? "節目推薦"
+        : hotelListMode === "area" ? "溫泉地人氣宿" : "全部";
+      const stats = $("#stats");
+      if (stats) {
+        stats.textContent = `${listLabel} · 符合 ${list.length} / 全庫 ${data.hotels.length} 間 · 排序：${sortLabel}`;
+      }
+
+      // Prefer table when hotels-body exists; fall back to cards if table mount missing
+      const hasTable = !!$("#hotels-body");
+      const useCards = hotelView === "cards" || !hasTable;
+      if (useCards) {
+        renderCards(list);
+        if ($("#hotels-table-wrap")) $("#hotels-table-wrap").classList.add("hidden");
+        if ($("#cards")) $("#cards").classList.remove("hidden");
+        updatePagers(list.length, 1, list.length || 1);
+      } else {
+        const start = (hotelPage - 1) * HOTEL_PAGE_SIZE;
+        const pageSlice = list.slice(start, start + HOTEL_PAGE_SIZE);
+        renderHotelsTable(pageSlice);
+        if ($("#hotels-table-wrap")) $("#hotels-table-wrap").classList.remove("hidden");
+        if ($("#cards")) $("#cards").classList.add("hidden");
+        updatePagers(list.length, hotelPage, HOTEL_PAGE_SIZE);
+      }
+    } catch (err) {
+      surfaceHotelError(err);
     }
   }
 
@@ -381,10 +450,14 @@
 
   function initHome(data) {
     fillSharedMeta(data);
-    const hotelCount = (data.hotels && data.hotels.length) || 0;
+    const hotels = (data.hotels && data.hotels) || [];
+    const hotelCount = hotels.length;
+    const showCount = hotels.filter(isShowHotel).length;
     const compareCount = (data.ranking_compare && data.ranking_compare.length) || 0;
     const hc = $("#home-hotel-count");
     if (hc) hc.textContent = String(hotelCount);
+    const sc = $("#home-show-count");
+    if (sc) sc.textContent = String(showCount);
     const cc = $("#home-compare-count");
     if (cc) cc.textContent = String(compareCount);
   }
@@ -426,85 +499,168 @@
   }
 
   function areaLabel(h) {
-    const cn = (h.area_cn || "").replace(/（.*?）/g, "").trim();
-    return cn ? `${cn}（${h.onsen_area}）` : h.onsen_area;
+    const cn = String(h.area_cn || "").replace(/（.*?）/g, "").trim();
+    return cn ? `${cn}（${h.onsen_area || ""}）` : (h.onsen_area || "");
+  }
+
+  function areaCnShort(h) {
+    const raw = String(h.area_cn || h.onsen_area || "");
+    const stripped = raw.replace(/（.*?）/, "").trim();
+    return stripped || String(h.onsen_area || "");
+  }
+
+  function isShowHotel(h) {
+    if (h && h.in_show === true) return true;
+    if (h && h.in_show === false) return false;
+    const src = String(h && h.source || "");
+    return src === "2024_HOY" || src === "2026_TVTokyo" || src === "2026_TVTokyo_guest";
+  }
+
+  function surfaceHotelError(err) {
+    const msg = err && err.message ? err.message : String(err || "unknown error");
+    const banner = $("#error-banner");
+    if (banner) {
+      banner.textContent = "住宿頁載入／篩選出錯：" + msg;
+      banner.classList.remove("hidden");
+    }
+    const stats = $("#stats");
+    if (stats) stats.textContent = "錯誤：" + msg;
+    const body = $("#hotels-body");
+    if (body && !body.children.length) {
+      body.innerHTML = `<tr><td colspan="8">無法顯示住宿資料：${esc(msg)}</td></tr>`;
+    }
+    console.error("[hotels]", err);
   }
 
   function initHotels(data) {
-    fillSharedMeta(data);
-    if (!$("#hotels-body") && !$("#cards")) return;
+    try {
+      fillSharedMeta(data);
+      if (!$("#hotels-body") && !$("#cards")) return;
+      if (!data.hotels || !data.hotels.length) {
+        surfaceHotelError(new Error("data.hotels 為空"));
+        return;
+      }
 
-    const prefs = unique(data.hotels.map(h => h.prefecture));
-    const prefSel = $("#pref");
-    if (prefSel) {
-      prefs.forEach(p => {
-        const o = document.createElement("option");
-        o.value = p; o.textContent = p;
-        prefSel.appendChild(o);
+      hotelListMode = readListModeFromUrl();
+      hotelPage = 1;
+      hotelView = "table";
+      syncListTabs();
+      // Ensure table is visible by default
+      if ($("#hotels-table-wrap")) $("#hotels-table-wrap").classList.remove("hidden");
+      if ($("#cards")) $("#cards").classList.add("hidden");
+      $$(".view-btn").forEach(b => {
+        b.classList.toggle("is-active", (b.dataset.view || "") === "table");
       });
-    }
 
-    // Area filter: unique onsen_area with CN label, sorted by rank then name
-    const areaSel = $("#area");
-    if (areaSel) {
-      const byArea = new Map();
-      data.hotels.forEach(h => {
-        if (!h.onsen_area) return;
-        if (!byArea.has(h.onsen_area)) byArea.set(h.onsen_area, h);
-      });
-      const areas = Array.from(byArea.values()).sort((a, b) => {
-        const ra = a.rank == null ? 9999 : Number(a.rank);
-        const rb = b.rank == null ? 9999 : Number(b.rank);
-        if (ra !== rb) return ra - rb;
-        return String(a.onsen_area).localeCompare(String(b.onsen_area), "ja");
-      });
-      areas.forEach(h => {
-        const o = document.createElement("option");
-        o.value = h.onsen_area;
-        o.textContent = areaLabel(h);
-        areaSel.appendChild(o);
-      });
-    }
+      const prefs = unique(data.hotels.map(h => h.prefecture));
+      const prefSel = $("#pref");
+      if (prefSel) {
+        prefs.forEach(p => {
+          const o = document.createElement("option");
+          o.value = p; o.textContent = p;
+          prefSel.appendChild(o);
+        });
+      }
 
-    const bands = ["日歸／入浴", "¥15,000 以下", "¥15,000–30,000", "¥30,000–50,000", "¥50,000 以上", "未取得"];
-    const bandSel = $("#band");
-    if (bandSel) {
-      bands.forEach(b => {
-        const o = document.createElement("option");
-        o.value = b; o.textContent = b;
-        bandSel.appendChild(o);
+      const areaSel = $("#area");
+      if (areaSel) {
+        const byArea = new Map();
+        data.hotels.forEach(h => {
+          if (!h.onsen_area) return;
+          if (!byArea.has(h.onsen_area)) byArea.set(h.onsen_area, h);
+        });
+        const areas = Array.from(byArea.values()).sort((a, b) => {
+          const ra = a.rank == null ? 9999 : Number(a.rank);
+          const rb = b.rank == null ? 9999 : Number(b.rank);
+          if (ra !== rb) return ra - rb;
+          return String(a.onsen_area).localeCompare(String(b.onsen_area), "ja");
+        });
+        areas.forEach(h => {
+          const o = document.createElement("option");
+          o.value = h.onsen_area;
+          o.textContent = areaLabel(h);
+          areaSel.appendChild(o);
+        });
+      }
+
+      const bands = ["日歸／入浴", "¥15,000 以下", "¥15,000–30,000", "¥30,000–50,000", "¥50,000 以上", "未取得"];
+      const bandSel = $("#band");
+      if (bandSel) {
+        bands.forEach(b => {
+          const o = document.createElement("option");
+          o.value = b; o.textContent = b;
+          bandSel.appendChild(o);
+        });
+      }
+
+      const bumpFilter = () => { hotelPage = 1; applyFilters(data); };
+
+      ["q", "pref", "area", "band", "sort"].forEach(id => {
+        const el = $(`#${id}`);
+        if (!el) return;
+        el.addEventListener("input", bumpFilter);
+        el.addEventListener("change", bumpFilter);
       });
-    }
 
-    ["q", "pref", "area", "band", "sort"].forEach(id => {
-      const el = $(`#${id}`);
-      if (!el) return;
-      el.addEventListener("input", () => applyFilters(data));
-      el.addEventListener("change", () => applyFilters(data));
-    });
+      $$(".list-tab").forEach(btn => {
+        btn.addEventListener("click", () => {
+          hotelListMode = btn.dataset.list || "show";
+          hotelPage = 1;
+          syncListTabs();
+          try {
+            const url = new URL(location.href);
+            if (hotelListMode === "show") url.searchParams.set("list", "show");
+            else if (hotelListMode === "area") url.searchParams.set("list", "area");
+            else url.searchParams.set("list", "all");
+            history.replaceState(null, "", url.pathname + url.search + url.hash);
+          } catch (e) {}
+          applyFilters(data);
+        });
+      });
 
-    const reset = $("#reset");
-    if (reset) {
-      reset.addEventListener("click", () => {
-        if ($("#q")) $("#q").value = "";
-        if ($("#pref")) $("#pref").value = "";
-        if ($("#area")) $("#area").value = "";
-        if ($("#band")) $("#band").value = "";
-        if ($("#sort")) $("#sort").value = "rank2024";
+      const reset = $("#reset");
+      if (reset) {
+        reset.addEventListener("click", () => {
+          if ($("#q")) $("#q").value = "";
+          if ($("#pref")) $("#pref").value = "";
+          if ($("#area")) $("#area").value = "";
+          if ($("#band")) $("#band").value = "";
+          if ($("#sort")) $("#sort").value = "rank2024";
+          hotelPage = 1;
+          applyFilters(data);
+        });
+      }
+
+      $$(".view-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          $$(".view-btn").forEach(b => b.classList.remove("is-active"));
+          btn.classList.add("is-active");
+          hotelView = btn.dataset.view || "table";
+          hotelPage = 1;
+          applyFilters(data);
+        });
+      });
+
+      const goPage = (delta) => {
+        const pages = Math.max(1, Math.ceil(lastFilteredHotels.length / HOTEL_PAGE_SIZE) || 1);
+        hotelPage = Math.min(pages, Math.max(1, hotelPage + delta));
         applyFilters(data);
+        const wrap = $("#hotels-table-wrap");
+        if (wrap && wrap.scrollIntoView) wrap.scrollIntoView({ behavior: "smooth", block: "start" });
+      };
+      ["page-prev", "page-prev-b"].forEach(id => {
+        const b = $(`#${id}`);
+        if (b) b.addEventListener("click", () => goPage(-1));
       });
+      ["page-next", "page-next-b"].forEach(id => {
+        const b = $(`#${id}`);
+        if (b) b.addEventListener("click", () => goPage(1));
+      });
+
+      applyFilters(data);
+    } catch (err) {
+      surfaceHotelError(err);
     }
-
-    $$(".view-btn").forEach(btn => {
-      btn.addEventListener("click", () => {
-        $$(".view-btn").forEach(b => b.classList.remove("is-active"));
-        btn.classList.add("is-active");
-        hotelView = btn.dataset.view || "table";
-        applyFilters(data);
-      });
-    });
-
-    applyFilters(data);
   }
 
   function init(data) {

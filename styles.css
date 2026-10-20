@@ -415,3 +415,68 @@ footer {
   .site-nav-link { padding: 10px 10px; font-size: 0.85rem; min-width: 64px; }
   header.compact .updated-short { display: none; }
 }
+
+
+/* List tabs (show / area / all) */
+.list-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0 12px;
+}
+.list-tab {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--bg2);
+  color: var(--text);
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 8px 14px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.list-tab:hover { background: var(--cream); }
+.list-tab.is-active {
+  background: var(--accent2);
+  border-color: var(--accent2);
+  color: #fff;
+}
+
+/* Pagination */
+.pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+.pager-btn {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--bg2);
+  color: var(--text);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.pager-btn:hover:not(:disabled) { background: var(--cream); }
+.pager-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.pager-info {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--muted);
+  min-width: 9rem;
+  text-align: center;
+}
+
+.banner.danger {
+  margin: 12px auto;
+  max-width: 1100px;
+  padding: 10px 14px;
+}

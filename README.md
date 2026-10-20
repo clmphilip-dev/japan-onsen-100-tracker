@@ -7,12 +7,17 @@
 - [首頁](https://clmphilip-dev.github.io/japan-onsen-100-tracker/)
 - [Top 10](https://clmphilip-dev.github.io/japan-onsen-100-tracker/ranks.html)
 - [排名對照](https://clmphilip-dev.github.io/japan-onsen-100-tracker/compare.html)
-- [住宿／設施](https://clmphilip-dev.github.io/japan-onsen-100-tracker/hotels.html)（表格為主，可篩溫泉地）
+- [住宿／設施](https://clmphilip-dev.github.io/japan-onsen-100-tracker/hotels.html)（預設：節目推薦）
+- [節目推薦名單](https://clmphilip-dev.github.io/japan-onsen-100-tracker/hotels.html?list=show)
+- [全部住宿](https://clmphilip-dev.github.io/japan-onsen-100-tracker/hotels.html?list=all)
 
 ## 資料
 
-- `data.json`：排名＋旅館（節目交叉核對＋じゃらん／楽天區域人氣榜擴充）
+- `data.json`：排名＋旅館
+  - `in_show: true` ≈ 95 間節目提及／交叉核對（HOY／電視東京）
+  - `in_show: false` ≈ 溫泉地人氣宿（じゃらん／楽天區域榜擴充）
 - 住宿範圍＝2024＋2026 榜上溫泉地之代表性旅館，**非**日本全國所有溫泉旅館
+- `Japan_Onsen_100_Tracker.xlsx`：`Hotels_All` 含 `In_Show` 欄；`Hotels_Mentioned` 為節目名單
 
 ## 本地
 
