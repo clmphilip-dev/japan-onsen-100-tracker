@@ -147,7 +147,13 @@ main { max-width: 1100px; margin: 0 auto; padding: 16px 16px 60px; }
   align-items: end;
 }
 .filters-hotels {
-  grid-template-columns: 1.2fr 1.1fr 0.85fr 0.9fr 1fr auto;
+  /* keyword / area / region / pref / band / daybath / privbath / sort / reset */
+  grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
+  align-items: end;
+}
+.filters-hotels .reset {
+  align-self: end;
+  justify-self: start;
 }
 .filters-compare { grid-template-columns: 1fr 1.2fr 1fr; }
 
@@ -207,7 +213,8 @@ main { max-width: 1100px; margin: 0 auto; padding: 16px 16px 60px; }
   margin: 0;
 }
 
-/* Desktop: always show filters (override details closed state); sticky compact row */
+/* Desktop: sticky filter bar; JS sets details[open] so filters render.
+   (Closed <details> hide non-summary children — CSS cannot override that.) */
 @media (min-width: 701px) {
   .filter-drawer {
     position: sticky;
@@ -215,9 +222,8 @@ main { max-width: 1100px; margin: 0 auto; padding: 16px 16px 60px; }
     z-index: 30;
   }
   .filter-drawer-summary {
-    display: none; /* filters always visible; no need for collapse chrome */
+    display: none; /* always open on desktop; no collapse chrome */
   }
-  /* Force filter grid visible even when <details> lacks open */
   .filter-drawer > .filters {
     display: grid;
     padding: 10px;

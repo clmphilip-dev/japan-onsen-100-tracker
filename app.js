@@ -298,12 +298,13 @@
   function syncFilterDrawers() {
     const mobile = isMobileFilterView();
     $$(".filter-drawer").forEach(d => {
-      // Desktop: CSS forces .filters visible even when closed; leave open=false.
-      // Mobile: default closed so the table fills the viewport.
+      // Desktop: must set open=true — browsers hide non-summary children of closed
+      // <details> regardless of CSS display rules (so sort/filters stay visible).
+      // Mobile: default closed so the table fills the viewport; respect user toggle.
       if (mobile) {
         if (!d.dataset.userToggled) d.open = false;
       } else {
-        d.open = false;
+        d.open = true;
         delete d.dataset.userToggled;
       }
     });

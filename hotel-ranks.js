@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  var DATA_URL = "hotel-ranks-data.json?v=20261102a";
+  var DATA_URL = "hotel-ranks-data.json?v=20261102b";
   var state = { hotels: [], meta: null, filtered: [], sort: "rank_asc" };
 
   function $(id) { return document.getElementById(id); }
@@ -219,6 +219,30 @@
     return hotels;
   }
 
+  function isMobileFilterView() {
+    return window.matchMedia && window.matchMedia("(max-width: 700px)").matches;
+  }
+
+  function syncFilterDrawers() {
+    var mobile = isMobileFilterView();
+    document.querySelectorAll(".filter-drawer").forEach(function (d) {
+      if (mobile) {
+        if (!d.dataset.userToggled) d.open = false;
+      } else {
+        d.open = true;
+        delete d.dataset.userToggled;
+      }
+    });
+  }
+
+  function bindFilterDrawerToggle() {
+    document.querySelectorAll(".filter-drawer").forEach(function (d) {
+      d.addEventListener("toggle", function () {
+        if (isMobileFilterView()) d.dataset.userToggled = "1";
+      });
+    });
+  }
+
   function init(data) {
     state.meta = data.meta || {};
     state.hotels = (data.hotels || []).slice().sort(function (a, b) {
@@ -239,6 +263,17 @@
       return h.prefecture_cn || h.prefecture_jp;
     })), "全部");
     bind();
+    bindFilterDrawerToggle();
+    syncFilterDrawers();
+    if (window.matchMedia) {
+      var mq = window.matchMedia("(max-width: 700px)");
+      var onMq = function () {
+        document.querySelectorAll(".filter-drawer").forEach(function (d) { delete d.dataset.userToggled; });
+        syncFilterDrawers();
+      };
+      if (mq.addEventListener) mq.addEventListener("change", onMq);
+      else if (mq.addListener) mq.addListener(onMq);
+    }
     applyFilters();
   }
 
@@ -247,7 +282,7 @@
       if (!r.ok) throw new Error("HTTP " + r.status);
       return r.json();
     }),
-    fetch("data.json?v=20261102a", { cache: "no-cache" })
+    fetch("data.json?v=20261102b", { cache: "no-cache" })
       .then(function (r) { return r.ok ? r.json() : null; })
       .catch(function () { return null; })
   ])
