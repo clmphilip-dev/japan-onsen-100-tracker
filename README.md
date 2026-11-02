@@ -28,3 +28,10 @@
 - `data.areas[]`：全部排名溫泉地的香港客交通／季節／人潮提示
 - 住宿頁：地方篩選、香港交通列、日歸／貸切・客室露天徽章與篩選
 - 阿蘇溫泉鄉缺口：補上湯巡追荘（じゃらん公開頁）；HOY 重溫暫不可用提示
+
+## 草津空室監控
+
+- [草津監控](https://clmphilip-dev.github.io/japan-onsen-100-tracker/kusatsu-watch.html)：15 間草津設施 × 2026-12-28～2027-01-08 內任意連續 2 晚（2 大人）
+- `kusatsu-watch-data.json`：旅館、視窗、checks[] 快照（可供 routine 覆寫）
+- `kusatsu-watch-status.json`：`open_rooms` 摘要（有房組合）
+- 重查：`python3 scripts/kusatsu_watch_check.py`（じゃらん ZAM 唯讀；不訂房、不寫價錢）
