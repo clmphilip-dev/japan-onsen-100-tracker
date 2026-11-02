@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>住宿／設施 — 《日本溫泉100強》追蹤</title>
   <meta name="description" content="節目推薦旅館與排名溫泉地人氣宿：可篩選溫泉地／縣／價錢，表格檢視訂房連結。" />
-  <link rel="stylesheet" href="styles.css?v=20261020c" />
+  <link rel="stylesheet" href="styles.css?v=20261102a" />
   <script>
     (function () {
       try {
@@ -74,11 +74,29 @@
           <label class="f">溫泉地
             <select id="area"><option value="">全部溫泉地</option></select>
           </label>
+          <label class="f">地方
+            <select id="region"><option value="">全部地方</option></select>
+          </label>
           <label class="f">都道府縣
             <select id="pref"><option value="">全部</option></select>
           </label>
           <label class="f">價錢帶
             <select id="band"><option value="">全部</option></select>
+          </label>
+          <label class="f">日歸入浴
+            <select id="daybath"><option value="">全部</option>
+              <option value="yes">有日歸</option>
+              <option value="no">無／不適用</option>
+              <option value="unknown">未核實</option>
+            </select>
+          </label>
+          <label class="f">貸切／客室露天
+            <select id="privbath"><option value="">全部</option>
+              <option value="kashikiri">貸切風呂</option>
+              <option value="room_roten">客室露天</option>
+              <option value="both">兩者皆有</option>
+              <option value="unknown">未核實</option>
+            </select>
           </label>
           <label class="f">排序
             <select id="sort">
@@ -135,6 +153,6 @@
     <p>資料來源：HOY TV <a href="https://hoy.tv/title/27930">hoy.tv/title/27930</a>、電視東京公開結果、じゃらんnet／楽天トラベル區域人氣・銷售榜整理。</p>
   </footer>
 
-  <script src="app.js?v=20261020c"></script>
+  <script src="app.js?v=20261102a"></script>
 </body>
 </html>

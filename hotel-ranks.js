@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  var DATA_URL = "hotel-ranks-data.json?v=20261020e";
+  var DATA_URL = "hotel-ranks-data.json?v=20261102a";
   var state = { hotels: [], meta: null, filtered: [], sort: "rank_asc" };
 
   function $(id) { return document.getElementById(id); }
@@ -143,9 +143,20 @@
       var nameJp = h.property_jp && h.property_jp !== h.property_cn
         ? '<div class="prop-jp">' + esc(h.property_jp) + "</div>"
         : "";
-      var desc = h.description_cn
-        ? '<details class="hr-desc"><summary>簡介</summary><p>' + esc(h.description_cn) + "</p></details>"
+      var tips = [];
+      if (h._area_travel) tips.push(h._area_travel);
+      if (h._area_season) tips.push(h._area_season);
+      if (h._hk_hub) tips.push("樞紐 " + h._hk_hub);
+      var tipHtml = tips.length
+        ? '<div class="area-tip">' + esc(tips.join(" · ")) + "</div>"
         : "";
+      var accessExtra = h._area_access
+        ? '<p class="hk-access">' + esc(h._area_access) + "</p>"
+        : "";
+      var desc = h.description_cn
+        ? '<details class="hr-desc"><summary>簡介</summary><p>' + esc(h.description_cn) + "</p>" + accessExtra + "</details>"
+        : (accessExtra ? '<details class="hr-desc"><summary>交通提示</summary>' + accessExtra + "</details>" : "");
+      desc = tipHtml + desc;
       var area = esc(h.onsen_area_cn || h.onsen_area_jp || "—");
       var areaJp = h.onsen_area_jp && h.onsen_area_jp !== h.onsen_area_cn
         ? '<div class="area-jp">' + esc(h.onsen_area_jp) + "</div>"
@@ -185,6 +196,29 @@
     }
   }
 
+  function attachAreaTips(hotels, areas) {
+    if (!areas || !areas.length) return hotels;
+    var by = {};
+    areas.forEach(function (a) { if (a && a.area_jp) by[a.area_jp] = a; });
+    hotels.forEach(function (h) {
+      var key = h.onsen_area_jp || "";
+      var a = by[key];
+      if (!a) {
+        // soft match: area name contained
+        Object.keys(by).some(function (k) {
+          if (key && (key.indexOf(k) >= 0 || k.indexOf(key) >= 0)) { a = by[k]; return true; }
+          return false;
+        });
+      }
+      if (!a) return;
+      h._area_travel = a.travel_time_band || "";
+      h._area_season = a.best_season_zh || "";
+      h._area_access = a.access_zh || "";
+      h._hk_hub = a.hk_hub || "";
+    });
+    return hotels;
+  }
+
   function init(data) {
     state.meta = data.meta || {};
     state.hotels = (data.hotels || []).slice().sort(function (a, b) {
@@ -208,12 +242,21 @@
     applyFilters();
   }
 
-  fetch(DATA_URL, { cache: "no-cache" })
-    .then(function (r) {
+  Promise.all([
+    fetch(DATA_URL, { cache: "no-cache" }).then(function (r) {
       if (!r.ok) throw new Error("HTTP " + r.status);
       return r.json();
+    }),
+    fetch("data.json?v=20261102a", { cache: "no-cache" })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .catch(function () { return null; })
+  ])
+    .then(function (pair) {
+      var data = pair[0];
+      var main = pair[1];
+      if (main && main.areas) attachAreaTips(data.hotels || [], main.areas);
+      init(data);
     })
-    .then(init)
     .catch(function (err) {
       showError("無法載入旅館排名資料：" + (err && err.message ? err.message : err));
     });

@@ -57,11 +57,30 @@
   }
 
   function alertChip(h) {
-    if (h.alert === "closed") return '<span class="chip alert-closed">休館中</span>';
-    if (h.alert === "phone_only") return '<span class="chip alert-phone">僅電話預約</span>';
-    if (h.alert === "rebranded") return '<span class="chip alert-rebrand">已改 Hilton</span>';
-    if (h.alert === "day_onsen") return '<span class="chip">日歸入浴</span>';
-    return "";
+    const bits = [];
+    if (h.alert === "closed") bits.push('<span class="chip alert-closed">休館中</span>');
+    if (h.alert === "phone_only") bits.push('<span class="chip alert-phone">僅電話預約</span>');
+    if (h.alert === "rebranded") bits.push('<span class="chip alert-rebrand">已改 Hilton</span>');
+    if (h.alert === "day_onsen" || h.day_bath === "yes") bits.push('<span class="chip chip-day">日歸入浴</span>');
+    if (h.private_bath === "both") bits.push('<span class="chip chip-priv">貸切＋客室露天</span>');
+    else if (h.private_bath === "kashikiri") bits.push('<span class="chip chip-priv">貸切風呂</span>');
+    else if (h.private_bath === "room_roten") bits.push('<span class="chip chip-priv">客室露天</span>');
+    if (h.region) bits.push(`<span class="chip chip-region">${esc(h.region)}</span>`);
+    return bits.join("");
+  }
+
+  function hkAccessLine(h) {
+    if (!h || !h.hk_access) return "";
+    const src = h.hk_access_source === "area" ? "（溫泉地共通）" : "";
+    return `<div class="hk-access">香港客：${esc(h.hk_access)}${src}</div>`;
+  }
+
+  function areaTipLine(h) {
+    const parts = [];
+    if (h.area_travel_time_band) parts.push(h.area_travel_time_band);
+    if (h.area_best_season_zh) parts.push(h.area_best_season_zh);
+    if (!parts.length) return "";
+    return `<div class="area-tip">${esc(parts.join(" · "))}</div>`;
   }
 
   function changeClass(ch) {
@@ -106,6 +125,8 @@
             <span class="chip">${esc(h.type || "")}</span>
             ${alertChip(h)}
           </div>
+          ${hkAccessLine(h)}
+          ${areaTipLine(h)}
           <p class="desc">${esc(h.description_cn || "")}</p>
           ${h.highlights ? `<p class="hl">賣點：${esc(h.highlights)}</p>` : ""}
           <div class="links">
@@ -141,9 +162,14 @@
             h.alert === "closed" ? "休館中" :
             h.alert === "phone_only" ? "僅電話" :
             h.alert === "day_onsen" ? "日歸" : esc(h.alert)
-          ) : ""}</div>
+          ) : ""}${h.day_bath === "yes" && h.alert !== "day_onsen" ? " · 日歸" : ""}${
+            h.private_bath === "both" ? " · 貸切＋客室露天" :
+            h.private_bath === "kashikiri" ? " · 貸切" :
+            h.private_bath === "room_roten" ? " · 客室露天" : ""
+          }</div>
+          ${hkAccessLine(h)}
         </td>
-        <td>${esc(h.prefecture || "")}</td>
+        <td>${esc(h.prefecture || "")}${h.region ? `<div class="area-jp">${esc(h.region)}</div>` : ""}</td>
         <td class="price">${esc(fmtPrice(h.price_jpy))}</td>
         <td>${esc(h.price_band || "未取得")}</td>
         <td>${bookLinks(h)}</td>
@@ -296,9 +322,12 @@
     if (!hint) return;
     let n = 0;
     if ((($("#q") && $("#q").value) || "").trim()) n++;
+    if ($("#region") && $("#region").value) n++;
     if ($("#pref") && $("#pref").value) n++;
     if ($("#area") && $("#area").value) n++;
     if ($("#band") && $("#band").value) n++;
+    if ($("#daybath") && $("#daybath").value) n++;
+    if ($("#privbath") && $("#privbath").value) n++;
     if ($("#sort") && $("#sort").value && $("#sort").value !== "rank2024") n++;
     if (n) {
       hint.hidden = false;
@@ -331,20 +360,27 @@
       if (!$("#hotels-body") && !$("#cards")) return;
       const q = (($("#q") && $("#q").value) || "").trim().toLowerCase();
       const pref = $("#pref") ? $("#pref").value : "";
+      const region = $("#region") ? $("#region").value : "";
       const area = $("#area") ? $("#area").value : "";
       const band = $("#band") ? $("#band").value : "";
+      const daybath = $("#daybath") ? $("#daybath").value : "";
+      const privbath = $("#privbath") ? $("#privbath").value : "";
       const mode = ($("#sort") && $("#sort").value) || "rank2024";
       let list = data.hotels.slice();
       if (hotelListMode === "show") list = list.filter(isShowHotel);
       else if (hotelListMode === "area") list = list.filter(h => !isShowHotel(h));
+      if (region) list = list.filter(h => h.region === region);
       if (pref) list = list.filter(h => h.prefecture === pref);
       if (area) list = list.filter(h => h.onsen_area === area);
       if (band) list = list.filter(h => h.price_band === band);
+      if (daybath) list = list.filter(h => (h.day_bath || "unknown") === daybath);
+      if (privbath) list = list.filter(h => (h.private_bath || "unknown") === privbath);
       if (q) {
         list = list.filter(h => {
           const blob = [
             h.property_jp, h.property_cn, h.property_en, h.area_cn,
-            h.onsen_area, h.description_cn, h.highlights, h.prefecture
+            h.onsen_area, h.description_cn, h.highlights, h.prefecture,
+            h.region, h.hk_access
           ].join(" ").toLowerCase();
           return blob.includes(q);
         });
@@ -637,6 +673,20 @@
         b.classList.toggle("is-active", (b.dataset.view || "") === "table");
       });
 
+      const regionOrder = ["北海道","東北","関東","中部","関西","中国","四国","九州"];
+      const regions = unique(data.hotels.map(h => h.region)).sort((a,b) => {
+        const ia = regionOrder.indexOf(a); const ib = regionOrder.indexOf(b);
+        return (ia < 0 ? 99 : ia) - (ib < 0 ? 99 : ib);
+      });
+      const regionSel = $("#region");
+      if (regionSel) {
+        regions.forEach(r => {
+          const o = document.createElement("option");
+          o.value = r; o.textContent = r;
+          regionSel.appendChild(o);
+        });
+      }
+
       const prefs = unique(data.hotels.map(h => h.prefecture));
       const prefSel = $("#pref");
       if (prefSel) {
@@ -680,7 +730,7 @@
 
       const bumpFilter = () => { hotelPage = 1; applyFilters(data); };
 
-      ["q", "pref", "area", "band", "sort"].forEach(id => {
+      ["q", "region", "pref", "area", "band", "daybath", "privbath", "sort"].forEach(id => {
         const el = $(`#${id}`);
         if (!el) return;
         el.addEventListener("input", bumpFilter);
@@ -707,9 +757,12 @@
       if (reset) {
         reset.addEventListener("click", () => {
           if ($("#q")) $("#q").value = "";
+          if ($("#region")) $("#region").value = "";
           if ($("#pref")) $("#pref").value = "";
           if ($("#area")) $("#area").value = "";
           if ($("#band")) $("#band").value = "";
+          if ($("#daybath")) $("#daybath").value = "";
+          if ($("#privbath")) $("#privbath").value = "";
           if ($("#sort")) $("#sort").value = "rank2024";
           hotelPage = 1;
           applyFilters(data);
