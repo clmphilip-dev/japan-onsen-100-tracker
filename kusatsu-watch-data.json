@@ -11,8 +11,8 @@
     "assumption_zh": "假設：2 位大人、1 間房、連續 2 晚（3 天 2 夜），入住與退房皆落在 2026-12-28～2027-01-08 內。",
     "disclaimer_zh": "空室以じゃらん公開庫存 API（ZAM）快照為準，年末假期變動快；不含價錢。請以訂房頁最終確認。非住宿設施不會查房。",
     "timezone": "Asia/Hong_Kong",
-    "last_checked_at": "2026-11-03T09:06:32+08:00",
-    "last_checked_label_zh": "最後檢查：2026-11-03 09:06:32（香港時間）",
+    "last_checked_at": "2026-11-04T09:01:30+08:00",
+    "last_checked_label_zh": "最後檢查：2026-11-04 09:01:30（香港時間）",
     "source_primary": "jalan_zam",
     "cache_bust": "20261102c"
   },
@@ -297,7 +297,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -307,7 +307,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -317,7 +317,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2026&stayMonth=12&stayDay=30&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -327,7 +327,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2026&stayMonth=12&stayDay=31&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -337,9 +337,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 3",
-      "stock": 3
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 2",
+      "stock": 2
     },
     {
       "hotel_id": "yuhata-sensui",
@@ -347,7 +347,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 6",
       "stock": 6
     },
@@ -357,7 +357,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 10",
       "stock": 10
     },
@@ -367,9 +367,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 17",
-      "stock": 17
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 16",
+      "stock": 16
     },
     {
       "hotel_id": "yuhata-sensui",
@@ -377,9 +377,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 21",
-      "stock": 21
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 20",
+      "stock": 20
     },
     {
       "hotel_id": "yuhata-sensui",
@@ -387,9 +387,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 20",
-      "stock": 20
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 19",
+      "stock": 19
     },
     {
       "hotel_id": "yuhata-souan",
@@ -397,7 +397,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 1",
       "stock": 1
     },
@@ -407,7 +407,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -417,7 +417,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2026&stayMonth=12&stayDay=30&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -427,7 +427,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2026&stayMonth=12&stayDay=31&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -437,7 +437,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 4",
       "stock": 4
     },
@@ -447,7 +447,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 5",
       "stock": 5
     },
@@ -457,7 +457,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 8",
       "stock": 8
     },
@@ -467,9 +467,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 9",
-      "stock": 9
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 8",
+      "stock": 8
     },
     {
       "hotel_id": "yuhata-souan",
@@ -477,9 +477,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 9",
-      "stock": 9
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 8",
+      "stock": 8
     },
     {
       "hotel_id": "yuhata-souan",
@@ -487,7 +487,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 11",
       "stock": 11
     },
@@ -497,7 +497,7 @@
       "status": "non_stay",
       "source": null,
       "source_url": "https://onsen-kusatsu.com/sainokawara/",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "非住宿／日歸溫泉",
       "stock": null
     },
@@ -507,7 +507,7 @@
       "status": "non_stay",
       "source": null,
       "source_url": "https://onsen-kusatsu.com/sainokawara/",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "非住宿／日歸溫泉",
       "stock": null
     },
@@ -517,7 +517,7 @@
       "status": "non_stay",
       "source": null,
       "source_url": "https://onsen-kusatsu.com/sainokawara/",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "非住宿／日歸溫泉",
       "stock": null
     },
@@ -527,7 +527,7 @@
       "status": "non_stay",
       "source": null,
       "source_url": "https://onsen-kusatsu.com/sainokawara/",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "非住宿／日歸溫泉",
       "stock": null
     },
@@ -537,7 +537,7 @@
       "status": "non_stay",
       "source": null,
       "source_url": "https://onsen-kusatsu.com/sainokawara/",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "非住宿／日歸溫泉",
       "stock": null
     },
@@ -547,7 +547,7 @@
       "status": "non_stay",
       "source": null,
       "source_url": "https://onsen-kusatsu.com/sainokawara/",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "非住宿／日歸溫泉",
       "stock": null
     },
@@ -557,7 +557,7 @@
       "status": "non_stay",
       "source": null,
       "source_url": "https://onsen-kusatsu.com/sainokawara/",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "非住宿／日歸溫泉",
       "stock": null
     },
@@ -567,7 +567,7 @@
       "status": "non_stay",
       "source": null,
       "source_url": "https://onsen-kusatsu.com/sainokawara/",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "非住宿／日歸溫泉",
       "stock": null
     },
@@ -577,7 +577,7 @@
       "status": "non_stay",
       "source": null,
       "source_url": "https://onsen-kusatsu.com/sainokawara/",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "非住宿／日歸溫泉",
       "stock": null
     },
@@ -587,7 +587,7 @@
       "status": "non_stay",
       "source": null,
       "source_url": "https://onsen-kusatsu.com/sainokawara/",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "非住宿／日歸溫泉",
       "stock": null
     },
@@ -597,7 +597,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 3",
       "stock": 3
     },
@@ -607,9 +607,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 3",
-      "stock": 3
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 2",
+      "stock": 2
     },
     {
       "hotel_id": "hotel-sakurai",
@@ -617,7 +617,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2026&stayMonth=12&stayDay=30&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -627,7 +627,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2026&stayMonth=12&stayDay=31&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -637,7 +637,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 1",
       "stock": 1
     },
@@ -647,7 +647,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 3",
       "stock": 3
     },
@@ -657,9 +657,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 5",
-      "stock": 5
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 4",
+      "stock": 4
     },
     {
       "hotel_id": "hotel-sakurai",
@@ -667,9 +667,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 14",
-      "stock": 14
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 12",
+      "stock": 12
     },
     {
       "hotel_id": "hotel-sakurai",
@@ -677,7 +677,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -687,29 +687,29 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
     {
       "hotel_id": "kusatsu-now",
       "window_id": "w01",
-      "status": "open",
+      "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 3",
-      "stock": 3
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
+      "stock": null
     },
     {
       "hotel_id": "kusatsu-now",
       "window_id": "w02",
-      "status": "open",
+      "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 3",
-      "stock": 3
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
+      "stock": null
     },
     {
       "hotel_id": "kusatsu-now",
@@ -717,7 +717,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2026&stayMonth=12&stayDay=30&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -727,7 +727,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2026&stayMonth=12&stayDay=31&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -737,7 +737,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 4",
       "stock": 4
     },
@@ -747,7 +747,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 10",
       "stock": 10
     },
@@ -757,9 +757,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 19",
-      "stock": 19
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 18",
+      "stock": 18
     },
     {
       "hotel_id": "kusatsu-now",
@@ -767,9 +767,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 28",
-      "stock": 28
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 27",
+      "stock": 27
     },
     {
       "hotel_id": "kusatsu-now",
@@ -777,9 +777,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 41",
-      "stock": 41
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 42",
+      "stock": 42
     },
     {
       "hotel_id": "kusatsu-now",
@@ -787,9 +787,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 57",
-      "stock": 57
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 56",
+      "stock": 56
     },
     {
       "hotel_id": "hotel-village",
@@ -797,9 +797,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 5",
-      "stock": 5
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 1",
+      "stock": 1
     },
     {
       "hotel_id": "hotel-village",
@@ -807,9 +807,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 27",
-      "stock": 27
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 11",
+      "stock": 11
     },
     {
       "hotel_id": "hotel-village",
@@ -817,7 +817,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2026&stayMonth=12&stayDay=30&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -827,7 +827,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2026&stayMonth=12&stayDay=31&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -837,9 +837,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 40",
-      "stock": 40
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 39",
+      "stock": 39
     },
     {
       "hotel_id": "hotel-village",
@@ -847,9 +847,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 113",
-      "stock": 113
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 115",
+      "stock": 115
     },
     {
       "hotel_id": "hotel-village",
@@ -857,9 +857,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 126",
-      "stock": 126
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 127",
+      "stock": 127
     },
     {
       "hotel_id": "hotel-village",
@@ -867,9 +867,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 126",
-      "stock": 126
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 127",
+      "stock": 127
     },
     {
       "hotel_id": "hotel-village",
@@ -877,9 +877,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 116",
-      "stock": 116
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 119",
+      "stock": 119
     },
     {
       "hotel_id": "hotel-village",
@@ -887,7 +887,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 130",
       "stock": 130
     },
@@ -897,7 +897,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -907,7 +907,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -917,7 +917,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2026&stayMonth=12&stayDay=30&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -927,7 +927,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2026&stayMonth=12&stayDay=31&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -937,7 +937,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -947,7 +947,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -957,9 +957,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 27",
-      "stock": 27
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 24",
+      "stock": 24
     },
     {
       "hotel_id": "daitokan",
@@ -967,9 +967,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 24",
-      "stock": 24
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 22",
+      "stock": 22
     },
     {
       "hotel_id": "daitokan",
@@ -977,9 +977,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 47",
-      "stock": 47
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 43",
+      "stock": 43
     },
     {
       "hotel_id": "daitokan",
@@ -987,9 +987,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 53",
-      "stock": 53
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 52",
+      "stock": 52
     },
     {
       "hotel_id": "naraya",
@@ -997,7 +997,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1007,7 +1007,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1017,7 +1017,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2026&stayMonth=12&stayDay=30&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1027,7 +1027,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2026&stayMonth=12&stayDay=31&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1037,7 +1037,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1047,7 +1047,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1057,7 +1057,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 12",
       "stock": 12
     },
@@ -1067,9 +1067,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 15",
-      "stock": 15
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 14",
+      "stock": 14
     },
     {
       "hotel_id": "naraya",
@@ -1077,9 +1077,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 30",
-      "stock": 30
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 28",
+      "stock": 28
     },
     {
       "hotel_id": "naraya",
@@ -1087,7 +1087,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 26",
       "stock": 26
     },
@@ -1097,7 +1097,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad316594/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1107,7 +1107,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad316594/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1117,7 +1117,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad316594/plan/?stayYear=2026&stayMonth=12&stayDay=30&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1127,7 +1127,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad316594/plan/?stayYear=2026&stayMonth=12&stayDay=31&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1137,7 +1137,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad316594/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1147,7 +1147,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad316594/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1157,7 +1157,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad316594/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1167,7 +1167,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad316594/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1177,7 +1177,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad316594/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 4",
       "stock": 4
     },
@@ -1187,7 +1187,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad316594/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 5",
       "stock": 5
     },
@@ -1197,7 +1197,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1207,9 +1207,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 3",
-      "stock": 3
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 2",
+      "stock": 2
     },
     {
       "hotel_id": "tokinoniwa",
@@ -1217,7 +1217,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2026&stayMonth=12&stayDay=30&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1227,7 +1227,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2026&stayMonth=12&stayDay=31&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1237,9 +1237,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 6",
-      "stock": 6
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 7",
+      "stock": 7
     },
     {
       "hotel_id": "tokinoniwa",
@@ -1247,9 +1247,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 15",
-      "stock": 15
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 11",
+      "stock": 11
     },
     {
       "hotel_id": "tokinoniwa",
@@ -1257,9 +1257,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 32",
-      "stock": 32
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 30",
+      "stock": 30
     },
     {
       "hotel_id": "tokinoniwa",
@@ -1267,7 +1267,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 32",
       "stock": 32
     },
@@ -1277,7 +1277,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 31",
       "stock": 31
     },
@@ -1287,7 +1287,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 36",
       "stock": 36
     },
@@ -1297,7 +1297,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1307,7 +1307,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1317,7 +1317,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2026&stayMonth=12&stayDay=30&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1327,7 +1327,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2026&stayMonth=12&stayDay=31&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1337,7 +1337,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1347,7 +1347,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1357,7 +1357,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 7",
       "stock": 7
     },
@@ -1367,9 +1367,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 20",
-      "stock": 20
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 19",
+      "stock": 19
     },
     {
       "hotel_id": "lavista-kusatsu",
@@ -1377,7 +1377,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 23",
       "stock": 23
     },
@@ -1387,9 +1387,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 25",
-      "stock": 25
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 23",
+      "stock": 23
     },
     {
       "hotel_id": "ichinoyu",
@@ -1397,7 +1397,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 2",
       "stock": 2
     },
@@ -1407,7 +1407,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 1",
       "stock": 1
     },
@@ -1417,7 +1417,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2026&stayMonth=12&stayDay=30&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1427,7 +1427,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2026&stayMonth=12&stayDay=31&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1437,9 +1437,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 11",
-      "stock": 11
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 9",
+      "stock": 9
     },
     {
       "hotel_id": "ichinoyu",
@@ -1447,9 +1447,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 21",
-      "stock": 21
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 19",
+      "stock": 19
     },
     {
       "hotel_id": "ichinoyu",
@@ -1457,7 +1457,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 21",
       "stock": 21
     },
@@ -1467,7 +1467,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 21",
       "stock": 21
     },
@@ -1477,9 +1477,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 29",
-      "stock": 29
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 28",
+      "stock": 28
     },
     {
       "hotel_id": "ichinoyu",
@@ -1487,7 +1487,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 39",
       "stock": 39
     },
@@ -1497,7 +1497,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1507,7 +1507,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1517,7 +1517,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2026&stayMonth=12&stayDay=30&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1527,7 +1527,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2026&stayMonth=12&stayDay=31&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1537,7 +1537,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 3",
       "stock": 3
     },
@@ -1547,7 +1547,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 16",
       "stock": 16
     },
@@ -1557,9 +1557,9 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 11",
-      "stock": 11
+      "checked_at": "2026-11-04T09:01:30+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 13",
+      "stock": 13
     },
     {
       "hotel_id": "takamatsu",
@@ -1567,7 +1567,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 9",
       "stock": 9
     },
@@ -1577,7 +1577,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 7",
       "stock": 7
     },
@@ -1587,7 +1587,7 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：殘室約 13",
       "stock": 13
     },
@@ -1597,7 +1597,7 @@
       "status": "need_official",
       "source": null,
       "source_url": "https://travel.rakuten.co.jp/HOTEL/106048/106048.html",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "無じゃらん公開庫存 API；請開官網／楽天確認",
       "stock": null
     },
@@ -1607,7 +1607,7 @@
       "status": "need_official",
       "source": null,
       "source_url": "https://travel.rakuten.co.jp/HOTEL/106048/106048.html",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "無じゃらん公開庫存 API；請開官網／楽天確認",
       "stock": null
     },
@@ -1617,7 +1617,7 @@
       "status": "need_official",
       "source": null,
       "source_url": "https://travel.rakuten.co.jp/HOTEL/106048/106048.html",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "無じゃらん公開庫存 API；請開官網／楽天確認",
       "stock": null
     },
@@ -1627,7 +1627,7 @@
       "status": "need_official",
       "source": null,
       "source_url": "https://travel.rakuten.co.jp/HOTEL/106048/106048.html",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "無じゃらん公開庫存 API；請開官網／楽天確認",
       "stock": null
     },
@@ -1637,7 +1637,7 @@
       "status": "need_official",
       "source": null,
       "source_url": "https://travel.rakuten.co.jp/HOTEL/106048/106048.html",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "無じゃらん公開庫存 API；請開官網／楽天確認",
       "stock": null
     },
@@ -1647,7 +1647,7 @@
       "status": "need_official",
       "source": null,
       "source_url": "https://travel.rakuten.co.jp/HOTEL/106048/106048.html",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "無じゃらん公開庫存 API；請開官網／楽天確認",
       "stock": null
     },
@@ -1657,7 +1657,7 @@
       "status": "need_official",
       "source": null,
       "source_url": "https://travel.rakuten.co.jp/HOTEL/106048/106048.html",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "無じゃらん公開庫存 API；請開官網／楽天確認",
       "stock": null
     },
@@ -1667,7 +1667,7 @@
       "status": "need_official",
       "source": null,
       "source_url": "https://travel.rakuten.co.jp/HOTEL/106048/106048.html",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "無じゃらん公開庫存 API；請開官網／楽天確認",
       "stock": null
     },
@@ -1677,7 +1677,7 @@
       "status": "need_official",
       "source": null,
       "source_url": "https://travel.rakuten.co.jp/HOTEL/106048/106048.html",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "無じゃらん公開庫存 API；請開官網／楽天確認",
       "stock": null
     },
@@ -1687,7 +1687,7 @@
       "status": "need_official",
       "source": null,
       "source_url": "https://travel.rakuten.co.jp/HOTEL/106048/106048.html",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "無じゃらん公開庫存 API；請開官網／楽天確認",
       "stock": null
     },
@@ -1697,7 +1697,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad356100/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1707,7 +1707,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad356100/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1717,7 +1717,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad356100/plan/?stayYear=2026&stayMonth=12&stayDay=30&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1727,7 +1727,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad356100/plan/?stayYear=2026&stayMonth=12&stayDay=31&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1737,7 +1737,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad356100/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1747,7 +1747,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad356100/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1757,7 +1757,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad356100/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1767,7 +1767,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad356100/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1777,7 +1777,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad356100/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     },
@@ -1787,7 +1787,7 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad356100/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-03T09:06:32+08:00",
+      "checked_at": "2026-11-04T09:01:30+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
       "stock": null
     }
