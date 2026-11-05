@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  var DATA_URL = "kusatsu-watch-data.json?v=20261105a";
+  var DATA_URL = "kusatsu-watch-data.json?v=20261105b";
   var STATUS = {
     open: "有房",
     full: "滿房",
@@ -34,6 +34,11 @@
       .replace(/"/g, "&quot;");
   }
 
+  function formatYen(n) {
+    if (n == null || isNaN(n)) return null;
+    return "¥" + Number(n).toLocaleString("en-US");
+  }
+
   function checkMap(checks) {
     var m = {};
     checks.forEach(function (c) {
@@ -49,6 +54,17 @@
       if (c && c.status === "open") n++;
     });
     return n;
+  }
+
+  function minOpenPrice(hotelId, cmap, windows) {
+    var min = null;
+    windows.forEach(function (w) {
+      var c = cmap[hotelId + "|" + w.id];
+      if (c && c.status === "open" && c.price_jpy != null) {
+        if (min == null || c.price_jpy < min) min = c.price_jpy;
+      }
+    });
+    return min;
   }
 
   function bestWindows(hotelId, cmap, windows) {
@@ -102,14 +118,49 @@
         if (da !== 0) return da;
         return String(a.property_jp).localeCompare(String(b.property_jp), "ja");
       });
+    } else if (state.sort === "price_asc") {
+      hotels.sort(function (a, b) {
+        var pa = minOpenPrice(a.id, cmap, windows);
+        var pb = minOpenPrice(b.id, cmap, windows);
+        if (pa == null && pb == null) {
+          return String(a.property_jp).localeCompare(String(b.property_jp), "ja");
+        }
+        if (pa == null) return 1;
+        if (pb == null) return -1;
+        if (pa !== pb) return pa - pb;
+        return String(a.property_jp).localeCompare(String(b.property_jp), "ja");
+      });
     } else if (state.sort === "name") {
       hotels.sort(function (a, b) {
         return String(a.property_jp).localeCompare(String(b.property_jp), "ja");
       });
     }
-    // list = original order (already)
 
     return { hotels: hotels, cmap: cmap, windows: windows };
+  }
+
+  function cellInner(c, label) {
+    var cls = STATUS_CLASS[c.status] || "unchecked";
+    var priceStr = (c.status === "open" && c.price_jpy != null) ? formatYen(c.price_jpy) : null;
+    var titleBits = [c.note_zh || label];
+    if (c.stock != null) titleBits.push("殘約 " + c.stock);
+    if (priceStr) {
+      titleBits.push(priceStr + "（2人2泊最低）");
+      if (c.price_per_person_jpy != null) {
+        titleBits.push("一人 " + formatYen(c.price_per_person_jpy));
+      }
+    }
+    var title = escapeHtml(titleBits.join(" · "));
+    var chip = "<span class=\"kw-chip " + cls + "\">" + escapeHtml(label) + "</span>";
+    var priceHtml = priceStr
+      ? "<span class=\"kw-price\">" + escapeHtml(priceStr) + "</span>"
+      : "";
+    var stack = "<span class=\"kw-cell-stack\">" + chip + priceHtml + "</span>";
+    if (c.source_url && (c.status === "open" || c.status === "full" || c.status === "need_official" || c.status === "unchecked")) {
+      return "<a class=\"kw-cell-link\" href=\"" + escapeHtml(c.source_url) +
+        "\" target=\"_blank\" rel=\"noopener\" title=\"" + title + "\">" + stack + "</a>";
+    }
+    return "<span title=\"" + title + "\">" + stack + "</span>";
   }
 
   function renderMatrix() {
@@ -130,28 +181,26 @@
 
     var rows = hotels.map(function (h) {
       var oc = openCountFor(h.id, cmap, windows);
+      var minP = minOpenPrice(h.id, cmap, windows);
       var badge = h.in_show ? "<span class=\"kw-badge-show\">節目</span>" : "";
       var ocLabel = (!h.skip_rooms && oc > 0)
         ? "<span class=\"kw-open-count\">" + oc + " 窗</span>"
         : "";
+      var priceLabel = (minP != null)
+        ? "<span class=\"kw-min-price\">起 " + escapeHtml(formatYen(minP)) + "</span>"
+        : "";
       var cells = windows.map(function (w) {
         var c = cmap[h.id + "|" + w.id] || { status: "unchecked" };
-        var cls = STATUS_CLASS[c.status] || "unchecked";
         var label = (state.data.status_labels_zh && state.data.status_labels_zh[c.status]) || STATUS[c.status] || c.status;
-        var title = escapeHtml((c.note_zh || label) + (c.stock != null ? " · 殘約 " + c.stock : ""));
-        var inner = "<span class=\"kw-chip " + cls + "\" title=\"" + title + "\">" + escapeHtml(label) + "</span>";
-        if (c.source_url && (c.status === "open" || c.status === "full" || c.status === "need_official" || c.status === "unchecked")) {
-          inner = "<a class=\"kw-cell-link\" href=\"" + escapeHtml(c.source_url) +
-            "\" target=\"_blank\" rel=\"noopener\" title=\"" + title + "\">" + inner + "</a>";
-        }
-        return "<td>" + inner + "</td>";
+        return "<td>" + cellInner(c, label) + "</td>";
       }).join("");
 
       return "<tr>" +
         "<td class=\"kw-hotel-col\">" +
           "<span class=\"kw-hotel-name\">" + escapeHtml(h.property_jp) + badge + ocLabel + "</span>" +
           "<span class=\"kw-hotel-cn\">" + escapeHtml(h.property_cn) +
-            (h.type === "day-onsen" ? " · 日歸" : "") + "</span>" +
+            (h.type === "day-onsen" ? " · 日歸" : "") +
+            (priceLabel ? " · " + priceLabel : "") + "</span>" +
         "</td>" + cells + "</tr>";
     }).join("");
 
@@ -161,10 +210,14 @@
       return openCountFor(h.id, checkMap(state.data.checks), state.data.windows) > 0;
     }).length;
     var openCells = state.data.checks.filter(function (c) { return c.status === "open"; }).length;
+    var pricedCells = state.data.checks.filter(function (c) {
+      return c.status === "open" && c.price_jpy != null;
+    }).length;
     $("#kw-stats").textContent =
       "顯示 " + hotels.length + "／" + state.data.hotels.length + " 間 · " +
-      "目前快照有房：" + openCells + " 格（" + openHotels + " 間旅館）· " +
-      "點芯片可開じゃらん／官網核對";
+      "目前快照有房：" + openCells + " 格（" + openHotels + " 間）· " +
+      "已標價：" + pricedCells + "／" + openCells + " · " +
+      "價錢＝2人2泊合計最低（點芯片開じゃらん核對）";
   }
 
   function linkBtn(href, label) {
@@ -190,8 +243,15 @@
           ? "此快照未能自動查庫存 — 請用下方連結手動確認。"
           : "此快照 10 個視窗均無じゃらん空室（年末常見）。";
       } else {
-        bestText = "有房視窗：" + best.map(function (w) { return w.label_zh; }).join("、") +
-          "（共 " + best.length + "／10）";
+        var parts = best.map(function (w) {
+          var c = cmap[h.id + "|" + w.id];
+          var p = (c && c.price_jpy != null) ? " " + formatYen(c.price_jpy) : "";
+          return w.label_zh + p;
+        });
+        var minP = minOpenPrice(h.id, cmap, windows);
+        bestText = "有房視窗：" + parts.join("、") +
+          "（共 " + best.length + "／10）" +
+          (minP != null ? " · 最低 " + formatYen(minP) + "（2人2泊）" : "");
       }
       var typeLabel = h.type === "day-onsen" ? "日歸溫泉" : (h.type === "ryokan" ? "旅館" : "酒店");
       var show = h.in_show ? "<span class=\"kw-badge-show\">節目推薦</span>" : "";
@@ -248,7 +308,6 @@
 
   function formatChecked(iso) {
     if (!iso) return "—";
-    // Display as Hong Kong local label; data already Asia/Hong_Kong
     try {
       var d = new Date(iso);
       if (isNaN(d.getTime())) return iso;
@@ -266,7 +325,7 @@
     $("#kw-updated").textContent = meta.last_checked_label_zh || ("最後檢查：" + formatChecked(meta.last_checked_at));
     $("#kw-edition").textContent =
       (meta.stay_window_start || "") + " ～ " + (meta.stay_window_end || "") +
-      " · 2 晚 · 2 大人";
+      " · 2 晚 · 2 大人 · 含價錢";
     syncDrawer();
     bindDrawerToggle();
     bindControls();

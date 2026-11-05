@@ -1,7 +1,8 @@
 {
-  "generated_at": "2026-11-05T14:39:04+08:00",
+  "generated_at": "2026-11-05T20:22:06+08:00",
   "timezone": "Asia/Hong_Kong",
-  "open_rooms_count": 78,
+  "open_rooms_count": 77,
+  "open_rooms_with_price": 77,
   "open_rooms": [
     {
       "hotel_id": "yuhata-sensui",
@@ -10,8 +11,12 @@
       "checkin": "2027-01-01",
       "checkout": "2027-01-03",
       "label_zh": "1/1→3",
-      "stock": 2,
-      "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2"
+      "stock": 1,
+      "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 208000,
+      "price_per_person_jpy": 104000,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-sensui",
@@ -21,7 +26,11 @@
       "checkout": "2027-01-04",
       "label_zh": "1/2→4",
       "stock": 6,
-      "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 198000,
+      "price_per_person_jpy": 99000,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-sensui",
@@ -31,7 +40,11 @@
       "checkout": "2027-01-05",
       "label_zh": "1/3→5",
       "stock": 11,
-      "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 160000,
+      "price_per_person_jpy": 80000,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-sensui",
@@ -41,7 +54,11 @@
       "checkout": "2027-01-06",
       "label_zh": "1/4→6",
       "stock": 16,
-      "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 113400,
+      "price_per_person_jpy": 56700,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-sensui",
@@ -51,7 +68,11 @@
       "checkout": "2027-01-07",
       "label_zh": "1/5→7",
       "stock": 20,
-      "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 108000,
+      "price_per_person_jpy": 54000,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-sensui",
@@ -61,7 +82,11 @@
       "checkout": "2027-01-08",
       "label_zh": "1/6→8",
       "stock": 19,
-      "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 108000,
+      "price_per_person_jpy": 54000,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-souan",
@@ -71,7 +96,11 @@
       "checkout": "2026-12-30",
       "label_zh": "12/28→30",
       "stock": 1,
-      "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 196000,
+      "price_per_person_jpy": 98000,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-souan",
@@ -81,7 +110,11 @@
       "checkout": "2027-01-03",
       "label_zh": "1/1→3",
       "stock": 4,
-      "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 146000,
+      "price_per_person_jpy": 73000,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-souan",
@@ -91,7 +124,11 @@
       "checkout": "2027-01-04",
       "label_zh": "1/2→4",
       "stock": 5,
-      "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 126000,
+      "price_per_person_jpy": 63000,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-souan",
@@ -101,7 +138,11 @@
       "checkout": "2027-01-05",
       "label_zh": "1/3→5",
       "stock": 8,
-      "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 86000,
+      "price_per_person_jpy": 43000,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-souan",
@@ -111,7 +152,11 @@
       "checkout": "2027-01-06",
       "label_zh": "1/4→6",
       "stock": 8,
-      "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 74000,
+      "price_per_person_jpy": 37000,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-souan",
@@ -121,7 +166,11 @@
       "checkout": "2027-01-07",
       "label_zh": "1/5→7",
       "stock": 8,
-      "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 66600,
+      "price_per_person_jpy": 33300,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-souan",
@@ -131,7 +180,11 @@
       "checkout": "2027-01-08",
       "label_zh": "1/6→8",
       "stock": 11,
-      "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 43200,
+      "price_per_person_jpy": 21600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-sakurai",
@@ -141,7 +194,11 @@
       "checkout": "2026-12-30",
       "label_zh": "12/28→30",
       "stock": 2,
-      "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 485100,
+      "price_per_person_jpy": 242550,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-sakurai",
@@ -151,7 +208,11 @@
       "checkout": "2026-12-31",
       "label_zh": "12/29→31",
       "stock": 2,
-      "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 487080,
+      "price_per_person_jpy": 243540,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-sakurai",
@@ -161,7 +222,11 @@
       "checkout": "2027-01-03",
       "label_zh": "1/1→3",
       "stock": 1,
-      "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 635800,
+      "price_per_person_jpy": 317900,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-sakurai",
@@ -171,7 +236,11 @@
       "checkout": "2027-01-04",
       "label_zh": "1/2→4",
       "stock": 3,
-      "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 465300,
+      "price_per_person_jpy": 232650,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-sakurai",
@@ -181,7 +250,11 @@
       "checkout": "2027-01-05",
       "label_zh": "1/3→5",
       "stock": 5,
-      "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 151800,
+      "price_per_person_jpy": 75900,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-sakurai",
@@ -191,7 +264,11 @@
       "checkout": "2027-01-06",
       "label_zh": "1/4→6",
       "stock": 10,
-      "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 123200,
+      "price_per_person_jpy": 61600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsu-now",
@@ -201,7 +278,11 @@
       "checkout": "2026-12-30",
       "label_zh": "12/28→30",
       "stock": 1,
-      "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 311200,
+      "price_per_person_jpy": 155600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsu-now",
@@ -211,7 +292,11 @@
       "checkout": "2026-12-31",
       "label_zh": "12/29→31",
       "stock": 1,
-      "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 321200,
+      "price_per_person_jpy": 160600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsu-now",
@@ -221,7 +306,11 @@
       "checkout": "2027-01-03",
       "label_zh": "1/1→3",
       "stock": 5,
-      "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 311200,
+      "price_per_person_jpy": 155600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsu-now",
@@ -231,7 +320,11 @@
       "checkout": "2027-01-04",
       "label_zh": "1/2→4",
       "stock": 8,
-      "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 149200,
+      "price_per_person_jpy": 74600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsu-now",
@@ -241,7 +334,11 @@
       "checkout": "2027-01-05",
       "label_zh": "1/3→5",
       "stock": 17,
-      "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 123200,
+      "price_per_person_jpy": 61600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsu-now",
@@ -250,8 +347,12 @@
       "checkin": "2027-01-04",
       "checkout": "2027-01-06",
       "label_zh": "1/4→6",
-      "stock": 26,
-      "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2"
+      "stock": 25,
+      "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 103200,
+      "price_per_person_jpy": 51600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsu-now",
@@ -260,8 +361,12 @@
       "checkin": "2027-01-05",
       "checkout": "2027-01-07",
       "label_zh": "1/5→7",
-      "stock": 40,
-      "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2"
+      "stock": 39,
+      "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 83200,
+      "price_per_person_jpy": 41600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsu-now",
@@ -270,8 +375,12 @@
       "checkin": "2027-01-06",
       "checkout": "2027-01-08",
       "label_zh": "1/6→8",
-      "stock": 54,
-      "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2"
+      "stock": 53,
+      "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 71200,
+      "price_per_person_jpy": 35600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-village",
@@ -281,7 +390,11 @@
       "checkout": "2026-12-30",
       "label_zh": "12/28→30",
       "stock": 3,
-      "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 145200,
+      "price_per_person_jpy": 72600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-village",
@@ -290,8 +403,12 @@
       "checkin": "2026-12-29",
       "checkout": "2026-12-31",
       "label_zh": "12/29→31",
-      "stock": 7,
-      "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2"
+      "stock": 6,
+      "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 158400,
+      "price_per_person_jpy": 79200,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-village",
@@ -300,8 +417,12 @@
       "checkin": "2027-01-01",
       "checkout": "2027-01-03",
       "label_zh": "1/1→3",
-      "stock": 38,
-      "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2"
+      "stock": 35,
+      "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 129800,
+      "price_per_person_jpy": 64900,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-village",
@@ -310,8 +431,12 @@
       "checkin": "2027-01-02",
       "checkout": "2027-01-04",
       "label_zh": "1/2→4",
-      "stock": 108,
-      "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2"
+      "stock": 107,
+      "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 116600,
+      "price_per_person_jpy": 58300,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-village",
@@ -320,8 +445,12 @@
       "checkin": "2027-01-03",
       "checkout": "2027-01-05",
       "label_zh": "1/3→5",
-      "stock": 123,
-      "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2"
+      "stock": 122,
+      "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 92400,
+      "price_per_person_jpy": 46200,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-village",
@@ -330,8 +459,12 @@
       "checkin": "2027-01-04",
       "checkout": "2027-01-06",
       "label_zh": "1/4→6",
-      "stock": 123,
-      "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2"
+      "stock": 122,
+      "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 67100,
+      "price_per_person_jpy": 33550,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-village",
@@ -341,7 +474,11 @@
       "checkout": "2027-01-07",
       "label_zh": "1/5→7",
       "stock": 119,
-      "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 51700,
+      "price_per_person_jpy": 25850,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-village",
@@ -350,8 +487,12 @@
       "checkin": "2027-01-06",
       "checkout": "2027-01-08",
       "label_zh": "1/6→8",
-      "stock": 128,
-      "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2"
+      "stock": 127,
+      "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 44000,
+      "price_per_person_jpy": 22000,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "daitokan",
@@ -361,7 +502,11 @@
       "checkout": "2027-01-05",
       "label_zh": "1/3→5",
       "stock": 24,
-      "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 101880,
+      "price_per_person_jpy": 50940,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "daitokan",
@@ -370,8 +515,12 @@
       "checkin": "2027-01-04",
       "checkout": "2027-01-06",
       "label_zh": "1/4→6",
-      "stock": 22,
-      "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2"
+      "stock": 21,
+      "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 84860,
+      "price_per_person_jpy": 42430,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "daitokan",
@@ -381,7 +530,11 @@
       "checkout": "2027-01-07",
       "label_zh": "1/5→7",
       "stock": 43,
-      "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 60800,
+      "price_per_person_jpy": 30400,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "daitokan",
@@ -391,7 +544,11 @@
       "checkout": "2027-01-08",
       "label_zh": "1/6→8",
       "stock": 52,
-      "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 51880,
+      "price_per_person_jpy": 25940,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "naraya",
@@ -401,7 +558,11 @@
       "checkout": "2027-01-05",
       "label_zh": "1/3→5",
       "stock": 12,
-      "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 266926,
+      "price_per_person_jpy": 133463,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "naraya",
@@ -411,7 +572,11 @@
       "checkout": "2027-01-06",
       "label_zh": "1/4→6",
       "stock": 14,
-      "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 225060,
+      "price_per_person_jpy": 112530,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "naraya",
@@ -421,7 +586,11 @@
       "checkout": "2027-01-07",
       "label_zh": "1/5→7",
       "stock": 28,
-      "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 196020,
+      "price_per_person_jpy": 98010,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "naraya",
@@ -431,7 +600,11 @@
       "checkout": "2027-01-08",
       "label_zh": "1/6→8",
       "stock": 24,
-      "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 196020,
+      "price_per_person_jpy": 98010,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "boun",
@@ -440,8 +613,12 @@
       "checkin": "2027-01-05",
       "checkout": "2027-01-07",
       "label_zh": "1/5→7",
-      "stock": 4,
-      "source_url": "https://www.jalan.net/yad316594/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2"
+      "stock": 3,
+      "source_url": "https://www.jalan.net/yad316594/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 96800,
+      "price_per_person_jpy": 48400,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "boun",
@@ -450,8 +627,12 @@
       "checkin": "2027-01-06",
       "checkout": "2027-01-08",
       "label_zh": "1/6→8",
-      "stock": 5,
-      "source_url": "https://www.jalan.net/yad316594/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2"
+      "stock": 3,
+      "source_url": "https://www.jalan.net/yad316594/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 92400,
+      "price_per_person_jpy": 46200,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "tokinoniwa",
@@ -461,7 +642,11 @@
       "checkout": "2026-12-30",
       "label_zh": "12/28→30",
       "stock": 1,
-      "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 389180,
+      "price_per_person_jpy": 194590,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "tokinoniwa",
@@ -471,7 +656,11 @@
       "checkout": "2026-12-31",
       "label_zh": "12/29→31",
       "stock": 1,
-      "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 374000,
+      "price_per_person_jpy": 187000,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "tokinoniwa",
@@ -481,7 +670,11 @@
       "checkout": "2027-01-03",
       "label_zh": "1/1→3",
       "stock": 10,
-      "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 315920,
+      "price_per_person_jpy": 157960,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "tokinoniwa",
@@ -491,7 +684,11 @@
       "checkout": "2027-01-04",
       "label_zh": "1/2→4",
       "stock": 15,
-      "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 244420,
+      "price_per_person_jpy": 122210,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "tokinoniwa",
@@ -501,7 +698,11 @@
       "checkout": "2027-01-05",
       "label_zh": "1/3→5",
       "stock": 13,
-      "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 177760,
+      "price_per_person_jpy": 88880,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "tokinoniwa",
@@ -511,7 +712,11 @@
       "checkout": "2027-01-06",
       "label_zh": "1/4→6",
       "stock": 30,
-      "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 159280,
+      "price_per_person_jpy": 79640,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "tokinoniwa",
@@ -521,7 +726,11 @@
       "checkout": "2027-01-07",
       "label_zh": "1/5→7",
       "stock": 29,
-      "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 138160,
+      "price_per_person_jpy": 69080,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "tokinoniwa",
@@ -531,7 +740,11 @@
       "checkout": "2027-01-08",
       "label_zh": "1/6→8",
       "stock": 36,
-      "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 128260,
+      "price_per_person_jpy": 64130,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "lavista-kusatsu",
@@ -541,7 +754,11 @@
       "checkout": "2027-01-05",
       "label_zh": "1/3→5",
       "stock": 7,
-      "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 148720,
+      "price_per_person_jpy": 74360,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "lavista-kusatsu",
@@ -551,7 +768,11 @@
       "checkout": "2027-01-06",
       "label_zh": "1/4→6",
       "stock": 18,
-      "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 112640,
+      "price_per_person_jpy": 56320,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "lavista-kusatsu",
@@ -561,7 +782,11 @@
       "checkout": "2027-01-07",
       "label_zh": "1/5→7",
       "stock": 21,
-      "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 112640,
+      "price_per_person_jpy": 56320,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "lavista-kusatsu",
@@ -571,7 +796,11 @@
       "checkout": "2027-01-08",
       "label_zh": "1/6→8",
       "stock": 22,
-      "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 112640,
+      "price_per_person_jpy": 56320,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "ichinoyu",
@@ -581,7 +810,11 @@
       "checkout": "2026-12-30",
       "label_zh": "12/28→30",
       "stock": 1,
-      "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 493200,
+      "price_per_person_jpy": 246600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "ichinoyu",
@@ -591,7 +824,11 @@
       "checkout": "2026-12-31",
       "label_zh": "12/29→31",
       "stock": 1,
-      "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 493200,
+      "price_per_person_jpy": 246600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "ichinoyu",
@@ -601,7 +838,11 @@
       "checkout": "2027-01-03",
       "label_zh": "1/1→3",
       "stock": 7,
-      "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 125200,
+      "price_per_person_jpy": 62600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "ichinoyu",
@@ -611,7 +852,11 @@
       "checkout": "2027-01-04",
       "label_zh": "1/2→4",
       "stock": 18,
-      "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 125200,
+      "price_per_person_jpy": 62600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "ichinoyu",
@@ -621,7 +866,11 @@
       "checkout": "2027-01-05",
       "label_zh": "1/3→5",
       "stock": 19,
-      "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 101200,
+      "price_per_person_jpy": 50600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "ichinoyu",
@@ -631,7 +880,11 @@
       "checkout": "2027-01-06",
       "label_zh": "1/4→6",
       "stock": 20,
-      "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 64400,
+      "price_per_person_jpy": 32200,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "ichinoyu",
@@ -641,7 +894,11 @@
       "checkout": "2027-01-07",
       "label_zh": "1/5→7",
       "stock": 27,
-      "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 64400,
+      "price_per_person_jpy": 32200,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "ichinoyu",
@@ -651,17 +908,11 @@
       "checkout": "2027-01-08",
       "label_zh": "1/6→8",
       "stock": 39,
-      "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2"
-    },
-    {
-      "hotel_id": "takamatsu",
-      "hotel_jp": "喜びの宿 高松",
-      "window_id": "w05",
-      "checkin": "2027-01-01",
-      "checkout": "2027-01-03",
-      "label_zh": "1/1→3",
-      "stock": 1,
-      "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 64400,
+      "price_per_person_jpy": 32200,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "takamatsu",
@@ -670,8 +921,12 @@
       "checkin": "2027-01-02",
       "checkout": "2027-01-04",
       "label_zh": "1/2→4",
-      "stock": 16,
-      "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2"
+      "stock": 15,
+      "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 132600,
+      "price_per_person_jpy": 66300,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "takamatsu",
@@ -681,7 +936,11 @@
       "checkout": "2027-01-05",
       "label_zh": "1/3→5",
       "stock": 13,
-      "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 83200,
+      "price_per_person_jpy": 41600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "takamatsu",
@@ -691,7 +950,11 @@
       "checkout": "2027-01-06",
       "label_zh": "1/4→6",
       "stock": 9,
-      "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 59200,
+      "price_per_person_jpy": 29600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "takamatsu",
@@ -701,7 +964,11 @@
       "checkout": "2027-01-07",
       "label_zh": "1/5→7",
       "stock": 6,
-      "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 49200,
+      "price_per_person_jpy": 24600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "takamatsu",
@@ -711,7 +978,11 @@
       "checkout": "2027-01-08",
       "label_zh": "1/6→8",
       "stock": 13,
-      "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 48200,
+      "price_per_person_jpy": 24100,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "urakusatsu-tou",
@@ -721,7 +992,11 @@
       "checkout": "2026-12-30",
       "label_zh": "12/28→30",
       "stock": 20,
-      "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 266930,
+      "price_per_person_jpy": 133465,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "urakusatsu-tou",
@@ -731,7 +1006,11 @@
       "checkout": "2026-12-31",
       "label_zh": "12/29→31",
       "stock": 21,
-      "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 266930,
+      "price_per_person_jpy": 133465,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "urakusatsu-tou",
@@ -741,7 +1020,11 @@
       "checkout": "2027-01-04",
       "label_zh": "1/2→4",
       "stock": 27,
-      "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 151424,
+      "price_per_person_jpy": 75712,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "urakusatsu-tou",
@@ -750,8 +1033,12 @@
       "checkin": "2027-01-03",
       "checkout": "2027-01-05",
       "label_zh": "1/3→5",
-      "stock": 14,
-      "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2"
+      "stock": 13,
+      "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 110292,
+      "price_per_person_jpy": 55146,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "urakusatsu-tou",
@@ -760,8 +1047,12 @@
       "checkin": "2027-01-04",
       "checkout": "2027-01-06",
       "label_zh": "1/4→6",
-      "stock": 13,
-      "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2"
+      "stock": 12,
+      "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 89544,
+      "price_per_person_jpy": 44772,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "urakusatsu-tou",
@@ -771,7 +1062,11 @@
       "checkout": "2027-01-07",
       "label_zh": "1/5→7",
       "stock": 11,
-      "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 101010,
+      "price_per_person_jpy": 50505,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "urakusatsu-tou",
@@ -781,13 +1076,18 @@
       "checkout": "2027-01-08",
       "label_zh": "1/6→8",
       "stock": 14,
-      "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2"
+      "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
+      "price_jpy": 97916,
+      "price_per_person_jpy": 48958,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     }
   ],
-  "full_cells": 62,
+  "full_cells": 63,
   "need_official_cells": 10,
   "non_stay_cells": 10,
   "unchecked_cells": 0,
   "total_cells": 160,
-  "note_zh": "供每日 routine 比對：若 open_rooms 出現新組合再通知 Philip。"
+  "price_definition_zh": "price_jpy＝じゃらん該入住日最低方案合計（2大人・2泊）；price_per_person_jpy＝合計÷2（一人2泊）。滿房／需官網／非住宿／未查 → 無價錢。",
+  "note_zh": "供每日 routine 比對：若 open_rooms 出現新組合再通知 Philip。價錢為じゃらん 2人2泊最低合計。"
 }

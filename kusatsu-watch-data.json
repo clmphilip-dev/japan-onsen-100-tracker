@@ -9,12 +9,13 @@
     "guests_adults": 2,
     "guests_rooms": 1,
     "assumption_zh": "假設：2 位大人、1 間房、連續 2 晚（3 天 2 夜），入住與退房皆落在 2026-12-28～2027-01-08 內。",
-    "disclaimer_zh": "空室以じゃらん公開庫存 API（ZAM）快照為準，年末假期變動快；不含價錢。請以訂房頁最終確認。非住宿設施不會查房。",
+    "disclaimer_zh": "空室與價錢以じゃらん公開庫存 API（ZAM）快照為準（2大人・1房・2泊合計最低價／lowestTotalPrice）。稅費以訂房頁顯示為準；年末假期變動快，請以訂房頁最終確認。非住宿設施不會查房。無じゃらん ID 者無自動價錢。",
     "timezone": "Asia/Hong_Kong",
-    "last_checked_at": "2026-11-05T14:39:04+08:00",
-    "last_checked_label_zh": "最後檢查：2026-11-05 14:39:04（香港時間）",
+    "last_checked_at": "2026-11-05T20:22:06+08:00",
+    "last_checked_label_zh": "最後檢查：2026-11-05 20:22:06（香港時間）",
     "source_primary": "jalan_zam",
-    "cache_bust": "20261105a"
+    "cache_bust": "20261105b",
+    "price_definition_zh": "price_jpy＝じゃらん該入住日最低方案合計（2大人・2泊）；price_per_person_jpy＝合計÷2（一人2泊）。滿房／需官網／非住宿／未查 → 無價錢。"
   },
   "windows": [
     {
@@ -311,9 +312,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-sensui",
@@ -321,9 +326,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-sensui",
@@ -331,9 +340,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2026&stayMonth=12&stayDay=30&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-sensui",
@@ -341,9 +354,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2026&stayMonth=12&stayDay=31&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-sensui",
@@ -351,9 +368,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 2",
-      "stock": 2
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 1 · ¥208,000（2人2泊最低）",
+      "stock": 1,
+      "price_jpy": 208000,
+      "price_per_person_jpy": 104000,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-sensui",
@@ -361,9 +382,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 6",
-      "stock": 6
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 6 · ¥198,000（2人2泊最低）",
+      "stock": 6,
+      "price_jpy": 198000,
+      "price_per_person_jpy": 99000,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-sensui",
@@ -371,9 +396,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 11",
-      "stock": 11
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 11 · ¥160,000（2人2泊最低）",
+      "stock": 11,
+      "price_jpy": 160000,
+      "price_per_person_jpy": 80000,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-sensui",
@@ -381,9 +410,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 16",
-      "stock": 16
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 16 · ¥113,400（2人2泊最低）",
+      "stock": 16,
+      "price_jpy": 113400,
+      "price_per_person_jpy": 56700,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-sensui",
@@ -391,9 +424,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 20",
-      "stock": 20
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 20 · ¥108,000（2人2泊最低）",
+      "stock": 20,
+      "price_jpy": 108000,
+      "price_per_person_jpy": 54000,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-sensui",
@@ -401,9 +438,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad331632/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 19",
-      "stock": 19
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 19 · ¥108,000（2人2泊最低）",
+      "stock": 19,
+      "price_jpy": 108000,
+      "price_per_person_jpy": 54000,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-souan",
@@ -411,9 +452,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 1",
-      "stock": 1
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 1 · ¥196,000（2人2泊最低）",
+      "stock": 1,
+      "price_jpy": 196000,
+      "price_per_person_jpy": 98000,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-souan",
@@ -421,9 +466,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-souan",
@@ -431,9 +480,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2026&stayMonth=12&stayDay=30&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-souan",
@@ -441,9 +494,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2026&stayMonth=12&stayDay=31&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-souan",
@@ -451,9 +508,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 4",
-      "stock": 4
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 4 · ¥146,000（2人2泊最低）",
+      "stock": 4,
+      "price_jpy": 146000,
+      "price_per_person_jpy": 73000,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-souan",
@@ -461,9 +522,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 5",
-      "stock": 5
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 5 · ¥126,000（2人2泊最低）",
+      "stock": 5,
+      "price_jpy": 126000,
+      "price_per_person_jpy": 63000,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-souan",
@@ -471,9 +536,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 8",
-      "stock": 8
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 8 · ¥86,000（2人2泊最低）",
+      "stock": 8,
+      "price_jpy": 86000,
+      "price_per_person_jpy": 43000,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-souan",
@@ -481,9 +550,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 8",
-      "stock": 8
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 8 · ¥74,000（2人2泊最低）",
+      "stock": 8,
+      "price_jpy": 74000,
+      "price_per_person_jpy": 37000,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-souan",
@@ -491,9 +564,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 8",
-      "stock": 8
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 8 · ¥66,600（2人2泊最低）",
+      "stock": 8,
+      "price_jpy": 66600,
+      "price_per_person_jpy": 33300,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "yuhata-souan",
@@ -501,9 +578,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad318392/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 11",
-      "stock": 11
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 11 · ¥43,200（2人2泊最低）",
+      "stock": 11,
+      "price_jpy": 43200,
+      "price_per_person_jpy": 21600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "sainokawara",
@@ -511,9 +592,13 @@
       "status": "non_stay",
       "source": null,
       "source_url": "https://onsen-kusatsu.com/sainokawara/",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "非住宿／日歸溫泉",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "sainokawara",
@@ -521,9 +606,13 @@
       "status": "non_stay",
       "source": null,
       "source_url": "https://onsen-kusatsu.com/sainokawara/",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "非住宿／日歸溫泉",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "sainokawara",
@@ -531,9 +620,13 @@
       "status": "non_stay",
       "source": null,
       "source_url": "https://onsen-kusatsu.com/sainokawara/",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "非住宿／日歸溫泉",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "sainokawara",
@@ -541,9 +634,13 @@
       "status": "non_stay",
       "source": null,
       "source_url": "https://onsen-kusatsu.com/sainokawara/",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "非住宿／日歸溫泉",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "sainokawara",
@@ -551,9 +648,13 @@
       "status": "non_stay",
       "source": null,
       "source_url": "https://onsen-kusatsu.com/sainokawara/",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "非住宿／日歸溫泉",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "sainokawara",
@@ -561,9 +662,13 @@
       "status": "non_stay",
       "source": null,
       "source_url": "https://onsen-kusatsu.com/sainokawara/",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "非住宿／日歸溫泉",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "sainokawara",
@@ -571,9 +676,13 @@
       "status": "non_stay",
       "source": null,
       "source_url": "https://onsen-kusatsu.com/sainokawara/",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "非住宿／日歸溫泉",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "sainokawara",
@@ -581,9 +690,13 @@
       "status": "non_stay",
       "source": null,
       "source_url": "https://onsen-kusatsu.com/sainokawara/",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "非住宿／日歸溫泉",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "sainokawara",
@@ -591,9 +704,13 @@
       "status": "non_stay",
       "source": null,
       "source_url": "https://onsen-kusatsu.com/sainokawara/",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "非住宿／日歸溫泉",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "sainokawara",
@@ -601,9 +718,13 @@
       "status": "non_stay",
       "source": null,
       "source_url": "https://onsen-kusatsu.com/sainokawara/",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "非住宿／日歸溫泉",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-sakurai",
@@ -611,9 +732,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 2",
-      "stock": 2
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 2 · ¥485,100（2人2泊最低）",
+      "stock": 2,
+      "price_jpy": 485100,
+      "price_per_person_jpy": 242550,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-sakurai",
@@ -621,9 +746,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 2",
-      "stock": 2
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 2 · ¥487,080（2人2泊最低）",
+      "stock": 2,
+      "price_jpy": 487080,
+      "price_per_person_jpy": 243540,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-sakurai",
@@ -631,9 +760,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2026&stayMonth=12&stayDay=30&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-sakurai",
@@ -641,9 +774,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2026&stayMonth=12&stayDay=31&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-sakurai",
@@ -651,9 +788,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 1",
-      "stock": 1
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 1 · ¥635,800（2人2泊最低）",
+      "stock": 1,
+      "price_jpy": 635800,
+      "price_per_person_jpy": 317900,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-sakurai",
@@ -661,9 +802,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 3",
-      "stock": 3
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 3 · ¥465,300（2人2泊最低）",
+      "stock": 3,
+      "price_jpy": 465300,
+      "price_per_person_jpy": 232650,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-sakurai",
@@ -671,9 +816,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 5",
-      "stock": 5
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 5 · ¥151,800（2人2泊最低）",
+      "stock": 5,
+      "price_jpy": 151800,
+      "price_per_person_jpy": 75900,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-sakurai",
@@ -681,9 +830,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 10",
-      "stock": 10
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 10 · ¥123,200（2人2泊最低）",
+      "stock": 10,
+      "price_jpy": 123200,
+      "price_per_person_jpy": 61600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-sakurai",
@@ -691,9 +844,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-sakurai",
@@ -701,9 +858,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsu-now",
@@ -711,9 +872,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 1",
-      "stock": 1
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 1 · ¥311,200（2人2泊最低）",
+      "stock": 1,
+      "price_jpy": 311200,
+      "price_per_person_jpy": 155600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsu-now",
@@ -721,9 +886,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 1",
-      "stock": 1
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 1 · ¥321,200（2人2泊最低）",
+      "stock": 1,
+      "price_jpy": 321200,
+      "price_per_person_jpy": 160600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsu-now",
@@ -731,9 +900,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2026&stayMonth=12&stayDay=30&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsu-now",
@@ -741,9 +914,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2026&stayMonth=12&stayDay=31&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsu-now",
@@ -751,9 +928,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 5",
-      "stock": 5
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 5 · ¥311,200（2人2泊最低）",
+      "stock": 5,
+      "price_jpy": 311200,
+      "price_per_person_jpy": 155600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsu-now",
@@ -761,9 +942,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 8",
-      "stock": 8
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 8 · ¥149,200（2人2泊最低）",
+      "stock": 8,
+      "price_jpy": 149200,
+      "price_per_person_jpy": 74600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsu-now",
@@ -771,9 +956,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 17",
-      "stock": 17
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 17 · ¥123,200（2人2泊最低）",
+      "stock": 17,
+      "price_jpy": 123200,
+      "price_per_person_jpy": 61600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsu-now",
@@ -781,9 +970,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 26",
-      "stock": 26
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 25 · ¥103,200（2人2泊最低）",
+      "stock": 25,
+      "price_jpy": 103200,
+      "price_per_person_jpy": 51600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsu-now",
@@ -791,9 +984,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 40",
-      "stock": 40
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 39 · ¥83,200（2人2泊最低）",
+      "stock": 39,
+      "price_jpy": 83200,
+      "price_per_person_jpy": 41600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsu-now",
@@ -801,9 +998,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 54",
-      "stock": 54
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 53 · ¥71,200（2人2泊最低）",
+      "stock": 53,
+      "price_jpy": 71200,
+      "price_per_person_jpy": 35600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-village",
@@ -811,9 +1012,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 3",
-      "stock": 3
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 3 · ¥145,200（2人2泊最低）",
+      "stock": 3,
+      "price_jpy": 145200,
+      "price_per_person_jpy": 72600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-village",
@@ -821,9 +1026,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 7",
-      "stock": 7
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 6 · ¥158,400（2人2泊最低）",
+      "stock": 6,
+      "price_jpy": 158400,
+      "price_per_person_jpy": 79200,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-village",
@@ -831,9 +1040,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2026&stayMonth=12&stayDay=30&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-village",
@@ -841,9 +1054,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2026&stayMonth=12&stayDay=31&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-village",
@@ -851,9 +1068,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 38",
-      "stock": 38
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 35 · ¥129,800（2人2泊最低）",
+      "stock": 35,
+      "price_jpy": 129800,
+      "price_per_person_jpy": 64900,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-village",
@@ -861,9 +1082,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 108",
-      "stock": 108
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 107 · ¥116,600（2人2泊最低）",
+      "stock": 107,
+      "price_jpy": 116600,
+      "price_per_person_jpy": 58300,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-village",
@@ -871,9 +1096,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 123",
-      "stock": 123
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 122 · ¥92,400（2人2泊最低）",
+      "stock": 122,
+      "price_jpy": 92400,
+      "price_per_person_jpy": 46200,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-village",
@@ -881,9 +1110,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 123",
-      "stock": 123
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 122 · ¥67,100（2人2泊最低）",
+      "stock": 122,
+      "price_jpy": 67100,
+      "price_per_person_jpy": 33550,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-village",
@@ -891,9 +1124,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 119",
-      "stock": 119
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 119 · ¥51,700（2人2泊最低）",
+      "stock": 119,
+      "price_jpy": 51700,
+      "price_per_person_jpy": 25850,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "hotel-village",
@@ -901,9 +1138,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 128",
-      "stock": 128
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 127 · ¥44,000（2人2泊最低）",
+      "stock": 127,
+      "price_jpy": 44000,
+      "price_per_person_jpy": 22000,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "daitokan",
@@ -911,9 +1152,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "daitokan",
@@ -921,9 +1166,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "daitokan",
@@ -931,9 +1180,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2026&stayMonth=12&stayDay=30&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "daitokan",
@@ -941,9 +1194,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2026&stayMonth=12&stayDay=31&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "daitokan",
@@ -951,9 +1208,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "daitokan",
@@ -961,9 +1222,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "daitokan",
@@ -971,9 +1236,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 24",
-      "stock": 24
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 24 · ¥101,880（2人2泊最低）",
+      "stock": 24,
+      "price_jpy": 101880,
+      "price_per_person_jpy": 50940,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "daitokan",
@@ -981,9 +1250,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 22",
-      "stock": 22
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 21 · ¥84,860（2人2泊最低）",
+      "stock": 21,
+      "price_jpy": 84860,
+      "price_per_person_jpy": 42430,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "daitokan",
@@ -991,9 +1264,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 43",
-      "stock": 43
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 43 · ¥60,800（2人2泊最低）",
+      "stock": 43,
+      "price_jpy": 60800,
+      "price_per_person_jpy": 30400,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "daitokan",
@@ -1001,9 +1278,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad366128/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 52",
-      "stock": 52
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 52 · ¥51,880（2人2泊最低）",
+      "stock": 52,
+      "price_jpy": 51880,
+      "price_per_person_jpy": 25940,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "naraya",
@@ -1011,9 +1292,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "naraya",
@@ -1021,9 +1306,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "naraya",
@@ -1031,9 +1320,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2026&stayMonth=12&stayDay=30&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "naraya",
@@ -1041,9 +1334,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2026&stayMonth=12&stayDay=31&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "naraya",
@@ -1051,9 +1348,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "naraya",
@@ -1061,9 +1362,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "naraya",
@@ -1071,9 +1376,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 12",
-      "stock": 12
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 12 · ¥266,926（2人2泊最低）",
+      "stock": 12,
+      "price_jpy": 266926,
+      "price_per_person_jpy": 133463,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "naraya",
@@ -1081,9 +1390,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 14",
-      "stock": 14
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 14 · ¥225,060（2人2泊最低）",
+      "stock": 14,
+      "price_jpy": 225060,
+      "price_per_person_jpy": 112530,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "naraya",
@@ -1091,9 +1404,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 28",
-      "stock": 28
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 28 · ¥196,020（2人2泊最低）",
+      "stock": 28,
+      "price_jpy": 196020,
+      "price_per_person_jpy": 98010,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "naraya",
@@ -1101,9 +1418,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 24",
-      "stock": 24
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 24 · ¥196,020（2人2泊最低）",
+      "stock": 24,
+      "price_jpy": 196020,
+      "price_per_person_jpy": 98010,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "boun",
@@ -1111,9 +1432,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad316594/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "boun",
@@ -1121,9 +1446,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad316594/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "boun",
@@ -1131,9 +1460,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad316594/plan/?stayYear=2026&stayMonth=12&stayDay=30&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "boun",
@@ -1141,9 +1474,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad316594/plan/?stayYear=2026&stayMonth=12&stayDay=31&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "boun",
@@ -1151,9 +1488,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad316594/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "boun",
@@ -1161,9 +1502,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad316594/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "boun",
@@ -1171,9 +1516,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad316594/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "boun",
@@ -1181,9 +1530,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad316594/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "boun",
@@ -1191,9 +1544,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad316594/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 4",
-      "stock": 4
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 3 · ¥96,800（2人2泊最低）",
+      "stock": 3,
+      "price_jpy": 96800,
+      "price_per_person_jpy": 48400,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "boun",
@@ -1201,9 +1558,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad316594/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 5",
-      "stock": 5
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 3 · ¥92,400（2人2泊最低）",
+      "stock": 3,
+      "price_jpy": 92400,
+      "price_per_person_jpy": 46200,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "tokinoniwa",
@@ -1211,9 +1572,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 1",
-      "stock": 1
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 1 · ¥389,180（2人2泊最低）",
+      "stock": 1,
+      "price_jpy": 389180,
+      "price_per_person_jpy": 194590,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "tokinoniwa",
@@ -1221,9 +1586,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 1",
-      "stock": 1
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 1 · ¥374,000（2人2泊最低）",
+      "stock": 1,
+      "price_jpy": 374000,
+      "price_per_person_jpy": 187000,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "tokinoniwa",
@@ -1231,9 +1600,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2026&stayMonth=12&stayDay=30&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "tokinoniwa",
@@ -1241,9 +1614,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2026&stayMonth=12&stayDay=31&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "tokinoniwa",
@@ -1251,9 +1628,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 10",
-      "stock": 10
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 10 · ¥315,920（2人2泊最低）",
+      "stock": 10,
+      "price_jpy": 315920,
+      "price_per_person_jpy": 157960,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "tokinoniwa",
@@ -1261,9 +1642,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 15",
-      "stock": 15
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 15 · ¥244,420（2人2泊最低）",
+      "stock": 15,
+      "price_jpy": 244420,
+      "price_per_person_jpy": 122210,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "tokinoniwa",
@@ -1271,9 +1656,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 13",
-      "stock": 13
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 13 · ¥177,760（2人2泊最低）",
+      "stock": 13,
+      "price_jpy": 177760,
+      "price_per_person_jpy": 88880,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "tokinoniwa",
@@ -1281,9 +1670,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 30",
-      "stock": 30
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 30 · ¥159,280（2人2泊最低）",
+      "stock": 30,
+      "price_jpy": 159280,
+      "price_per_person_jpy": 79640,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "tokinoniwa",
@@ -1291,9 +1684,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 29",
-      "stock": 29
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 29 · ¥138,160（2人2泊最低）",
+      "stock": 29,
+      "price_jpy": 138160,
+      "price_per_person_jpy": 69080,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "tokinoniwa",
@@ -1301,9 +1698,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 36",
-      "stock": 36
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 36 · ¥128,260（2人2泊最低）",
+      "stock": 36,
+      "price_jpy": 128260,
+      "price_per_person_jpy": 64130,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "lavista-kusatsu",
@@ -1311,9 +1712,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "lavista-kusatsu",
@@ -1321,9 +1726,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "lavista-kusatsu",
@@ -1331,9 +1740,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2026&stayMonth=12&stayDay=30&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "lavista-kusatsu",
@@ -1341,9 +1754,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2026&stayMonth=12&stayDay=31&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "lavista-kusatsu",
@@ -1351,9 +1768,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "lavista-kusatsu",
@@ -1361,9 +1782,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "lavista-kusatsu",
@@ -1371,9 +1796,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 7",
-      "stock": 7
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 7 · ¥148,720（2人2泊最低）",
+      "stock": 7,
+      "price_jpy": 148720,
+      "price_per_person_jpy": 74360,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "lavista-kusatsu",
@@ -1381,9 +1810,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 18",
-      "stock": 18
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 18 · ¥112,640（2人2泊最低）",
+      "stock": 18,
+      "price_jpy": 112640,
+      "price_per_person_jpy": 56320,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "lavista-kusatsu",
@@ -1391,9 +1824,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 21",
-      "stock": 21
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 21 · ¥112,640（2人2泊最低）",
+      "stock": 21,
+      "price_jpy": 112640,
+      "price_per_person_jpy": 56320,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "lavista-kusatsu",
@@ -1401,9 +1838,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad378442/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 22",
-      "stock": 22
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 22 · ¥112,640（2人2泊最低）",
+      "stock": 22,
+      "price_jpy": 112640,
+      "price_per_person_jpy": 56320,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "ichinoyu",
@@ -1411,9 +1852,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 1",
-      "stock": 1
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 1 · ¥493,200（2人2泊最低）",
+      "stock": 1,
+      "price_jpy": 493200,
+      "price_per_person_jpy": 246600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "ichinoyu",
@@ -1421,9 +1866,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 1",
-      "stock": 1
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 1 · ¥493,200（2人2泊最低）",
+      "stock": 1,
+      "price_jpy": 493200,
+      "price_per_person_jpy": 246600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "ichinoyu",
@@ -1431,9 +1880,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2026&stayMonth=12&stayDay=30&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "ichinoyu",
@@ -1441,9 +1894,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2026&stayMonth=12&stayDay=31&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "ichinoyu",
@@ -1451,9 +1908,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 7",
-      "stock": 7
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 7 · ¥125,200（2人2泊最低）",
+      "stock": 7,
+      "price_jpy": 125200,
+      "price_per_person_jpy": 62600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "ichinoyu",
@@ -1461,9 +1922,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 18",
-      "stock": 18
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 18 · ¥125,200（2人2泊最低）",
+      "stock": 18,
+      "price_jpy": 125200,
+      "price_per_person_jpy": 62600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "ichinoyu",
@@ -1471,9 +1936,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 19",
-      "stock": 19
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 19 · ¥101,200（2人2泊最低）",
+      "stock": 19,
+      "price_jpy": 101200,
+      "price_per_person_jpy": 50600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "ichinoyu",
@@ -1481,9 +1950,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 20",
-      "stock": 20
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 20 · ¥64,400（2人2泊最低）",
+      "stock": 20,
+      "price_jpy": 64400,
+      "price_per_person_jpy": 32200,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "ichinoyu",
@@ -1491,9 +1964,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 27",
-      "stock": 27
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 27 · ¥64,400（2人2泊最低）",
+      "stock": 27,
+      "price_jpy": 64400,
+      "price_per_person_jpy": 32200,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "ichinoyu",
@@ -1501,9 +1978,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad333604/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 39",
-      "stock": 39
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 39 · ¥64,400（2人2泊最低）",
+      "stock": 39,
+      "price_jpy": 64400,
+      "price_per_person_jpy": 32200,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "takamatsu",
@@ -1511,9 +1992,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "takamatsu",
@@ -1521,9 +2006,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "takamatsu",
@@ -1531,9 +2020,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2026&stayMonth=12&stayDay=30&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "takamatsu",
@@ -1541,19 +2034,27 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2026&stayMonth=12&stayDay=31&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "takamatsu",
       "window_id": "w05",
-      "status": "open",
+      "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 1",
-      "stock": 1
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "takamatsu",
@@ -1561,9 +2062,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 16",
-      "stock": 16
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 15 · ¥132,600（2人2泊最低）",
+      "stock": 15,
+      "price_jpy": 132600,
+      "price_per_person_jpy": 66300,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "takamatsu",
@@ -1571,9 +2076,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 13",
-      "stock": 13
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 13 · ¥83,200（2人2泊最低）",
+      "stock": 13,
+      "price_jpy": 83200,
+      "price_per_person_jpy": 41600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "takamatsu",
@@ -1581,9 +2090,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 9",
-      "stock": 9
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 9 · ¥59,200（2人2泊最低）",
+      "stock": 9,
+      "price_jpy": 59200,
+      "price_per_person_jpy": 29600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "takamatsu",
@@ -1591,9 +2104,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 6",
-      "stock": 6
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 6 · ¥49,200（2人2泊最低）",
+      "stock": 6,
+      "price_jpy": 49200,
+      "price_per_person_jpy": 24600,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "takamatsu",
@@ -1601,9 +2118,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 13",
-      "stock": 13
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 13 · ¥48,200（2人2泊最低）",
+      "stock": 13,
+      "price_jpy": 48200,
+      "price_per_person_jpy": 24100,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsukan",
@@ -1611,9 +2132,13 @@
       "status": "need_official",
       "source": null,
       "source_url": "https://kusatsukan.rwiths.net/r-withs/tfi0010a.do",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "無じゃらん公開庫存 API；請開官網預約站／楽天確認",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsukan",
@@ -1621,9 +2146,13 @@
       "status": "need_official",
       "source": null,
       "source_url": "https://kusatsukan.rwiths.net/r-withs/tfi0010a.do",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "無じゃらん公開庫存 API；請開官網預約站／楽天確認",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsukan",
@@ -1631,9 +2160,13 @@
       "status": "need_official",
       "source": null,
       "source_url": "https://kusatsukan.rwiths.net/r-withs/tfi0010a.do",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "無じゃらん公開庫存 API；請開官網預約站／楽天確認",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsukan",
@@ -1641,9 +2174,13 @@
       "status": "need_official",
       "source": null,
       "source_url": "https://kusatsukan.rwiths.net/r-withs/tfi0010a.do",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "無じゃらん公開庫存 API；請開官網預約站／楽天確認",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsukan",
@@ -1651,9 +2188,13 @@
       "status": "need_official",
       "source": null,
       "source_url": "https://kusatsukan.rwiths.net/r-withs/tfi0010a.do",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "無じゃらん公開庫存 API；請開官網預約站／楽天確認",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsukan",
@@ -1661,9 +2202,13 @@
       "status": "need_official",
       "source": null,
       "source_url": "https://kusatsukan.rwiths.net/r-withs/tfi0010a.do",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "無じゃらん公開庫存 API；請開官網預約站／楽天確認",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsukan",
@@ -1671,9 +2216,13 @@
       "status": "need_official",
       "source": null,
       "source_url": "https://kusatsukan.rwiths.net/r-withs/tfi0010a.do",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "無じゃらん公開庫存 API；請開官網預約站／楽天確認",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsukan",
@@ -1681,9 +2230,13 @@
       "status": "need_official",
       "source": null,
       "source_url": "https://kusatsukan.rwiths.net/r-withs/tfi0010a.do",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "無じゃらん公開庫存 API；請開官網預約站／楽天確認",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsukan",
@@ -1691,9 +2244,13 @@
       "status": "need_official",
       "source": null,
       "source_url": "https://kusatsukan.rwiths.net/r-withs/tfi0010a.do",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "無じゃらん公開庫存 API；請開官網預約站／楽天確認",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "kusatsukan",
@@ -1701,9 +2258,13 @@
       "status": "need_official",
       "source": null,
       "source_url": "https://kusatsukan.rwiths.net/r-withs/tfi0010a.do",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "無じゃらん公開庫存 API；請開官網預約站／楽天確認",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "nakamuraya",
@@ -1711,9 +2272,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad356100/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "nakamuraya",
@@ -1721,9 +2286,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad356100/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "nakamuraya",
@@ -1731,9 +2300,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad356100/plan/?stayYear=2026&stayMonth=12&stayDay=30&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "nakamuraya",
@@ -1741,9 +2314,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad356100/plan/?stayYear=2026&stayMonth=12&stayDay=31&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "nakamuraya",
@@ -1751,9 +2328,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad356100/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "nakamuraya",
@@ -1761,9 +2342,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad356100/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "nakamuraya",
@@ -1771,9 +2356,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad356100/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "nakamuraya",
@@ -1781,9 +2370,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad356100/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "nakamuraya",
@@ -1791,9 +2384,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad356100/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "nakamuraya",
@@ -1801,9 +2398,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad356100/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "urakusatsu-tou",
@@ -1811,9 +2412,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 20",
-      "stock": 20
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 20 · ¥266,930（2人2泊最低）",
+      "stock": 20,
+      "price_jpy": 266930,
+      "price_per_person_jpy": 133465,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "urakusatsu-tou",
@@ -1821,9 +2426,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 21",
-      "stock": 21
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 21 · ¥266,930（2人2泊最低）",
+      "stock": 21,
+      "price_jpy": 266930,
+      "price_per_person_jpy": 133465,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "urakusatsu-tou",
@@ -1831,9 +2440,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2026&stayMonth=12&stayDay=30&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "urakusatsu-tou",
@@ -1841,9 +2454,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2026&stayMonth=12&stayDay=31&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "urakusatsu-tou",
@@ -1851,9 +2468,13 @@
       "status": "full",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
+      "checked_at": "2026-11-05T20:22:06+08:00",
       "note_zh": "じゃらん（2大人・2泊）：該入住日無空室／未上架",
-      "stock": null
+      "stock": null,
+      "price_jpy": null,
+      "price_per_person_jpy": null,
+      "price_note_zh": null,
+      "currency": "JPY"
     },
     {
       "hotel_id": "urakusatsu-tou",
@@ -1861,9 +2482,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 27",
-      "stock": 27
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 27 · ¥151,424（2人2泊最低）",
+      "stock": 27,
+      "price_jpy": 151424,
+      "price_per_person_jpy": 75712,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "urakusatsu-tou",
@@ -1871,9 +2496,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 14",
-      "stock": 14
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 13 · ¥110,292（2人2泊最低）",
+      "stock": 13,
+      "price_jpy": 110292,
+      "price_per_person_jpy": 55146,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "urakusatsu-tou",
@@ -1881,9 +2510,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 13",
-      "stock": 13
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 12 · ¥89,544（2人2泊最低）",
+      "stock": 12,
+      "price_jpy": 89544,
+      "price_per_person_jpy": 44772,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "urakusatsu-tou",
@@ -1891,9 +2524,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 11",
-      "stock": 11
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 11 · ¥101,010（2人2泊最低）",
+      "stock": 11,
+      "price_jpy": 101010,
+      "price_per_person_jpy": 50505,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     },
     {
       "hotel_id": "urakusatsu-tou",
@@ -1901,9 +2538,13 @@
       "status": "open",
       "source": "jalan_zam",
       "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2",
-      "checked_at": "2026-11-05T14:39:04+08:00",
-      "note_zh": "じゃらん（2大人・2泊）：殘室約 14",
-      "stock": 14
+      "checked_at": "2026-11-05T20:22:06+08:00",
+      "note_zh": "じゃらん（2大人・2泊）：殘室約 14 · ¥97,916（2人2泊最低）",
+      "stock": 14,
+      "price_jpy": 97916,
+      "price_per_person_jpy": 48958,
+      "price_note_zh": "2人2泊合計／じゃらん最低價（lowestTotalPrice）",
+      "currency": "JPY"
     }
   ],
   "status_labels_zh": {

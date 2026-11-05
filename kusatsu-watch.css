@@ -149,3 +149,34 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
+.kw-cell-stack {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  line-height: 1.2;
+}
+.kw-price {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--accent2);
+  white-space: nowrap;
+  letter-spacing: -0.02em;
+}
+.kw-min-price {
+  color: var(--ok);
+  font-weight: 700;
+}
+.kw-matrix a.kw-cell-link {
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+}
+.kw-matrix td {
+  min-width: 72px;
+}
+@media (max-width: 700px) {
+  .kw-price { font-size: 0.62rem; }
+  .kw-matrix td { padding: 6px 4px; min-width: 64px; }
+}

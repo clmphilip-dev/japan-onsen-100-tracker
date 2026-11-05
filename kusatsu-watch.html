@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>草津監控 — 2026/12/28～2027/1/8 兩晚空室</title>
   <meta name="description" content="草津溫泉設施：監控 2026-12-28 至 2027-01-08 內任何連續兩晚（2 大人）空室。" />
-  <link rel="stylesheet" href="styles.css?v=20261105a" />
-  <link rel="stylesheet" href="kusatsu-watch.css?v=20261105a" />
+  <link rel="stylesheet" href="styles.css?v=20261105b" />
+  <link rel="stylesheet" href="kusatsu-watch.css?v=20261105b" />
   <script>
     (function () {
       try {
@@ -51,8 +51,9 @@
       <span id="kw-assumption"></span>
     </div>
     <div class="banner warn" role="status">
-      年末日本溫泉極熱門；空室變動快。本頁為<strong>唯讀監控</strong>（不訂房、不顯示價錢），
-      快照來自じゃらん公開庫存 API；最終以訂房頁為準。西の河原露天風呂為<strong>非住宿／日歸</strong>，不查房。
+      年末日本溫泉極熱門；空室／價錢變動快。本頁為<strong>唯讀監控</strong>（不訂房）。
+      「有房」格顯示じゃらん快照<strong>2大人・2泊合計最低價</strong>（JPY）；稅費以訂房頁為準，請再確認。
+      西の河原露天風呂為<strong>非住宿／日歸</strong>，不查房。無じゃらん ID 者無自動價錢。
     </div>
 
     <section class="panel">
@@ -85,6 +86,7 @@
           <label class="f">排序
             <select id="kw-sort">
               <option value="open_desc">有房視窗多→少</option>
+              <option value="price_asc">最低有房價→高</option>
               <option value="name">旅館名</option>
               <option value="list">名單順序</option>
             </select>
@@ -110,10 +112,10 @@
   </main>
 
   <footer>
-    <p>空室來源：じゃらん ZAM 公開 API 快照（2 大人・2 泊）。無じゃらん ID 者→「需官網」（官網預約站／楽天）。本頁不訂房。</p>
+    <p>空室與價錢來源：じゃらん ZAM 公開 API 快照（2 大人・1 房・2 泊合計最低價）。無じゃらん ID 者→「需官網」（官網預約站／楽天）。本頁不訂房。</p>
     <p>資料檔：<code>kusatsu-watch-data.json</code> · 狀態摘要：<code>kusatsu-watch-status.json</code></p>
   </footer>
 
-  <script src="kusatsu-watch.js?v=20261105a"></script>
+  <script src="kusatsu-watch.js?v=20261105b"></script>
 </body>
 </html>
