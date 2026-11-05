@@ -2,6 +2,7 @@
 """Refresh kusatsu-watch-data.json / kusatsu-watch-status.json via Jalan ZAM.
 
 Read-only. Does not book. Intended for a daily routine.
+Hotels with jalan_id use ZAM; Tripla-only / no-jalan stay as need_official with deep links.
 Run from repo root: python3 scripts/kusatsu_watch_check.py
 """
 from __future__ import annotations
@@ -82,9 +83,14 @@ def main() -> None:
                         "window_id": w["id"],
                         "status": "need_official",
                         "source": None,
-                        "source_url": h.get("rakuten_url") or h.get("official_url"),
+                        "source_url": (
+                            h.get("other_booking")
+                            or h.get("booking_url")
+                            or h.get("rakuten_url")
+                            or h.get("official_url")
+                        ),
                         "checked_at": checked_at,
-                        "note_zh": "無じゃらん公開庫存 API；請開官網／楽天確認",
+                        "note_zh": "無じゃらん公開庫存 API；請開官網預約站／楽天確認",
                         "stock": None,
                     }
                 )

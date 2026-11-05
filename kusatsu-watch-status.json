@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-11-05T09:07:58+08:00",
+  "generated_at": "2026-11-05T14:39:04+08:00",
   "timezone": "Asia/Hong_Kong",
-  "open_rooms_count": 71,
+  "open_rooms_count": 78,
   "open_rooms": [
     {
       "hotel_id": "yuhata-sensui",
@@ -140,7 +140,7 @@
       "checkin": "2026-12-28",
       "checkout": "2026-12-30",
       "label_zh": "12/28→30",
-      "stock": 3,
+      "stock": 2,
       "source_url": "https://www.jalan.net/yad310401/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2"
     },
     {
@@ -260,7 +260,7 @@
       "checkin": "2027-01-05",
       "checkout": "2027-01-07",
       "label_zh": "1/5→7",
-      "stock": 41,
+      "stock": 40,
       "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2"
     },
     {
@@ -270,7 +270,7 @@
       "checkin": "2027-01-06",
       "checkout": "2027-01-08",
       "label_zh": "1/6→8",
-      "stock": 55,
+      "stock": 54,
       "source_url": "https://www.jalan.net/yad335720/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2"
     },
     {
@@ -280,7 +280,7 @@
       "checkin": "2026-12-28",
       "checkout": "2026-12-30",
       "label_zh": "12/28→30",
-      "stock": 1,
+      "stock": 3,
       "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2"
     },
     {
@@ -290,7 +290,7 @@
       "checkin": "2026-12-29",
       "checkout": "2026-12-31",
       "label_zh": "12/29→31",
-      "stock": 9,
+      "stock": 7,
       "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2"
     },
     {
@@ -300,7 +300,7 @@
       "checkin": "2027-01-01",
       "checkout": "2027-01-03",
       "label_zh": "1/1→3",
-      "stock": 39,
+      "stock": 38,
       "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=1&stayCount=2&roomCount=1&adultNum=2"
     },
     {
@@ -310,7 +310,7 @@
       "checkin": "2027-01-02",
       "checkout": "2027-01-04",
       "label_zh": "1/2→4",
-      "stock": 109,
+      "stock": 108,
       "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2"
     },
     {
@@ -320,7 +320,7 @@
       "checkin": "2027-01-03",
       "checkout": "2027-01-05",
       "label_zh": "1/3→5",
-      "stock": 126,
+      "stock": 123,
       "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2"
     },
     {
@@ -330,7 +330,7 @@
       "checkin": "2027-01-04",
       "checkout": "2027-01-06",
       "label_zh": "1/4→6",
-      "stock": 126,
+      "stock": 123,
       "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2"
     },
     {
@@ -350,7 +350,7 @@
       "checkin": "2027-01-06",
       "checkout": "2027-01-08",
       "label_zh": "1/6→8",
-      "stock": 130,
+      "stock": 128,
       "source_url": "https://www.jalan.net/yad323154/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2"
     },
     {
@@ -420,7 +420,7 @@
       "checkin": "2027-01-05",
       "checkout": "2027-01-07",
       "label_zh": "1/5→7",
-      "stock": 27,
+      "stock": 28,
       "source_url": "https://www.jalan.net/yad362465/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2"
     },
     {
@@ -490,7 +490,7 @@
       "checkin": "2027-01-02",
       "checkout": "2027-01-04",
       "label_zh": "1/2→4",
-      "stock": 13,
+      "stock": 15,
       "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2"
     },
     {
@@ -500,7 +500,7 @@
       "checkin": "2027-01-03",
       "checkout": "2027-01-05",
       "label_zh": "1/3→5",
-      "stock": 10,
+      "stock": 13,
       "source_url": "https://www.jalan.net/yad375013/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2"
     },
     {
@@ -700,7 +700,7 @@
       "checkin": "2027-01-05",
       "checkout": "2027-01-07",
       "label_zh": "1/5→7",
-      "stock": 7,
+      "stock": 6,
       "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2"
     },
     {
@@ -712,12 +712,82 @@
       "label_zh": "1/6→8",
       "stock": 13,
       "source_url": "https://www.jalan.net/yad344574/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2"
+    },
+    {
+      "hotel_id": "urakusatsu-tou",
+      "hotel_jp": "裏草津 蕩 TOU",
+      "window_id": "w01",
+      "checkin": "2026-12-28",
+      "checkout": "2026-12-30",
+      "label_zh": "12/28→30",
+      "stock": 20,
+      "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2026&stayMonth=12&stayDay=28&stayCount=2&roomCount=1&adultNum=2"
+    },
+    {
+      "hotel_id": "urakusatsu-tou",
+      "hotel_jp": "裏草津 蕩 TOU",
+      "window_id": "w02",
+      "checkin": "2026-12-29",
+      "checkout": "2026-12-31",
+      "label_zh": "12/29→31",
+      "stock": 21,
+      "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2026&stayMonth=12&stayDay=29&stayCount=2&roomCount=1&adultNum=2"
+    },
+    {
+      "hotel_id": "urakusatsu-tou",
+      "hotel_jp": "裏草津 蕩 TOU",
+      "window_id": "w06",
+      "checkin": "2027-01-02",
+      "checkout": "2027-01-04",
+      "label_zh": "1/2→4",
+      "stock": 27,
+      "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2027&stayMonth=1&stayDay=2&stayCount=2&roomCount=1&adultNum=2"
+    },
+    {
+      "hotel_id": "urakusatsu-tou",
+      "hotel_jp": "裏草津 蕩 TOU",
+      "window_id": "w07",
+      "checkin": "2027-01-03",
+      "checkout": "2027-01-05",
+      "label_zh": "1/3→5",
+      "stock": 14,
+      "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2027&stayMonth=1&stayDay=3&stayCount=2&roomCount=1&adultNum=2"
+    },
+    {
+      "hotel_id": "urakusatsu-tou",
+      "hotel_jp": "裏草津 蕩 TOU",
+      "window_id": "w08",
+      "checkin": "2027-01-04",
+      "checkout": "2027-01-06",
+      "label_zh": "1/4→6",
+      "stock": 13,
+      "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2027&stayMonth=1&stayDay=4&stayCount=2&roomCount=1&adultNum=2"
+    },
+    {
+      "hotel_id": "urakusatsu-tou",
+      "hotel_jp": "裏草津 蕩 TOU",
+      "window_id": "w09",
+      "checkin": "2027-01-05",
+      "checkout": "2027-01-07",
+      "label_zh": "1/5→7",
+      "stock": 11,
+      "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2027&stayMonth=1&stayDay=5&stayCount=2&roomCount=1&adultNum=2"
+    },
+    {
+      "hotel_id": "urakusatsu-tou",
+      "hotel_jp": "裏草津 蕩 TOU",
+      "window_id": "w10",
+      "checkin": "2027-01-06",
+      "checkout": "2027-01-08",
+      "label_zh": "1/6→8",
+      "stock": 14,
+      "source_url": "https://www.jalan.net/yad392336/plan/?stayYear=2027&stayMonth=1&stayDay=6&stayCount=2&roomCount=1&adultNum=2"
     }
   ],
-  "full_cells": 59,
+  "full_cells": 62,
   "need_official_cells": 10,
   "non_stay_cells": 10,
   "unchecked_cells": 0,
-  "total_cells": 150,
+  "total_cells": 160,
   "note_zh": "供每日 routine 比對：若 open_rooms 出現新組合再通知 Philip。"
 }

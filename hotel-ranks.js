@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  var DATA_URL = "hotel-ranks-data.json?v=20261102b";
+  var DATA_URL = "hotel-ranks-data.json?v=20261105a";
   var state = { hotels: [], meta: null, filtered: [], sort: "rank_asc" };
 
   function $(id) { return document.getElementById(id); }
@@ -282,7 +282,7 @@
       if (!r.ok) throw new Error("HTTP " + r.status);
       return r.json();
     }),
-    fetch("data.json?v=20261102b", { cache: "no-cache" })
+    fetch("data.json?v=20261105a", { cache: "no-cache" })
       .then(function (r) { return r.ok ? r.json() : null; })
       .catch(function () { return null; })
   ])

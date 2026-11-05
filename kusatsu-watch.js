@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  var DATA_URL = "kusatsu-watch-data.json?v=20261102c";
+  var DATA_URL = "kusatsu-watch-data.json?v=20261105a";
   var STATUS = {
     open: "有房",
     full: "滿房",
