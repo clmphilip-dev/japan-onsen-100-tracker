@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>九州監控 — 2026/12/28～2027/1/8 兩晚空室</title>
+  <meta name="description" content="九州溫泉旅館：監控 2026-12-28 至 2027-01-08 內任何連續兩晚（2 大人）空室。" />
+  <link rel="stylesheet" href="styles.css?v=20261109k" />
+  <link rel="stylesheet" href="kusatsu-watch.css?v=20261109k" />
+  <link rel="stylesheet" href="kyushu-watch.css?v=20261109k" />
+  <script>
+    (function () {
+      try {
+        if (!(window.matchMedia && window.matchMedia("(max-width: 700px)").matches)) return;
+        document.documentElement.classList.add("is-narrow");
+        var close = function () {
+          document.querySelectorAll(".filter-drawer").forEach(function (d) { d.open = false; });
+        };
+        if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", close);
+        else close();
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body data-page="kyushu-watch" class="page-compact">
+  <header class="app-header compact">
+    <div class="wrap header-bar">
+      <div>
+        <h1>九州 · 空室監控</h1>
+        <p class="sub">2026/12/28～2027/1/8 · 任意連續 2 晚 · tracker 內九州旅館</p>
+      </div>
+      <div class="meta-row">
+        <a class="hoy" href="hotels.html?region=%E4%B9%9D%E5%B7%9E" rel="noopener">住宿名單</a>
+        <span id="kw-updated" class="updated-short">—</span>
+      </div>
+    </div>
+  </header>
+
+  <nav class="site-nav sticky-nav" aria-label="主要頁面">
+    <a href="index.html" class="site-nav-link">首頁</a>
+    <a href="ranks.html" class="site-nav-link">Top 10</a>
+    <a href="compare.html" class="site-nav-link">排名對照</a>
+    <a href="hotels.html" class="site-nav-link">住宿</a>
+    <a href="hotel-ranks.html" class="site-nav-link">旅館排名</a>
+    <a href="kusatsu-watch.html" class="site-nav-link">草津監控</a>
+    <a href="kyushu-watch.html" class="site-nav-link is-active" aria-current="page">九州監控</a>
+  </nav>
+
+  <main>
+    <div class="banner info" role="status">
+      <strong>假設：</strong>2 位大人、1 間房、連續 <strong>2 晚</strong>（3 天 2 夜）。
+      入住日須使退房 ≤ 2027-01-08（共 10 個視窗）。
+      <span id="kw-assumption"></span>
+    </div>
+    <div class="banner warn" role="status">
+      年末日本溫泉極熱門；空室／價錢變動快。本頁為<strong>唯讀監控</strong>（不訂房）。
+      「有房」格顯示じゃらん快照<strong>2大人・2泊合計最低價</strong>（JPY）；稅費以訂房頁為準，請再確認。
+      日歸溫泉（觀音岩／玉手箱／砂樂）為<strong>非住宿</strong>，不查房。無じゃらん ID 者→「需官網」。
+    </div>
+
+    <section class="panel">
+      <div class="panel-head">
+        <h2>旅館 × 入住視窗</h2>
+        <span class="kw-edition" id="kw-edition">—</span>
+      </div>
+      <p class="lede lede-hide-mobile" id="kw-lede">
+        狀態：<span class="kw-chip open">有房</span>
+        <span class="kw-chip full">滿房</span>
+        <span class="kw-chip unchecked">未查</span>
+        <span class="kw-chip non-stay">非住宿</span>
+        <span class="kw-chip need-official">需官網</span>
+      </p>
+
+      <details class="filter-drawer" id="kw-filter-drawer">
+        <summary class="filter-drawer-summary">
+          <span class="filter-drawer-title">篩選／排序</span>
+          <span class="filter-drawer-hint" id="kw-filter-hint" hidden></span>
+          <span class="filter-drawer-chevron" aria-hidden="true"></span>
+        </summary>
+        <div class="filters filters-hotels kyushu-filters" id="kw-filters">
+          <label class="f">縣
+            <select id="kw-pref">
+              <option value="all">全部</option>
+              <option value="大分">大分</option>
+              <option value="熊本">熊本</option>
+              <option value="鹿児島">鹿兒島</option>
+              <option value="佐賀">佐賀</option>
+              <option value="長崎">長崎</option>
+            </select>
+          </label>
+          <label class="f">溫泉地
+            <select id="kw-area">
+              <option value="all">全部</option>
+            </select>
+          </label>
+          <label class="f">顯示
+            <select id="kw-filter">
+              <option value="all">全部</option>
+              <option value="open">只看有房</option>
+              <option value="stay">只看可住宿</option>
+              <option value="show">只看節目推薦</option>
+            </select>
+          </label>
+          <label class="f">排序
+            <select id="kw-sort">
+              <option value="open_desc">有房視窗多→少</option>
+              <option value="price_asc">最低有房價→高</option>
+              <option value="area">溫泉地／名單</option>
+              <option value="name">旅館名</option>
+              <option value="list">名單順序</option>
+            </select>
+          </label>
+          <button type="button" class="reset" id="kw-reset">重設</button>
+        </div>
+      </details>
+      <p class="stats" id="kw-stats"></p>
+
+      <div class="table-wrap kw-matrix-wrap" id="kw-matrix-wrap">
+        <table class="kw-matrix" id="kw-matrix">
+          <thead id="kw-thead"></thead>
+          <tbody id="kw-tbody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>旅館詳情與訂房連結</h2>
+      <p class="lede lede-hide-mobile">每間顯示溫泉地、最佳有房視窗摘要與官網／じゃらん／楽天連結（有則顯示）。</p>
+      <div class="kw-cards" id="kw-cards"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>空室與價錢來源：じゃらん ZAM 公開 API 快照（2 大人・1 房・2 泊合計最低價）。無じゃらん ID 者→「需官網」（官網預約站／楽天）。本頁不訂房。</p>
+    <p>資料檔：<code>kyushu-watch-data.json</code> · 狀態摘要：<code>kyushu-watch-status.json</code></p>
+  </footer>
+
+  <script src="kyushu-watch.js?v=20261109k"></script>
+</body>
+</html>

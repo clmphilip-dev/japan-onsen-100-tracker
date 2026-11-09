@@ -34,4 +34,12 @@
 - [草津監控](https://clmphilip-dev.github.io/japan-onsen-100-tracker/kusatsu-watch.html)：草津溫泉設施（資料檔動態載入） × 2026-12-28～2027-01-08 內任意連續 2 晚（2 大人）
 - `kusatsu-watch-data.json`：旅館、視窗、checks[] 快照（可供 routine 覆寫）
 - `kusatsu-watch-status.json`：`open_rooms` 摘要（有房組合）
-- 重查：`python3 scripts/kusatsu_watch_check.py`（じゃらん ZAM 唯讀；不訂房、不寫價錢）
+- 重查：`python3 scripts/kusatsu_watch_check.py`（じゃらん ZAM 唯讀；不訂房；有房時寫入 2人2泊最低合計價）
+
+## 九州空室監控
+
+- [九州監控](https://clmphilip-dev.github.io/japan-onsen-100-tracker/kyushu-watch.html)：tracker 內全部九州旅館 × 2026-12-28～2027-01-08 內任意連續 2 晚（2 大人）
+- `kyushu-watch-data.json`：旅館（含縣／溫泉地）、視窗、checks[] 快照
+- `kyushu-watch-status.json`：`open_rooms` 摘要（有房組合＋價錢）
+- 重查：`python3 scripts/kyushu_watch_check.py`（じゃらん ZAM 唯讀；不訂房；有房時寫入 2人2泊最低合計價）
+- 日歸溫泉不查房；無じゃらん ID 者標「需官網」

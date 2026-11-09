@@ -1,0 +1,41 @@
+/* Kyushu watch extras on top of kusatsu-watch.css */
+.kyushu-filters {
+  flex-wrap: wrap;
+  gap: 8px 12px;
+}
+.kw-matrix .kw-hotel-area {
+  display: block;
+  font-size: 0.68rem;
+  color: var(--accent2);
+  font-weight: 600;
+  margin-top: 1px;
+}
+.kw-matrix th.kw-hotel-col,
+.kw-matrix td.kw-hotel-col {
+  min-width: 168px;
+  max-width: 230px;
+}
+.kw-area-group td {
+  background: #f3ebe3;
+  text-align: left !important;
+  font-weight: 700;
+  color: var(--accent2);
+  font-size: 0.82rem;
+  padding: 6px 10px;
+  position: sticky;
+  left: 0;
+  z-index: 1;
+}
+.kw-card .kw-area-line {
+  font-size: 0.78rem;
+  color: var(--accent2);
+  font-weight: 600;
+  margin: 0 0 6px;
+}
+@media (max-width: 700px) {
+  .kw-matrix th.kw-hotel-col,
+  .kw-matrix td.kw-hotel-col {
+    min-width: 132px;
+    max-width: 160px;
+  }
+}
